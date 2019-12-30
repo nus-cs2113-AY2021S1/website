@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, step, thumb, timing_badge with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("appendixE-gitHub") %}
@@ -53,7 +53,12 @@ We expect the PR peer-review to be mutually beneficial to the reviewer and the a
 
 ### <div class="text-white bg-dark p-1">Organization Setup</div>
 
-{{ icon_important_big_red }} Please follow the organization/repo name format precisely because we use scripts to download your code or else our scripts will not be able to detect your work.
+
+<box light type="important">
+
+Please follow the organization/repo name format precisely because we use scripts to download your code or else our scripts will not be able to detect your work.
+
+</box>
 
 After receiving your team ID, one team member should do the following steps:
 * Create a GitHub organization with the following details:
@@ -70,27 +75,37 @@ After receiving your team ID, one team member should do the following steps:
 
 ### <div class="text-white bg-dark p-1">Repo Setup</div>
 
+<box light type="important">
+
+The tP project template given to you is a variation of the Duke repo you used for the iP, but ==with some important differences==. Please follow instructions carefully, rather than follow what you remember from the iP.
+
+</box>
+
 Only one team member:
 
-1. **Fork** [Address Book - Level 3 (AB3)]({{module_org}}/addressbook-level3) to your team org.
-1. ==**Rename** the forked repo as `main`==. This repo (let's call it the _team repo_) is to be used as the repo for your project.
-1. ==Ensure the issue tracker of your team repo is enabled.== %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.%%
-1. Ensure your team members have the desired level of access to your team repo.
-1. [**Enable Travis CI for the team repo**]({{ ab3_website }}/UsingTravis.html#setting-up-travis-ci).
-1. [**Set up _auto-publishing_ of docs**]({{ ab3_website }}/UsingTravis.html#enabling-auto-publishing-of-documentation). When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/main` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/main/`. This also requires you to [enable the _GitHub Pages_ feature of your team repo and configure it to serve the website from the `gh-pages` branch](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).
-1. **create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/addressbook-level3]({{module_org}}/addressbook-level3)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[CS2103T-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
+1. **Fork** the tP project template [nus-{{ module | lower }}-{{ semester }}/tP]({{module_org}}/tP) repo to your team org.<br>
+   This repo (let's call it the _team repo_) is to be used as the repo for your project.<br>
+   <span id="do-not-rename">{{ icon_important_big_red }} Please do not rename the fork %%Reason: it will make it difficult for our bots to find your fork if you rename it.%%</span>
+1. ==**Enable the issue tracker**== of the team repo %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.%%
+1. **Enable GitHub actions**: Go to the {{ show_as_rounded_tab(':fas-play-circle: Actions') }} tab and enable workflows by clicking the {{ button('I understand my workflows ...', button_style="success") }} button. That will enable the GitHub Actions that come with the project template.
+1. **Enable GitHub Pages**: Go to the {{ show_as_rounded_tab(':octicon-gear: Settings') }} tab and enable `GitHub Pages` for the `master branch /docs folder` (similar to how you did it in the iP).<br>
+   Remember to choose a theme too by clicking the {{ button('**Choose a theme**') }} button (that will create a commit in your repo that is needed in a later step.<br>
+   After a few minutes, confirm your tP website is available in the corresponding `github.io` URL.
+1. **Give access to team members**: Ensure your team members have the desired level of access to your team repo.
+1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/tP]({{module_org}}/tP)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ module }}T-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
 
 All team members:
 
-1. **Watch** the `main` repo (created above) i.e., go to the repo and click on the `watch` button to subscribe to activities of the repo
-1. **Fork** the `main` repo to your personal GitHub account.
+1. **Watch** the `tP` repo (created above) i.e., go to the repo and click on the {{ button(':octicon-eye: Watch :octicon-triangle-down:') }} button to subscribe to activities of the repo
+1. **Fork** the `tP` repo to your personal GitHub account.<br>
+   <include src="appendixE-gitHub.md#do-not-rename" inline />
 1. **Clone** the fork to your computer.
 1. **Set up** the developer environment in your computer.<br>
-   Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).
+   Recommended: Set it up as an Intellij project (follow the instructions in the [README]({{module_org}}/tP) carefully as the ==steps are different from the iP==).
 
 Note that some of our bot scripts depend on the following folder paths. Please do not alter those paths in your project.
-* `/src/main`  
-* `/src/test`  
+* `/src/main/java`  
+* `/src/test/java`  
 * `/docs`
 
 </div>
@@ -111,20 +126,23 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 </modal>
 
 
-**Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger> in your project up to v1.1.** In particular,
-
+**We recommend the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger> for your project.** In particular,
+* **Protect the `master` branch**: You can use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs. We suggest the following:
+  * Go the the {{ show_as_rounded_tab(':octicon-gear: settings') }} of your team repo. 
+  * Click on the `Branches` option on the navigation menu on the left.
+  * Click the {{ button('**Add rule**') }} button. In the _Branch protection rule_ page,
+    * Specify the _Branch name pattern_ to be `master`
+    * Tick the option `Require status checks to pass before merging` to ensure that code has to pass CI before then can be merged to the `master` branch
+    * If you think all PRs should be reviewed before they are merged, also tick the `Require pull request reviews before merging` option.
 * **Create issues to represent project tasks** so that they can be tracked using the issue tracker features.
 * **Create a PR when you implement a project task** that updates the code.<br>
   {{ icon_tip }} You can use GitHub's [_draft PRs_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) feature to indicate that a PR is not yet ready for merging.<br>
   {{ icon_pro_tip }} `LGTM` is common abbreviation you can use in the review comments to mean `Looks Good To Merge`.
 * **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
-  * After [setting up Netlify]({{ ab3_website }}/UsingNetlify.html), you can use _Netlify PR Preview_ to preview changes to documentation files, if the PR contains updates to documentation. To see the preview, click on the `Details` link in front of the Netlify status reported (refer screenshot below).<br>
-  <img src="{{ baseUrl }}/admin/images/gitHubPrStatus.png" width="700"/>
-* **Do not merge PRs failing <tooltip content="Continuous Integration e.g., Travis">CI</tooltip>.** After [setting up Travis]({{ ab3_website }}/UsingTravis.html#setting-up-travis-ci), the CI status of a PR is reported at the bottom of the PR page. The screenshot below shows the status of a PR that is passing all CI checks.
-  * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.<br>
-  {{ icon_pro_tip }} You can use GitHub's [_protected branches_](https://help.github.com/en/articles/about-protected-branches) feature to prevent CI-failing PRs from being merged.
-* After merging a PR, close the corresponding issue.<br>
+* **Don't merge code that fails CI**. Ensure the PRs you merge have CI {{ icon_tick_green }} before you merge them. If your CI breaks, a {{ icon_x_red }} will show up in your team PR [here]({{ module_org }}/tp/pulls) (the shame!).
+* **After merging a PR, close the corresponding issue.**<br>
   {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
+* **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.
 
 <modal large title="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
   <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -133,19 +151,8 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 </div>
 <div id="workflow-after-v11">
 
-**After completing v1.1, you can reduce process rigor** to suit your team's pace. Here are some examples:
+**You can reduce process rigor** to suit your team's pace, after following the above workflow for a while. For example, you can **switch to a lighter workflow**: While _forking workflow_ is the safest, it is also rather heavy. You can switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_. However, we still recommend that you use PR reviews, at least for PRs affecting others' features.
 
-* **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br>
-  It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
-  There is no direct penalty for removing tests. Also note <trigger trigger="click" for="modal:appEworkflow-testingExpectations">our expectation on test code</trigger>.
-
-* **Reduce automated checks**: You can also reduce the rigor of checkstyle checks to expedite PR processing.
-
-* **Switch to a lighter workflow**: While _forking workflow_ is the safest, it is also rather heavy. You an switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_. However, we still recommend that you use PR reviews, at least for PRs affecting others' features.
-
-**You can also increase the rigor/safety of your workflow** in the following ways:
-
-* Use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs.
 
 <modal title="Admin {{ icon_embedding }} Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
   <include src="tp-expectations.md#testing-expectations"/>
@@ -159,7 +166,7 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 
 ### <div class="text-white bg-dark p-1">Issue Tracker Setup</div>
 
-We recommend you configure the issue tracker of the `main` repo as follows:
+We recommend you configure the issue tracker of the `tP` repo as follows:
 
 * Delete existing labels and add the following labels.<br>
   {{ icon_tip }} **Issue type** labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.
@@ -172,21 +179,6 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 * `type.Enhancement`: An enhancement to an existing story
 * `type.Task` (or `type.Chore`) : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
 * `type.Bug` : A bug
-
-</box>
-
-<box>
-
-**Status** labels:
-* `status.Ongoing` : The issue is currently being worked on. note: remove this label before closing an issue.
-</box>
-
-<box>
-
-**Priority** labels:
-* `priority.High` : Must do
-* `priority.Medium` : Nice to have
-* `priority.Low` : Unlikely to do
 
 </box>
 
@@ -204,7 +196,7 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 
 </span>
 
-* Create following milestones : `v1.0`, `v1.1`, `v1.2`, `{{ penultimate_version }}`, `{{ final_version }}`,
+* Create following milestones : `v1.0`, `{{ penultimate_version }}`, `{{ final_version }}`
 
 * You may configure other project settings as you wish. e.g. more labels, more milestones
 
@@ -218,17 +210,13 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 #### Using Issues:
 
-<big>**During the initial stages**</big> (latest by the start of v1.2):
-
 * **Record each of the user stories you plan to deliver as an issue in the issue tracker.** 
     %%e.g.%% `Title: As a user I can add a deadline`  
     `Description: ... so that I can keep track of my deadlines`
 
-* **Assign the `type.*` and `priority.*` labels to those issues.**
+* **Assign the `type.*` labels to those issues.**
 
 * **Formalize the project plan** by assigning relevant issues to the corresponding milestone.
-
-<big>**From milestone v1.2:**</big>
 
 * **Define project tasks as issues**. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks.  ==Create issues for each== of those tasks so that they can be tracked.%%e.g.%% 
   * A typical task should be able to done by one person, in a few hours.
@@ -246,24 +234,22 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 * **Assign tasks (i.e., issues) to the corresponding team members using the `assignees` field.** ==Normally, there should be some ongoing tasks and some pending tasks against each team member at any point==.
 
-* Optionally, you can use `status.ongoing` label to indicate issues currently ongoing.
-
 <div id="using-milestones">
 
 #### Using Milestones:
 
-We recommend you do proper milestone management starting from v1.2. ==Given below are the conditions to satisfy for a milestone to be considered properly managed==:
+==Given below are the conditions to satisfy for a milestone to be considered properly managed==:
 
 **Planning a Milestone**:<br>
 
-* **Issues assigned to the milestone, team members assigned to issues**: Used [GitHub milestones](https://help.github.com/articles/about-milestones/) to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones. Also make sure those issues are assigned to team members. %%Note that you can change the milestone plan along the way as necessary.%%
+* **Issues assigned to the milestone, team members assigned to issues**: Used [GitHub milestones](https://help.github.com/articles/about-milestones/) to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones. Ensured issues are assigned to team members. %%Note that you can change the milestone plan along the way as necessary.%%
 
 * **Deadline set for the milestones** (in the GitHub milestone). %%Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.%%
 
 **Wrapping up a Milestone**:<br>
 
-  * **A working product tagged** with the correct tag (e.g. `v1.2`) and is pushed to the main repo<br>
-    or a **product _release_ done on GitHub**. A product release is optional for v1.2 but required from from {{ penultimate_version }}. Click [here](https://github.com/se-edu/addressbook-level3/releases/) to see an example release.
+  * **A working product tagged** with the correct tag (e.g. `{{ penultimate_version }}`) and is pushed to the main repo<br>
+    or a **product _release_ done on GitHub**.
 
   * **All tests passing** on Travis for the version tagged/released.
 

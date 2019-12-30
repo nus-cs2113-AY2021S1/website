@@ -8,11 +8,11 @@
 **Timing/venue**:
 
 {% set sem1_lectures %}
-{{ module }}   | LT19             | **1200**-1400
-{{ module }}T  | ICube Auditorium | **1600**-1800
+{{ module }}   | LT19             | **1600**-1800
+{{ module }}/T | LT19             | **1600**-1800
 {% endset %}
 {% set sem2_lectures %}
-{{ module }}/T | ICube Auditorium | **1400**-1600
+{{ module }}/T | LT15             | **1200**-1400
 {% endset %}
 {% set lectures = (sem1_lectures | trim) if S == "1" else (sem2_lectures | trim) %}
 

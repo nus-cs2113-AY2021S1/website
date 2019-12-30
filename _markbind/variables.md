@@ -1,15 +1,15 @@
-<span id="module">CS2103</span>
+<span id="module">CS2113</span>
 
-<span id="module_pair">CS2103/T</span>
+<span id="module_pair">CS2113/T</span>
 
-<span id="module_name">Software Engineering</span>
+<span id="module_name">Software Engineering & Object-Oriented Programming</span>
 
 <span id="S">2</span>
 <span id="semester">AY1920S{{ S }}</span>
 
 <span id="period">2020 Jan-Apr</span>
 
-<span id="module_color">success</span>
+<span id="module_color">primary</span>
 
 <span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
 
@@ -22,13 +22,13 @@
 
 <span id="module_website">{{ module_gh_pages }}/website</span>
 
-<span id="ab3_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3</span>
+<span id="ab3_website">https://se-edu.github.io/addressbook-level3</span>
 
-<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQt_VkIgajiPIkdLzgqLTBkYf6UoYhAEMkgDns7S3eWfsx7x2EsI0wix6RLHooaYbETWkTuGnqGP-5s/pub?embedded=true</span>
+<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vTUo2X9eVTHmSGf4-sYU8m6M7_xGZfA7XrrxQv0lCl0Gd-Ad9GS5rNVG1AlNG-37hZ_m41QeGA3zoov/pub?embedded=true</span>
 
 <span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true</span>
 
-<span id="participation_marks_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml</span>
+<span id="participation_marks_page">{{ baseUrl }}/admin/participation-dashboard.html</span>
 
 <span id="files_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</span>
 
@@ -38,19 +38,21 @@
 
 <span id="forum_link">{{ module_org | safe }}/forum/issues</span>
 
+<span id="repl_link">https://repl.it/classroom/invite/jmu7TQ6</span>
+
 <span id="admin_link"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></span>
 
 <span id="schedule_link"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></span>
 
-<span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
+<span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/basic.html</span>
 
 <span id="ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</span>
-<span id="tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard</span>
+<span id="tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard/#breakdown=true</span>
 
-<span id="first_version">v1.2</span>
-<span id="penultimate_version">v1.3</span>
-<span id="final_version">v1.4</span>
-<span id="future_version">v2.0</span>
+<span id="first_version">v1.0</span>
+<span id="penultimate_version">v2.0</span>
+<span id="final_version">v2.1</span>
+<span id="future_version">v3.0</span>
 
 <span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>
 

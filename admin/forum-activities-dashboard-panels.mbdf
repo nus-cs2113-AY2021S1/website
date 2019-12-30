@@ -1,0 +1,2839 @@
+%%[This page was last updated on Apr 11 2020]%%
+
+
+<panel type="info" header="### WU SIBING `@SibingWu` (64 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: IO Redirection test passes locally but fails on github**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/104" expanded>
+
+The text-ui-test passes locally on my computer
+![image](https://user-images.githubusercontent.com/49228945/78998049-604b5e00-7b7a-11ea-9194-d8f59488d6f4.png)
+but it fails when pulling request
+![image](https://user-images.githubusercontent.com/49228945/78998071-6f321080-7b7a-11ea-8d29-04d79b968f27.png)
+Wonder how I can fix it?
+</panel>
+
+<panel  header="**2. :fas-info-circle: Page limit for PPP**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/102" expanded>
+
+I wonder if the heading and the tail count into the page limit? Those really occupy a lot of space
+![image](https://user-images.githubusercontent.com/49228945/78968826-1d689680-7b38-11ea-958f-d813b1488edf.png)
+
+![image](https://user-images.githubusercontent.com/49228945/78968848-2b1e1c00-7b38-11ea-80a4-1b30d8deae50.png)
+
+</panel>
+
+<panel  header="**3. :fas-info-circle: Incorrect format of content inside `Topic` tab**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/97" expanded>
+
+The format seems problematic here.
+
+![image](https://user-images.githubusercontent.com/49228945/78469010-7a86d580-774f-11ea-929f-d75650096944.png)
+
+</panel>
+
+<panel  header="**4. :fas-info-circle: Linkage Error when running text-ui-test**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/91" expanded>
+
+when running the text-ui-test, such error occurs. Such error never happens before, my JDK is set to be 11.
+
+![image](https://user-images.githubusercontent.com/49228945/77821596-7e4ea280-7126-11ea-9e78-91b0c9300bfb.png)
+
+</panel>
+
+<panel  header="**5. :fas-info-circle: CATcher unauthorized user**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/90" expanded>
+
+When I logged into CATcher using github for the first time, it saids that
+![image](https://user-images.githubusercontent.com/49228945/77533754-6848a400-6ed2-11ea-9168-6e8dca37b4f7.png)
+How I can fix it?
+</panel>
+
+<panel  header="**6. :fas-info-circle: Jar has no manifest attribute**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/80" expanded>
+
+I generated the jar file for tp via
+project structure -> artifacts -> JAR -> from modules with dependencies -> <All modules>
+however, when running the jar file, terminal shows that "jar has no manifest attribute"
+I wonder how I can fix it?
+![image](https://user-images.githubusercontent.com/49228945/76753608-da770580-67bb-11ea-9269-52d795d06b20.png)
+</panel>
+
+<panel  header="**7. :fas-info-circle: How to conduct check style on local computer?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/72" expanded>
+
+As per subject. It is inconvenient to wait for github to check on submission
+</panel>
+
+<panel  header="**8. :fas-info-circle: JUnitest on void return function**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/64" expanded>
+
+Given than we can have JUnitest for those functions that return something, I wonder if we can test for functions such as "execute" which return "void"?
+</panel>
+
+<panel  header="**9. :fas-info-circle: JDK 12 issue**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/63" expanded>
+
+Hi professor, since my computer was configured with JDK 12, so do intellij, the jar file generated cannot be run on JDK 11. I wonder how I can fix it?
+</panel>
+
+<panel  header="**10. :fas-info-circle: How to convert a java project into gradle project**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/54" expanded>
+
+1. How to convert an existing ordinary java project into a gradle project in intellij. In Topic, it seems that it only mentions how to create brand new gradle and import existing gradle project.
+2. Do we need to convert it to gradle project for iP?
+</panel>
+
+<panel  header="**11. :fas-info-circle: Must we update the user guide on the main page of project?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/52" expanded>
+
+As per issue subject. I wonder if we can just update the README.md on docs/README.md since I think the tutorial on the README.md in the original duke is quite good.
+</panel>
+
+<panel  header="**12. :fas-info-circle: Inquiry on documentation**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/49" expanded>
+
+I wonder if there is a abstract methods for superclass and polymorphism shown in subclasses, do we need to write documentation for the abstract method in superclass? Or we just need to write documentation for that method (specific implementation) in each subclass?
+</panel>
+
+<panel  header="**13. :fas-info-circle: Edit does not reflect when doing test-ui-test**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46" expanded>
+
+I modified the code and the demo looks like this.
+![image](https://user-images.githubusercontent.com/49228945/75507568-7236ce80-5a1c-11ea-9372-5f6efa1d91fc.png)
+
+However, when I ran test-ui-test, it told me that there was difference.
+
+![image](https://user-images.githubusercontent.com/49228945/75507602-8a0e5280-5a1c-11ea-8c1c-6cf9307787aa.png)
+
+I wonder why this is so and how I can make changes
+</panel>
+
+<panel  header="**14. :fas-info-circle: Not able to read file properly via relative path**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/33" expanded>
+
+I tried to read the txt file using relative path, however it always said "file not exists"; if I changed it to absolute path, then it can be read. I wonder what is wrong with it?
+
+private static String filePath = ".." + File.separator + ".." + File.separator + "data" + File.separator + "duke.txt";
+
+![image](https://user-images.githubusercontent.com/49228945/74545832-82fb3500-4f84-11ea-97da-b6dc15b1e359.png)
+
+</panel>
+
+<panel  header="**15. :fas-info-circle: Inquiry on Merge Conflict**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/27" expanded>
+
+I wonder what the three markers mean?
+
+![image](https://user-images.githubusercontent.com/49228945/74320200-28fb4380-4dbb-11ea-9bfb-50a9d3641af6.png)
+
+</panel>
+
+<panel  header="**16. :fas-info-circle: Inquiry on Coding Style of main function**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/25" expanded>
+
+I wonder for good coding style, it is better to put the function definition before main function/where it is called or after?
+</panel>
+
+<panel  header="**17. :fas-info-circle: IP: Cannot show tick icon properly**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/24" expanded>
+
+For IP, when generating the ACTUAL.txt file, it seems that tick icon cannot be shown properly. I wonder how I can fix it? Any help would be appreciated!
+
+![image](https://user-images.githubusercontent.com/49228945/73653301-d8e9f600-46c3-11ea-8a32-1323171e85e6.png)
+
+</panel>
+
+<panel  header="**18. :fas-info-circle: Problem when importing contacts project to Intellij**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/23" expanded>
+
+I tried to import contacts project mentioned in Lecture 3, but the IDE only recognize "src\main\java" as source directory so project only includes files under this directory after import. However the project still need files from "text-ui-test" or something. How can I fix this problem? Any help would be appreciated!
+</panel>
+
+<panel  header="**19. :fas-info-circle: Inquiry on Ex4: getMultipleGradeCaps**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/8" expanded>
+
+When running the test case, it shows "assertEquals(Arrays.toString(new double[]{5.0, 0, 2.5, 3.0}), Arrays.toString(Main.getMultipleGradeCaps(new String[]{"A+", "Foo", "C", "B-"})));"
+
+It seems that it expects "0" instead of "0.0" for "Foo". However, as a double, the result will be 0.0. In this case, should we do any special manipulation on "0.0" case?
+</panel>
+
+<panel  header="**20 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/8#issuecomment-575890278" expanded>
+
+> > It seems that it expects "0" instead of "0.0" for "Foo".
+> 
+> Are you sure this is the cause of the test failure? As no one else reported a similar problem, my initial thought is that the test failure caused by something something else.
+
+I found the reason, due to the wrong function name...
+</panel>
+
+<panel  header="**21 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/23#issuecomment-581349035" expanded>
+
+> You can change the view to 'Project Files' instead of 'Project' to see non-java files.
+
+Thanks that help! However I wonder when you demo during lecture, it seems that it showed all files including non-java files with "Project", why this is so?
+</panel>
+
+<panel  header="**22 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/23#issuecomment-581349832" expanded>
+
+Also I am not sure what is wrong here, but there seems to ACTUAL.txt
+![image](https://user-images.githubusercontent.com/49228945/73646739-067b7300-46b5-11ea-8c4d-868995dc3a04.png)
+
+</panel>
+
+<panel  header="**23 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/23#issuecomment-581353780" expanded>
+
+> Also I am not sure what is wrong here, but there seems to ACTUAL.txt
+> 
+> 
+> ACTUAL.TXT is generated by the script and contains the actual output from the program, so it doesn't need to be present before the script runs. If ACTUAL.TXT is present, the script deletes it before compiling and running the program again (e.g. in the .bat script on line 7):
+> del ACTUAL.TXT
+
+OK thx so much! Problem fixed!
+</panel>
+
+<panel  header="**24 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/23#issuecomment-581357354" expanded>
+
+> Thanks for the help @rdimaio
+> Go ahead and close this issue if the problem is resolved @SibingWu
+
+Professor I am still wondering why when you demo during lecture, it seems that it showed all files including non-java files with "Project" instead of Project Files
+</panel>
+
+<panel  header="**25 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/23#issuecomment-581370057" expanded>
+
+> Professor I am still wondering why when you demo during lecture, it seems that it showed all files including non-java files with "Project" instead of Project Files
+> 
+> I suspect  that earlier (before the lecture), I must have set some setting in Intellij to make those files visible by default, although I can't remember exactly what though.
+
+OK, thank you so much for your help!
+</panel>
+
+<panel  header="**26 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/24#issuecomment-581728309" expanded>
+
+> replace line 18 in runtest.bat to
+> java -Dfile.encoding=UTF-8 -classpath ..\bin Duke < input.txt > ACTUAL.TXT
+
+Thank you so much for your help! Problem fixed!
+</panel>
+
+<panel  header="**27 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/25#issuecomment-583736520" expanded>
+
+> As that aspect is not specified in the coding standard, you are free to choose your own, but apply in consistently throughout the code base.
+
+Thank you so much! Confusion clarified.
+</panel>
+
+<panel  header="**28 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/33#issuecomment-586351311" expanded>
+
+> One thing you can try is to print the 'current working directory' from your code. That should tell you what directory is your path 'relative to'. It may not be the location of the java file.
+
+Thank you so much! Problem fixed!
+</panel>
+
+<panel  header="**29 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587026085" expanded>
+
+I think you may run the jar file in a improper directory. Maybe you can try this:
+1. cd to the directory of "duke" project
+2. then "java -jar xxxx.jar"
+I think it will be fixed
+
+![image](https://user-images.githubusercontent.com/49228945/74663513-dd8bcf80-51d6-11ea-8979-b44dcf101933.png)
+
+Since that the path we used to find txt file is a relative path, so it is very important that which directory we are relative to (just guess
+</panel>
+
+<panel  header="**30 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592299574" expanded>
+
+> Maybe you have added some new package and you forgot to put the path?
+
+if this is so, the idea will just report error for not finding the classes
+</panel>
+
+<panel  header="**31 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592300116" expanded>
+
+> I think she is referring to your runtest.bat. It may compile and run as normal in the terminal but shows this response because the new classes have not been included in the batch script.
+
+I understand, and I have tried; if the batch script does not include the new package, it will report the error
+</panel>
+
+<panel  header="**32 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592300929" expanded>
+
+> May I ask what kind of operation will produce “empty list” in your code, list or a message after you add a new task
+
+It will display "Empty List." when there is no tasks in the duke.txt file, so nothing will be loaded to the screen
+</panel>
+
+<panel  header="**33 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592301562" expanded>
+
+> So 2 possible reasons, is it because your duke.txt is empty or  when your program cannot find the file, it has a default constructor to build an empty task list?
+
+I think the second one is possible (since if it is the first reason, then it should display "Empty List." as expected). However I wonder how I can write the batch script to let it find the duke.txt?
+</panel>
+
+<panel  header="**34 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592303542" expanded>
+
+Here comes another problem:
+
+when running the project in intellij, it works perfectly fine.
+
+However when it comes to runtest.bat, error occurs:
+![image](https://user-images.githubusercontent.com/49228945/75509533-d6f52780-5a22-11ea-8cb7-bc29eb3aa55c.png)
+
+2 problems:
+1. how come there is no bug when running in intellij and there is an exception for runtest.bat
+2. there is no line 90 in Duke.java
+![image](https://user-images.githubusercontent.com/49228945/75509557-f5f3b980-5a22-11ea-8034-d226d48f2a35.png)
+
+</panel>
+
+<panel  header="**35 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592305098" expanded>
+
+> Search for all *.class files (that were generated by previous runs) and delete them.
+
+Make sense! I wonder where I can find those .class files?
+</panel>
+
+<panel  header="**36 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592305872" expanded>
+
+> Make sense! I wonder where I can find those .class files?
+> 
+> try out folder, bin folder (if any)
+
+I deleted all .class files under the two folders, but there is another problem: java.lang.ClassNotFoundException: Duke
+
+Such exception only occurs when runtest.bat
+</panel>
+
+<panel  header="**37 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592306946" expanded>
+
+> I deleted all .class files under the two folders, but there is another problem: java.lang.ClassNotFoundException: Duke
+> Such exception only occurs when runtest.bat
+> 
+> Did you update the javac command in the runtest.bat to account for the packages you introduced?
+
+I did: javac  -cp ..\src -Xlint:none -d ..\bin ..\src\main\java\duke\*.java ..\src\main\java\duke\commands\*.java ..\src\main\java\duke\exceptions\*.java ..\src\main\java\duke\parser\*.java ..\src\main\java\duke\storage\*.java ..\src\main\java\duke\tasklist\*.java ..\src\main\java\duke\tasks\*.java ..\src\main\java\duke\ui\*.java ..\src\main\java\duke\utils\*.java
+</panel>
+
+<panel  header="**38 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592312788" expanded>
+
+> I did: javac -cp ..\src -Xlint:none -d ..\bin ..\src\main\java\duke*.java ..\src\main\java\duke\commands*.java ..\src\main\java\duke\exceptions*.java ..\src\main\java\duke\parser*.java ..\src\main\java\duke\storage*.java ..\src\main\java\duke\tasklist*.java ..\src\main\java\duke\tasks*.java ..\src\main\java\duke\ui*.java ..\src\main\java\duke\utils*.java
+> 
+> Does that command work when you run it manually, from the same directory as the runtest.bat?
+
+It can work:
+![image](https://user-images.githubusercontent.com/49228945/75511413-263e5680-5a29-11ea-8752-a6ddcec09864.png)
+
+Actually runtest.bat successfully generates the *.class files under bin directory
+</panel>
+
+<panel  header="**39 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592315843" expanded>
+
+> Actually runtest.bat successfully generates the *.class files under bin directory
+> 
+> Then, check the java command in the runtest.bat. Is it updated to use the packaged Duke class?
+
+![image](https://user-images.githubusercontent.com/49228945/75511985-f5f7b780-5a2a-11ea-8490-0a5631cb5368.png)
+I wonder how I can know if it is updated?
+</panel>
+
+<panel  header="**40 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592319616" expanded>
+
+> I wonder how I can know if it is updated?
+> 
+> See the end of this textbook section.
+
+Thank you so much!!! Problem fixed!
+</panel>
+
+<panel  header="**41 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/52#issuecomment-593067498" expanded>
+
+> Not entirely sure what you mean.
+> [root]/docs/README.md is supposed to be a user guide whereas [root]/README.md is meant for developers. So, best not to copy content from latter to the former.
+> Is that what you wanted to know?
+
+Yes! Thank you prof!
+</panel>
+
+<panel  header="**42 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/54#issuecomment-593087886" expanded>
+
+> > 2. Do we need to convert it to gradle project for iP?
+> 
+> No. We start using Gradle in the tP.
+
+Ok Thank you
+</panel>
+
+<panel  header="**43 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/64#issuecomment-597133550" expanded>
+
+> Testing is essentially ensuring that the actual behavior is same as the expected behavior. If the return value of a method is not able to tell you the actual behavior, you can try some other ways to verify it.
+> 
+> For example, if the execute method is supposed to add an object to a list, you can check the last element in the list to confirm that the object has been added there as expected.
+> 
+> If the actual behavior is hard to verify (e.g., the method simply prints something), that means the _testability_ of the method is low -- you can try to redesign the method to improve the testability e.g, get the method to return the string instead of printing it directly.
+
+So it means that, when doing JUnitest for adding something to the list, the thing used for test is truely added into the list, and we need to remove it after test finishes?
+</panel>
+
+<panel  header="**44 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/64#issuecomment-597526781" expanded>
+
+> So it means that, when doing JUnitest for adding something to the list, the thing used for test is truely added into the list, and we need to remove it after test finishes?
+> 
+> Yes, if that addition could affect the result of other tests.
+
+Thx Prof!
+</panel>
+
+<panel  header="**45 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/72#issuecomment-598129092" expanded>
+
+> `gradlew checkstyleMain`
+
+Thx!
+</panel>
+
+<panel  header="**46 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/74#issuecomment-599184447" expanded>
+
+@damithc dear professor, I also created a PR to the  https://github.com/nus-cs2113-AY1920S2/tp repo, could u please take a look? we tried many times, but the problem of IO redirection test still not resolved... I modifed the INPUT.txt, but the corresponding EXPECTED.txt generated on my local computer still cannot pass the test. I wonder if it can run properly on your end?
+</panel>
+
+<panel  header="**47 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/80#issuecomment-599486769" expanded>
+
+> gradlew shadowJar
+
+then where can find the generated jar file?
+</panel>
+
+<panel  header="**48 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/80#issuecomment-599488649" expanded>
+
+> build/libs
+
+Thank you, problem fixed!
+</panel>
+
+<panel  header="**49 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/90#issuecomment-603809177" expanded>
+
+> You are trying to access a session of CS2103. Our module code is CS2113.
+
+my bad... thx prof!
+</panel>
+
+<panel  header="**50 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/91#issuecomment-605438276" expanded>
+
+> Looks like another Java version is being used somewhere along the way.
+> If possible, remove all other java versions from your computer.
+
+just curious why this never happens before?
+</panel>
+
+<panel  header="**51 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/91#issuecomment-605446081" expanded>
+
+> Well, something must have changed somewhere. Perhaps an automatic update?
+
+I fix it by changing the computer environment path from jdk11 back to jdk 12... seems that I need to remove all the .class files generated when my computer was still jdk 12
+</panel>
+
+<panel  header="**52 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/91#issuecomment-605447001" expanded>
+
+> Well, something must have changed somewhere. Perhaps an automatic update?
+
+no use if I just delete the .class files from `out` directory; I have to change back to jdk12...
+</panel>
+
+<panel  header="**53 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/91#issuecomment-605452744" expanded>
+
+> Keep in mind that using JDK 12 might appear to solve the problem in your computer but you should be using JDK 11 for all PE work and the jar file your team releases must be produced using JDK 11. If your jar file doesn't work on JDK 11, you are going to lose a lot of marks as your product will be completely unusable in the target execution environment.
+
+notice with thx!
+</panel>
+
+<panel  header="**54 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/97#issuecomment-609370402" expanded>
+
+> Can you elaborate?
+
+![image](https://user-images.githubusercontent.com/49228945/78469071-0ef13800-7750-11ea-9290-fb9e87e2f668.png)
+The overall format looks like this. I cannot see the content for "What BVA recommends"; it is blocked
+</panel>
+
+<panel  header="**55 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/97#issuecomment-609372933" expanded>
+
+> Looks fine to me. May be a caching issue. Try force-reloading the page?
+
+I restart the whole browser but the problem still exists; however, when I changed another browser, it is normal now
+</panel>
+
+<panel  header="**56 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/97#issuecomment-609373309" expanded>
+
+> ctrl+F5
+
+still problematic 
+</panel>
+
+<panel  header="**57 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/97#issuecomment-609373869" expanded>
+
+> Which Browser is problematic?
+
+EDGE
+</panel>
+
+<panel  header="**58 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/97#issuecomment-609374258" expanded>
+
+> Yes, older Edge Browsers seem to have this problem. Upgrade to the new edge:
+
+OK, thx prof!
+</panel>
+
+<panel  header="**59 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/102#issuecomment-611999296" expanded>
+
+> Yes. The page limit takes into account that a significant amount of space is wasted by the template. Try to make the PPP concise; peer evaluators are not going to like it if you make them read a lot. Same applies for other 'tricks' such as using small fonts or narrow margins. It's not enough to meet the page limit in theory; you should also meet it in spirit -- i.e., make the content concise. If the content is concise, evaluators are unlikely to fault you for going over the page limit slightly.
+
+OK Got it! Thx Prof!
+</panel>
+
+<panel  header="**60 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/104#issuecomment-612059904" expanded>
+
+> Hi, I've encountered this issue too. It could be caused by an old jar file in your local build/lib directory, resulting in a false positive test pass. Try deleting the old jar and making a new jar via gradle shadowJar, after which your local test would be similar to the CI tool and you can fix accordingly.
+
+thx!
+</panel>
+
+<panel  header="**61 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/107#issuecomment-612406042" expanded>
+
+@damithc Professor, I wonder if the instruction for source code here means that we need to make a pull request of our code to the main repo? or it simply means the "source code" shown after we release the jar file?
+![image](https://user-images.githubusercontent.com/49228945/79043146-102ed300-7c30-11ea-9fcc-881e85babc08.png)
+
+</panel>
+
+<panel  header="**62 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/107#issuecomment-612409940" expanded>
+
+> @damithc Professor, I wonder if the instruction for source code here means that we need to make a pull request of our code to the main repo? or it simply means the "source code" shown after we release the jar file?
+> 
+> No need to do anything extra @SibingWu Just make sure your team repo source code matches the jar file.
+
+Noted with thx!
+</panel>
+
+<panel  header="**63 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/107#issuecomment-612441780" expanded>
+
+@damithc is it OK for the jar name to look like this in github? it is [xxx][xxx].jar in local, but when submitted, it becomes the following
+![image](https://user-images.githubusercontent.com/49228945/79047419-f9e14100-7c48-11ea-931b-f0a890e7a90e.png)
+
+</panel>
+
+<panel  header="**64 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/107#issuecomment-612448794" expanded>
+
+> @damithc is it OK for the jar name to look like this in github? it is [xxx][xxx].jar in local, but when submitted, it becomes the following
+> 
+> It's OK, as long as the file submitted to LumiNUS has the correct name.
+
+OK!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### Huang Zhilin `@Zhilin-Huang` (44 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Final exam format?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/87" expanded>
+
+Will we have in-person final exam for the course? I think many exchange students have already left NUS.
+</panel>
+
+<panel  header="**2. :fas-info-circle: Tutorial 9 Exercise Answers**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/85" expanded>
+
+Is it possible for the teaching team to share Tutorial 9 Exercise Answers with us? :)
+</panel>
+
+<panel  header="**3. :fas-info-circle: Path coverage and statement coverage**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/83" expanded>
+
+Understood from the explanation that 100% path coverage gives the highest intensity, but why doesn't 100% statement coverage give highest intensity as well? Doesn't all statements being executed mean all paths are executed?
+
+![image](https://user-images.githubusercontent.com/31772358/77057085-62544e00-6a0e-11ea-860a-69586b9d91db.png)
+
+Any help is appreciated!
+</panel>
+
+<panel  header="**4. :fas-info-circle: Week 8 Tutorial Exercise 3**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/69" expanded>
+
+Does anyone know why `Alfred` and `Bruce` are using the same home address? I know it's logical to assume they have the same home address since `Alfred` is a guardian of `Bruce`, but this is not explicitly mentioned.
+
+The screenshot is as below:
+![image](https://user-images.githubusercontent.com/31772358/76441962-2bbd7880-63fb-11ea-9516-9f6debcc250a.png)
+
+</panel>
+
+<panel  header="**5. :fas-info-circle: Week 9 Quiz Part 2 is worth 0 mark?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/68" expanded>
+
+It seems that Week 9 Quiz Part 2 is worth 0 mark - is this a mistake?
+![image](https://user-images.githubusercontent.com/31772358/76427746-ac727980-63e7-11ea-911d-e6df212b5328.png)
+
+</panel>
+
+<panel  header="**6. :fas-info-circle: Do we need to publish User Guide for tP v1.0?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/66" expanded>
+
+We've submitted UG v1.0 before during tutorial, but do we need to publish the UG v1.0 on GitHub like we did for iP?
+</panel>
+
+<panel  header="**7. :fas-info-circle: Will the answers to tutorial exercises be posted?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/60" expanded>
+
+I noticed that there are some exercises in [Week 8 Tutorial](https://nus-cs2113-ay1920s2.github.io/website/schedule/week8/tutorial.html) - just wondering whether the answers to these exercises will be posted?
+</panel>
+
+<panel  header="**8. :fas-info-circle: Are we supposed to add JavaDoc comments in tP v1.0?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/56" expanded>
+
+I'm not sure whether we are supposed to add JavaDoc comments in tP v1.0, but when we do not add the JavaDoc comments, the Java CI tests fail?
+</panel>
+
+<panel  header="**9. :fas-info-circle: iP Demo in Week 6 Tutorial**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/32" expanded>
+
+Is the iP demo in next week's tutorial graded as part of our iP mark?
+The iP grading page is [here](https://nus-cs2113-ay1920s2.github.io/website/admin/ip-grading.html#ip-grading) but I didn't find anything related to the demo.
+</panel>
+
+<panel  header="**10. :fas-info-circle: Help with gradlew run command**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/31" expanded>
+
+After I merged the branch `gradle` to my `master` branch, I'm unable to run `gradlew run` as it gives `zsh: command not found: gradlew` error. But I'm able to run `./gradlew run`.
+
+Is it okay to just run `./gradlew run`? And why is it failing to execute `gradlew run`?
+
+Any help is appreciated!
+</panel>
+
+<panel  header="**11. :fas-info-circle: Model answer for post-lecture quizzes**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/29" expanded>
+
+I noticed that we do not get direct feedback on whether or not the answers we submit for post-lecture quizzes on LumiNUS are correct. Will we get the model answers after the deadline?
+</panel>
+
+<panel  header="**12. :fas-info-circle: Broken links in Week 6 e-learning instructions**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/26" expanded>
+
+It seems that the links to the textbook chapters required for week 6 [e-learning](https://nus-cs2113-ay1920s2.github.io/website/schedule/week6/index.html
+) are broken.
+
+I get a page not found error when clicking on any of the 3 links: e.g. [https://nus-cs2113-ay1920s2.github.io/website/schedule/week6/se-book-adapted/chapters/requirements.html](https://nus-cs2113-ay1920s2.github.io/website/schedule/week6/se-book-adapted/chapters/requirements.html)
+</panel>
+
+<panel  header="**13. :fas-info-circle: Javadoc Comments for iP**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/22" expanded>
+
+Does anyone have any idea about which functions we are supposed to write Javadoc comments for?
+Any help is appreciated :D
+</panel>
+
+<panel  header="**14. :fas-info-circle: How to reference when using code from Stack Overflow**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/21" expanded>
+
+I'm looking to use a few lines of code in my iP similar to that I found on Stack Overflow. Does anyone know how do we indicate that we referenced from online sources? Can I just put the link in my code?
+
+Any help is appreciated!
+</panel>
+
+<panel  header="**15. :fas-info-circle: Tutors email addresses?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/17" expanded>
+
+Understood that the tutors for each tutorial group are listed in the module website. But where could we get the email addresses of our tutors?
+
+Any help is appreciated!
+</panel>
+
+<panel  header="**16. :fas-info-circle: Are our iP graded on a weekly basis?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/15" expanded>
+
+Understood from the previous issue [here](https://github.com/nus-cs2113-AY1920S2/forum/issues/9) that we are to push our work to our GitHub repo starting from Week 3. 
+However, are we going to get grade/feedback for our iP every week?
+</panel>
+
+<panel  header="**17 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/9#issuecomment-575891992" expanded>
+
+I believe the prof has mentioned during the first lecture that our repos are to remain public. Correct me if I'm wrong :)
+</panel>
+
+<panel  header="**18 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/9#issuecomment-575893220" expanded>
+
+> > I believe the prof has mentioned during the first lecture that our repos are to remain public. Correct me if I'm wrong :)
+> 
+> That's correct. Thanks @Zhilin-Huang
+> 
+> > In that case, are we still supposed to push our commits to the public repo?
+> 
+> Yes, but no need to push this week. You'll need to push your code from week 3.
+
+Thanks for the clarification!
+</panel>
+
+<panel  header="**19 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/15#issuecomment-578395825" expanded>
+
+Noted! Also, for the exercises on repl.it every week, will we get frequent grade/feedback on this component? Or is it sufficient that we make sure we submit solutions that pass all the test cases?
+</panel>
+
+<panel  header="**20 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/15#issuecomment-578398906" expanded>
+
+Thanks for the clarification!
+</panel>
+
+<panel  header="**21 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/17#issuecomment-579072413" expanded>
+
+> https://nus-cs2113-ay1920s2.github.io/website/admin/instructors.html
+
+Thank you!
+</panel>
+
+<panel  header="**22 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/20#issuecomment-580725492" expanded>
+
+Not sure what's the problem with the second screenshot, but from your GitHub repo I see that your tags are attached to different commits instead of the first commit: [https://github.com/kokjoon97/duke/releases](https://github.com/kokjoon97/duke/releases)
+</panel>
+
+<panel  header="**23 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/21#issuecomment-581005353" expanded>
+
+This solves my problem! Thanks for your help :)
+</panel>
+
+<panel  header="**24 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/22#issuecomment-581033923" expanded>
+
+Noted! Thanks Prof :)
+</panel>
+
+<panel  header="**25 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/28#issuecomment-585156848" expanded>
+
+Based on how I understand the requirements, I think we are allowed to customize the output of our bot as we see fit
+</panel>
+
+<panel  header="**26 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/29#issuecomment-585253726" expanded>
+
+Thanks Prof!
+</panel>
+
+<panel  header="**27 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/31#issuecomment-585590346" expanded>
+
+I see! But it seems that `A-Gradle` is an increment under `A-Jar` for Week 6 iP tasks [here](https://nus-cs2113-ay1920s2.github.io/website/schedule/week6/project.html)?
+</panel>
+
+<panel  header="**28 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/31#issuecomment-585765432" expanded>
+
+Thanks for the clarification 👍 
+</panel>
+
+<panel  header="**29 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/32#issuecomment-586290756" expanded>
+
+Thanks for the clarification!
+</panel>
+
+<panel  header="**30 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/43#issuecomment-591815838" expanded>
+
+If you are very sure that you want to delete that commit, then it should be fine to do so.
+</panel>
+
+<panel  header="**31 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/50#issuecomment-592938056" expanded>
+
+I think the iP progress dashboard is not updated in real time? So maybe it's because you released the JAR file after the last update
+</panel>
+
+<panel  header="**32 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/56#issuecomment-595085202" expanded>
+
+> > I'm not sure whether we are supposed to add JavaDoc comments in tP v1.0, but when we do not add the JavaDoc comments, the Java CI tests fail?
+> 
+> The code is expected to be _well-documented_, which includes using javadoc comments appropriately.
+> 
+> Having said that, you can modify the checkstyle config file to allow methods without javadoc comments as the given coding standard does not specifically disallow methods/classes without javadoc comments. I'll look into removing that rule from the checkstyle config so that it will not be enforced against your PRs in https://github.com/nus-cs2113-AY1920S2/tp/pulls
+
+Thanks for the clarification!
+</panel>
+
+<panel  header="**33 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/60#issuecomment-596188411" expanded>
+
+Thanks Prof!
+</panel>
+
+<panel  header="**34 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/66#issuecomment-597443958" expanded>
+
+> Which tP requirement in which week are you referring to?
+> Anyhow, yes the tP UG must be published on GitHub. Your project template comes with a UG file that you need to update https://github.com/nus-cs2113-AY1920S2/tp/blob/master/docs/UserGuide.md
+
+Okay, we'll update and publish UG v1.0 on GitHub!
+I was asking about tP v1.0 requirements for Week 8 and 9 because I cannot seem to find a requirement corresponding to UG update.
+</panel>
+
+<panel  header="**35 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/66#issuecomment-597447284" expanded>
+
+> > I was asking about tP v1.0 requirements for Week 8 and 9 because I cannot seem to find a requirement corresponding to UG update.
+> 
+> Updating UG is not required at v1.0, but you are welcome to update the UG as you go.
+
+Noted! Thanks Prof
+</panel>
+
+<panel  header="**36 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/68#issuecomment-597676726" expanded>
+
+> It's a LumiNUS bug. Will contact NUS IT to see if they can help. Meanwhile, you can go ahead and attempt the quiz as marks calculation can be changed later.
+
+Noted with thanks
+</panel>
+
+<panel  header="**37 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/69#issuecomment-597976062" expanded>
+
+> It was mentioned during tutorial that it's because the question stated to assume that we are trying to minimize the number of total objects.
+
+Oh I see! Thanks
+</panel>
+
+<panel  header="**38 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/73#issuecomment-598263471" expanded>
+
+To add on to this problem - I think our team have followed the forking workflow but this task it is not marked as done for us (or anyone else in the class?)
+</panel>
+
+<panel  header="**39 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/73#issuecomment-598269599" expanded>
+
+> It's not being checked yet.
+
+I see :) Thanks Prof!
+</panel>
+
+<panel  header="**40 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/83#issuecomment-602037339" expanded>
+
+> Good question @Zhilin-Huang
+> Consider a case of a while-loop in the code. An execution path that does only one iteration through the loop executes all statements in the loop, achieving 100% statement coverage. But that does not mean _all unique paths through the loop_ have been executed because a path that does only one iteration in the loop is different from another path that does two iterations in the loop.
+
+I see! So does this mean that in the case that we have a while-loop, we can never achieve 100% path coverage because executing 1, 2, 3... n iterations are considered different paths?
+</panel>
+
+<panel  header="**41 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/83#issuecomment-602038253" expanded>
+
+> > I see! So does this mean that in the case that we have a while-loop, we can never achieve 100% path coverage because executing 1, 2, 3... n iterations are considered different paths?
+> 
+> Yes, if the possible number of loops is not a fixed number of possibilities. In other cases it is not _impossible_ but the number of paths can be too big for 100% path coverage to be _feasible_.
+
+Thanks for the clarification Prof!
+</panel>
+
+<panel  header="**42 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/85#issuecomment-602976903" expanded>
+
+> Thanks for the reminder @Zhilin-Huang . Posted as an announcement.
+
+Hmmm I cannot seem to find the announcement @damithc ? The latest announcement is the one about Week 10 Tutorial arrangement.
+</panel>
+
+<panel  header="**43 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/85#issuecomment-602992332" expanded>
+
+> > Hmmm I cannot seem to find the announcement @damithc ? The latest announcement is the one about Week 10 Tutorial arrangement.
+> 
+> Sorry, it turns out I posted it in the wrong module :-p
+> Re-posted it in CS2113 just now.
+
+Just saw the announcement :) Thanks!
+</panel>
+
+<panel  header="**44 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/87#issuecomment-603116812" expanded>
+
+> Yes, we will have a final on-site exam. There will be an alternative assessment option given to exchange students who are no longer in Singapore.
+
+Noted with thanks!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### Wang Jingtan `@JTWang2000` (30 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Loading of package suddently becomes unavailable**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/101" expanded>
+
+This is my current IntelliJ:
+![image](https://user-images.githubusercontent.com/49268567/78962671-695f0f80-7b27-11ea-96cf-e965e533c780.png)
+
+All the loading suddently becomes unavailable. I have shifted to the original status when every code should be correct, but still cannot work. 
+</panel>
+
+<panel  header="**2. :fas-info-circle: Markdown syntax**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/88" expanded>
+
+When I am implementing the UG, I want to write things in different lines so I use `</p>`. This works when I display in Github:
+
+**This is the code for UG:**
+![image](https://user-images.githubusercontent.com/49268567/77439794-78a14600-6e22-11ea-8165-756b4bad5a7d.png)
+
+**This is the display when I see it on github or my IDE:**
+![image](https://user-images.githubusercontent.com/49268567/77439668-4c85c500-6e22-11ea-9d58-26356345f835.png)
+
+**However, when I see it on the website of my project, the </P> will displayed:**
+![image](https://user-images.githubusercontent.com/49268567/77439990-b4d4a680-6e22-11ea-9f91-54087aca3a16.png)
+
+I am confused why this happens.
+I also wonder how to add return in markdown. 
+
+</panel>
+
+<panel  header="**3. :fas-info-circle: User Guide Not Update**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/51" expanded>
+
+I have updated the user guide on docs/readme
+However, when i am visiting the website: http://{your username}.github.io/duke/, it still appears the readme of origin duke. 
+</panel>
+
+<panel  header="**4. :fas-info-circle: Merge conflict issues**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/48" expanded>
+
+![image](https://user-images.githubusercontent.com/49268567/75523541-2f3e2080-5a47-11ea-8dcb-be1857752eea.png)
+When want to solve the merge conflict, I have carried out some wrong steps. Currently, my branch-A-JavaDoc is in some strange location. May I ask how to slove this and how to continue to merge master and javadoc?
+
+If i pull the javadoc , then it becomes:
+![image](https://user-images.githubusercontent.com/49268567/75523760-952aa800-5a47-11ea-88e7-0e8dd9fa0455.png)
+
+</panel>
+
+<panel  header="**5. :fas-info-circle: Redo Merge issue**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/47" expanded>
+
+![image](https://user-images.githubusercontent.com/49268567/75522580-48de6880-5a45-11ea-8d3d-291e99125177.png)
+
+When i want to do the merge for JavaDoc and master, i accidently  check out the branch-java doc, and then pull the master. Such thing appear. May i ask if there is any way that can come back to the previous status so that i can first check out master, then pull master, then merge master to branch?
+</panel>
+
+<panel  header="**6. :fas-info-circle: Delete a commit in github**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/43" expanded>
+
+![image](https://user-images.githubusercontent.com/49268567/75419896-ce90e400-5971-11ea-9081-1fc2270e0ff2.png)
+Is it okay to delete a commit on github by:
+git reset --hard HEAD^
+git push origin +branchName --force
+
+
+</panel>
+
+<panel  header="**7. :fas-info-circle: Unknown error when doing A-oop**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/41" expanded>
+
+Remember to give sufficient details e.g.,
+* Your development environment (IntelliJ version, Java version, OS, ...)
+* Relevant code, error message, stack trace
+* Relevant code snippet (an example given below), or link to the relevant code on your GitHub repo
+
+```java
+String value = "Some code here"
+```
+
+When i am refactoring the code, there are some unknown errors displayed on Intellij.
+![image](https://user-images.githubusercontent.com/49268567/75332310-215d9380-58bf-11ea-8546-05aa011dbab3.png)
+All newly created class suffer from this errors. I have searched and tried to change encoding. However, still cannot really see the errors. 
+
+:bulb: You can use [Markdown](https://guides.github.com/features/mastering-markdown/) to format your text
+
+</panel>
+
+<panel  header="**8. :fas-info-circle: [Text-ui-test] Can not find /data/duke.txt**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37" expanded>
+
+When I am running the text-ui-test after creating the Level-7, it cannot find the duke.txt. May I ask what to deal with? Do we need to add some lines in the runtest.bat? 
+</panel>
+
+<panel  header="**9. :fas-info-circle: IP: Cannot show tick icon properly both in terminal and ACTUAL.txt**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/36" expanded>
+
+Hi, even in the terminal, my tick icon cannot display properly. I am not sure if that is because the encoding of the project has something wrong. 
+![image](https://user-images.githubusercontent.com/49268567/74663466-c77e0f00-51d6-11ea-8fc1-8c7cf0b99d21.png)
+
+</panel>
+
+<panel  header="**10 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587022894" expanded>
+
+I am not sure if this solution is okay. I add a folder called "data" which is in the same directory as the jar file, then the jar file works. 
+</panel>
+
+<panel  header="**11 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/36#issuecomment-587031143" expanded>
+
+Thank you for your reply. Then i just use the a regular character. 
+</panel>
+
+<panel  header="**12 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587049843" expanded>
+
+![image](https://user-images.githubusercontent.com/49268567/74667519-65c1a300-51de-11ea-84d7-9aec1df5e2e9.png)
+I have tried creating a new file when there is no duke.txt However, it still does not work. I suppose that the jar cannot find the data folder? 
+</panel>
+
+<panel  header="**13 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587052839" expanded>
+
+> @JTWang2000 Something to consider: What would happen after your code catches the `FIleNotFoundException` ? Will it continue to run your `while` loop?
+
+I suppose that it will not run the while loop? It means there is no such file so it will create a duke.txt file. However, it cannot find the data folder so it cannot create? 
+</panel>
+
+<panel  header="**14 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587053650" expanded>
+
+@Jeremy733 yeah i tried to make it File f = new File(duke.txt). OMG it works! But is that okay that we do not a data foler?
+</panel>
+
+<panel  header="**15 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-587058544" expanded>
+
+> A general tip: if you expects the data file to be in specific folder e.g., `./data/`, your code must check if the folder exists and create it if it doesn't. If your code doesn't have that, your text ui tests could fail too.
+
+yep. I find that even if i add the data directory in the runtest.bat, still got similar error as the jar file which is cannot find data directory. 
+</panel>
+
+<panel  header="**16 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-590704592" expanded>
+
+> Do you mean when you run the jar file, the initial task list is not loaded because can not find the file?
+Sorry for answering so late. Yes. I think because there is no data folder. 
+
+
+</panel>
+
+<panel  header="**17 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/41#issuecomment-591334774" expanded>
+
+> can you check if `；` is the chinese character?...
+
+Have tried. If it is the Chinese character, then the display will be:
+![image](https://user-images.githubusercontent.com/49268567/75332656-b791b980-58bf-11ea-94c0-08ffe841c023.png)
+So it should be the English character
+</panel>
+
+<panel  header="**18 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/41#issuecomment-591343751" expanded>
+
+> You can copy paste some code from the problematic files into a tool like [this one](https://www.soscisurvey.de/tools/view-chars.php) to see if there are some hidden characters in the code.
+> Also check if your other Intellij java projects suffer from this problem. If they don't, you can try reimporting this project.
+
+Thank you for your reply. 
+After pasting the code to the website:
+![image](https://user-images.githubusercontent.com/49268567/75333902-e741c100-58c1-11ea-90e6-07a216437e4f.png)
+I suppose that there is no hidden characters?
+
+I tried the circus class we used to use during lecture. When i am creating class and package, it works fine. Then, I tried to reimport this project, still have the same problem. 
+
+I tried to change the console to UTF -16 to try to see if the strange "characters" are chinese character:
+![image](https://user-images.githubusercontent.com/49268567/75334071-31c33d80-58c2-11ea-8dc0-1218c3958bba.png)
+Also failed. Very confusing. 
+</panel>
+
+<panel  header="**19 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/41#issuecomment-591346240" expanded>
+
+![image](https://user-images.githubusercontent.com/49268567/75334566-0db42c00-58c3-11ea-8b69-6a3af795e031.png)
+I tried to rewrite the: package duke.command;
+a new error appears. 
+I suppose that maybe my encoding of all the files are wrong?
+
+Then, i check the setting which displays:
+![image](https://user-images.githubusercontent.com/49268567/75334725-4eac4080-58c3-11ea-8adb-cc8d25043dd4.png)
+
+</panel>
+
+<panel  header="**20 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/41#issuecomment-591365104" expanded>
+
+I tried the Remove BOM function. It works! Thank you so much. 
+</panel>
+
+<panel  header="**21 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/43#issuecomment-591816760" expanded>
+
+@Zhilin-Huang Sure. Thanks. This command works
+@damithc  Thank you for your advice. 
+</panel>
+
+<panel  header="**22 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-592296949" expanded>
+
+My understanding for this problem is that: Previously, there is no data/duke.txt. When we first run duke, it will be created. Therefore, we may need to add code to create a data folder and a duke.txt. This may solve both jar problem and test-ui problem?
+</panel>
+
+<panel  header="**23 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592298291" expanded>
+
+Maybe you have added some new package and you forgot to put the path?
+
+</panel>
+
+<panel  header="**24 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/47#issuecomment-592403617" expanded>
+
+![image](https://user-images.githubusercontent.com/49268567/75523148-72e45a80-5a46-11ea-9d0b-caee14f1f887.png)
+uhhh. I solve it by myself
+</panel>
+
+<panel  header="**25 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/48#issuecomment-592412433" expanded>
+
+@damithc Thank you for your reply. I tried and it worked. 
+![image](https://user-images.githubusercontent.com/49268567/75524956-e50a6e80-5a49-11ea-845d-b36fab090cc1.png)
+But then i followed this to try to solve conflict, then my master leaves at previous stage:
+![image](https://user-images.githubusercontent.com/49268567/75525019-09664b00-5a4a-11ea-8a69-59e98f9f2e78.png)
+
+
+</panel>
+
+<panel  header="**26 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/48#issuecomment-592915022" expanded>
+
+@damithc Thanks. I have understood now and merged to master successfully. 
+</panel>
+
+<panel  header="**27 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-592915342" expanded>
+
+I have added a test when loading the duke.txt file and will create a data folder. Then, even if I do not add the path in runtest.bat, it still works. It is just that every time when a runtest, I need to delete the data folder to ensure the actual and expected txt matches. 
+![image](https://user-images.githubusercontent.com/49268567/75603454-696ff680-5b09-11ea-83f4-64d3e1c276ae.png)
+Thanks for those who have helped me. 
+</panel>
+
+<panel  header="**28 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/51#issuecomment-593031261" expanded>
+
+Thanks, I have fixed!
+</panel>
+
+<panel  header="**29 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/88#issuecomment-606401336" expanded>
+
+@damithc @rdimaio Thank you for the reply. I will try to add line break by using two consecutive blank lines instead of one. 
+</panel>
+
+<panel  header="**30 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/101#issuecomment-611912302" expanded>
+
+I re-import and it worked!. Thanks. 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### TAN KOK JOON `@kokjoon97` (28 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Project submission**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/100" expanded>
+
+Hello,
+Should all v2.1 deliverables including the portfolio go into the final submission folder on LumiNUS? 
+
+Also, it says on the website that for the product demo the submission is to a different folder, though I do not see any other folder on LumiNUS. Will this be created later on?
+</panel>
+
+<panel  header="**2. :fas-info-circle: Week 12 Quiz Results**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/99" expanded>
+
+Hello,
+It seems I am unable to view the results for the week 12 quiz in LumiNUS and also cannot see the questions I got correct or wrong even though its past the closing time of the quiz.
+</panel>
+
+<panel  header="**3. :fas-info-circle: Saving markdown file to pdf**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/95" expanded>
+
+Hello,
+Can I check if there is a recommended way of converting our md files into pdf format (since it seems the final submission for the portfolio page is in pdf)?
+
+It seems I am unable to save the md file as any other file format and I'm not sure if it is safe to rely on an online converter also. When I tried to print as pdf on the rendered md file on Github, it then has the problem of including the UI of the webpage as well.
+</panel>
+
+<panel  header="**4. :fas-info-circle: RepoSense not recording some of my code contributions**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/84" expanded>
+
+Hi,
+In order for the code to be RepoSense-compatible, does this mean that all the code contributions by me should be recorded in the code dashboard? 
+
+Currently, it seems that the code that is attributed to me in the dashboard is indeed contributed by me however some of the other code portions which I have written as well are not reflected in the dashboard but are instead showing up in the dashboard for other members of my team. Do I have to create the config.json file to fix this? Its just one method that is missing though so I'm not sure if its considered a serious issue too
+</panel>
+
+<panel  header="**5. :fas-info-circle: Week 10 Post-lecture quiz**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/82" expanded>
+
+Hi,
+It seems that in LumiNUS, I am only able to see Week 10 - Quiz Part II. Can I check if there is supposed to be a part I which I am not seeing in the quizzes section?
+</panel>
+
+<panel  header="**6. :fas-info-circle: Final-JAR**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/50" expanded>
+
+Hello,
+
+I have already released the JAR file using Github releases, however the iP progress dashboard shows that I have not completed the Final Jar increment. Is this because I checked the box that says it is a pre-release when publishing the release?
+
+If that is the case, do I have to create a new release or can I simply edit the release and uncheck that option?
+</panel>
+
+<panel  header="**7. :fas-info-circle: Scripts ignoring untagged commits?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/39" expanded>
+
+I made a costly mistake by creating a branch from one of my branches instead of from the master branch. As a result, when I created the PRs and tried to merge, the results were disastrous.
+
+I have then tried to delete the changes manually and make a new commit to "undo" the change since I don't think it is possible to revert commits on GitHub. After this, I did the merging of the PRs correctly and also tagged the merge commits. 
+
+Will the scripts only focus on the commits that are tagged and ignore the erratic commits that I have made to the fork?
+</panel>
+
+<panel  header="**8. :fas-info-circle: Duke output**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/28" expanded>
+
+Can I check if it is a must to follow the output of Duke exactly as given in the iP tasks? Is it acceptable if we vary the format of the output but still achieve the same functions? 
+
+For example, even after I have fixed writing of UTF-8 characters into txt files using 
+-Dfile.encoding=UTF8, I am still having problems with the command prompt not displaying UTF-8 characters when I tried running the JAR file which I created. I have tried changing the code page to 65001 but it does not seem to work and most solutions I have found suggested editing the registry which seems pretty risky.
+
+
+</panel>
+
+<panel  header="**9. :fas-info-circle: Tags on GitHub**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/20" expanded>
+
+I have unintentionally removed one of my tags on the commits in Github and I tried to undo that removal by re-pushing my latest commit (with all tags pushed). Now, for my latest commit (first picture below) it shows its own tag, whereas for my first commit (second picture below), it shows all the tags which I have ever included in a commit.
+![image](https://user-images.githubusercontent.com/42376931/73540657-7c8c9980-446b-11ea-829a-5295c733a00a.png)
+
+![image](https://user-images.githubusercontent.com/42376931/73540767-be1d4480-446b-11ea-86fa-b31ecaf31788.png)
+
+Can I clarify if this is what I am supposed to see if I have tagged the commits correctly?
+
+</panel>
+
+<panel  header="**10. :fas-info-circle: (A-TextUiTesting) Unicode characters in txt files**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/18" expanded>
+
+When redirecting output from the console into a txt file, I find that I am unable to represent Unicode characters properly. This problem occurs since in the Duke chatbot, stylized ticks and crosses are used to indicate the status of completion for different tasks.
+
+Every time when I try to run the batch script, I get something like this:
+***** ACTUAL.TXT
+Got it. I've added this task:
+  [E][?] project meeting (at: Mon 2-4pm)
+Now you have 3 tasks in the list.
+***** EXPECTED.TXT
+Got it. I've added this task:
+  [E][Γ£ÿ] project meeting (at: Mon 2-4pm)
+Now you have 3 tasks in the list.
+*****
+Any stylized symbols get transformed into a "?" the moment I try to put them in a txt file. May I know if there is a workaround for this issue?
+</panel>
+
+<panel  header="**11 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/18#issuecomment-580270454" expanded>
+
+Just found a solution, I basically added the "-Dfile.encoding=UTF8" into the java command in the batch script.
+java -Dfile.encoding=UTF8 -classpath ..\bin Duke < input.txt > ACTUAL.TXT
+Referenced from this website: http://hints.macworld.com/article.php?story=20050208053951714
+</panel>
+
+<panel  header="**12 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/20#issuecomment-580727938" expanded>
+
+I wonder if it is a feature of GitHub for commits to show their own tag and tags of commits that come after them, though I could imagine that might make it hard to track which tag is for which commit specifically
+</panel>
+
+<panel  header="**13 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/20#issuecomment-580747335" expanded>
+
+Okay thank you for clarifying prof!
+</panel>
+
+<panel  header="**14 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/28#issuecomment-585213960" expanded>
+
+Okay thank you for clarifying!
+</panel>
+
+<panel  header="**15 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/39#issuecomment-589699526" expanded>
+
+I was just wondering if the scripts would detect the erratic commits and if there are any penalties for those commits
+</panel>
+
+<panel  header="**16 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/39#issuecomment-589722354" expanded>
+
+Okay thank you for clarifying prof!
+</panel>
+
+<panel  header="**17 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/50#issuecomment-592938111" expanded>
+
+Hmm I uploaded the JAR file before these new tasks were added to the dashboard though
+</panel>
+
+<panel  header="**18 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/50#issuecomment-592943734" expanded>
+
+My final release was on the evening of 28th, not sure what time the update to the dashboard was done. I have also changed that release to be a final release for consistency because I realized I marked one of my earlier releases as a final release while this one was not.
+</panel>
+
+<panel  header="**19 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/50#issuecomment-592951408" expanded>
+
+> > My final release was on the evening of 28th, not sure what time the update to the dashboard was done. I have also changed that release to be a final release for consistency because I realized I marked one of my earlier releases as a final release while this one was not.
+> 
+> @kokjoon97 dashboard updated. Your jar should be visible now.
+
+Okay thank you prof!
+</panel>
+
+<panel  header="**20 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/71#issuecomment-598127532" expanded>
+
+Hi, on behalf of the OP, this is the commit where our team last edited the code that had to do with scanning of user input: 
+[Link to commit](https://github.com/AY1920S2-CS2113T-T13-1/tp/commit/225e70a3d37bb2d16036bf502fad3d28b95ded1c)
+</panel>
+
+<panel  header="**21 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/71#issuecomment-598219390" expanded>
+
+It seems I have resolved the issue by changing the path to 'dir /b duke-0.0.1.jar' in the runtest.bat file where it was previously 'dir /b *.jar'. I don't think it was an issue with the Scanner like IntelliJ was warning about, it seemed no matter how I changed the code, it kept warning about the same line of code even though that line only contained a curly bracket.
+
+I have just merged a PR which passes all the CI tests.
+
+EDIT: Not very sure why shadowJar creates two different jar files in the build/libs directory, of which only one works (duke-0.0.1.jar)
+</panel>
+
+<panel  header="**22 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/71#issuecomment-598235107" expanded>
+
+Ohhhh I see, that explains why one of the jar files had such weird behaviour. Thanks for clarifying prof!
+</panel>
+
+<panel  header="**23 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/82#issuecomment-600434974" expanded>
+
+Okay I see it now! Thank you prof!
+</panel>
+
+<panel  header="**24 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/84#issuecomment-601993938" expanded>
+
+Ah okay so I only have to add the @@author tag in the code? I thought it was a much more complex process. Thanks for clarifying prof!
+</panel>
+
+<panel  header="**25 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/95#issuecomment-608985974" expanded>
+
+Okay thank you for clarifying prof!
+</panel>
+
+<panel  header="**26 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/99#issuecomment-610764219" expanded>
+
+Its still not working for me for some reason though
+</panel>
+
+<panel  header="**27 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/99#issuecomment-610765812" expanded>
+
+It works now! Thank you prof!
+</panel>
+
+<panel  header="**28 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/100#issuecomment-611866891" expanded>
+
+Okay thank you prof!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### YANG CHENGLONG `@A11riseforme` (19 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: typos**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/3" expanded>
+
+https://nus-cs2113-ay1920s2.github.io/website/se-book-adapted/chapters/uml.html#associations
+https://nus-cs2113-ay1920s2.github.io/website/se-book-adapted/chapters/oop.html#classes
+to **indication** the three priority levels -> to **indicate** the three priority levels
+
+https://nus-cs2113-ay1920s2.github.io/website/se-book-adapted/chapters/oop.html#implementing-multiplicity
+without having a **direction** association with it -> without having a **direct** association with it
+
+https://nus-cs2113-ay1920s2.github.io/website/schedule/week4/topics.html#paradigms-oop-inheritance-what
+**woment** -> **women**
+
+https://nus-cs2113-ay1920s2.github.io/website/se-book-adapted/chapters/designFundamentals.html#cohesion
+because the code **realated** to that change -> because the code **related** to that change
+
+https://nus-cs2113-ay1920s2.github.io/website/se-book-adapted/chapters/codeQuality.html#intermediate
+it has no value on matter how fast/efficient it **it**. -> it has no value on matter how fast/efficient it **is**.
+
+https://nus-cs2113-ay1920s2.github.io/website/se-book-adapted/chapters/gitAndGithub.html#git-and-github
+Git will now show ignored **fiels** as ‘unstaged modifications’  -> Git will now show ignored **files** as ‘unstaged modifications’ 
+Note that the URL of the Github project is different **form** the URL -> Note that the URL of the Github project is different **from** the URL you 
+
+https://nus-cs2113-ay1920s2.github.io/website/se-book-adapted/chapters/gitAndGithub.html#git-and-github
+Creating Pull **Requsts** (PRs) is needed -> Creating Pull **Requests** (PRs) is needed
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/10#issuecomment-576357765" expanded>
+
+on repl, the class name should be Main if you want to click `run` to test your code.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/10#issuecomment-576370349" expanded>
+
+you can run your own command in the repl console to specify your argument passing to the program.
+![image](https://user-images.githubusercontent.com/9150683/72746592-6ff77e00-3bed-11ea-8a6f-963d339ec25a.png)
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/16#issuecomment-578488948" expanded>
+
+Maybe you can define a finalize method? https://javaconceptoftheday.com/garbage-collection-finalize-method-java/
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/16#issuecomment-578772535" expanded>
+
+I think that is what you need. finalize() is called before the garbage collector tries to release the unreferenced object memory, and you can put the decrement of the static class variable in the finalize() method. But when the garbage collector works is totally up to jvm, even you reference an object to null, the JVM may start garbage collection only when it runs out of memory. so the finalize method may not be called throughout the entire programme running time.
+Correct me if I am wrong. 
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/17#issuecomment-579072279" expanded>
+
+https://nus-cs2113-ay1920s2.github.io/website/admin/instructors.html
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/24#issuecomment-581422244" expanded>
+
+replace line 18 in runtest.bat to 
+`java -Dfile.encoding=UTF-8 -classpath ..\bin Duke < input.txt > ACTUAL.TXT`
+</panel>
+
+<panel  header="**8 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/41#issuecomment-591334095" expanded>
+
+can you check if `；` is the chinese character?...
+</panel>
+
+<panel  header="**9 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/41#issuecomment-591348850" expanded>
+
+GBK is the encoding for Chinese characters... and 0xBF is part of the BOM header. I suspect that you edited the file using the windows notepad before.... you can copy the content of the file, paste into notepad, delete this file, create a new one, then paste it back and try if error is still there.
+
+actually the IntelliJ is providing a `Remove BOM` function, right click on the file and select `Remove BOM`
+</panel>
+
+<panel  header="**10 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/41#issuecomment-591391793" expanded>
+
+No problem, glad I can help.
+</panel>
+
+<panel  header="**11 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/30#issuecomment-592053023" expanded>
+
+> 
+> 
+> Hi may I ask what GSON actually helps with? Not familiar with this particular library
+
+Probably saving the objects(tasks) into file as json string, and loading json string from the file back to objects.
+but acually ObjectOutputStream and ObjectInputStream can do the work well already, just the output file is in binary, and cannot be edited by text editor.
+</panel>
+
+<panel  header="**12 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/51#issuecomment-592957231" expanded>
+
+![image](https://user-images.githubusercontent.com/9150683/75610428-005da280-5b4c-11ea-8859-6a62d65fe3a2.png)
+change this
+</panel>
+
+<panel  header="**13 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/65#issuecomment-597163374" expanded>
+
+"check1" and "check2" will remain in the buffer until a newline "\n" is at the end, which is "Please enter your gender\n", then these three strings will be printed to the stdout together.
+</panel>
+
+<panel  header="**14 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/72#issuecomment-598118927" expanded>
+
+`gradlew checkstyleMain`
+</panel>
+
+<panel  header="**15 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/80#issuecomment-599484288" expanded>
+
+`gradlew shadowJar`
+</panel>
+
+<panel  header="**16 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/80#issuecomment-599487170" expanded>
+
+build/libs
+</panel>
+
+<panel  header="**17 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/97#issuecomment-609373113" expanded>
+
+ctrl+F5
+</panel>
+
+<panel  header="**18 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/106#issuecomment-612346406" expanded>
+
+replace the line 
+`![Image of SwitchCase](https://github.com/AY1920S2-CS2113-T14-2/tp/blob/master/docs/images/switchCase.png)`
+by 
+`![Image of SwitchCase](images/switchCase.png)` 
+or
+`![Image of SwitchCase](https://raw.githubusercontent.com/AY1920S2-CS2113-T14-2/tp/master/docs/images/switchCase.png)`
+it is because https://github.com/AY1920S2-CS2113-T14-2/tp/blob/master/docs/images/switchCase.png is not even a pure image resource.
+
+</panel>
+
+<panel  header="**19 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/110#issuecomment-612439623" expanded>
+
+`<img src="images/xxx.jpg" style="zoom:50%;" />`
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### CHONG JIN HWA, BRANDON `@brandoncjh` (17 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Resizing local images in Markdown**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/110" expanded>
+
+Hello, how can I resize images in Markdown? Several images are taking a lot of space in my PPP section. I tried the <img src + width> tags but it didn't work.
+
+Any help would be appreciated!
+</panel>
+
+<panel  header="**2. :fas-info-circle: Unable to run JUnit tests**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/67" expanded>
+
+I am having issues with trying to build and run the JUnit tests. For example, using the default tests provided, the test classes encounter an error when trying to build the module, IntelliJ is unable to import the Assertions class:
+![capture1](https://user-images.githubusercontent.com/54733974/76393399-7238b600-63ae-11ea-87ba-3140e02e7e12.PNG)
+After adding the recommended library to the classpath:
+![Screenshot (36)](https://user-images.githubusercontent.com/54733974/76393406-74027980-63ae-11ea-9d6c-25534f18ec30.png)
+I can build the module, but trying to run all tests it gives this error:
+![capture2](https://user-images.githubusercontent.com/54733974/76393402-7369e300-63ae-11ea-965f-e52eb4f69f75.PNG)
+Is there any way to rectify this? Have tried deleting and reimporting the project but it makes no difference.
+</panel>
+
+<panel  header="**3. :fas-info-circle: Clarification on possible typo in UML notes**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/61" expanded>
+
+https://nus-cs2113-ay1920s2.github.io/website/book/uml/classDiagrams/associations/navigability/
+
+In the exercise, it says, "In the implementation, the `Unit` object will hold a `Unit` object in one of its variables." Was wondering if the 2nd Unit was meant to be an Item instead?
+</panel>
+
+<panel  header="**4. :fas-info-circle: Github Page for User Guide not showing**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/53" expanded>
+
+Hello, the Github page for my user guide says it has been published, but when I access the link, there is no page available. Anyone able to help with this?
+![problem1](https://user-images.githubusercontent.com/54733974/75622534-482c0a80-5bdc-11ea-85db-0044bf5c9721.PNG)
+![problem2](https://user-images.githubusercontent.com/54733974/75622533-46fadd80-5bdc-11ea-9260-723048ea380b.PNG)
+
+</panel>
+
+<panel  header="**5. :fas-info-circle: Repl.it W3 Ex10**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/13" expanded>
+
+Hello, my program for Repl.it W3 Ex10 keeps failing the final test case, even though I am able to get the required output. It passes the other 2 test cases when submitting, may I know is there some sort of time limit for the program or any other issue?
+
+![capture1](https://user-images.githubusercontent.com/54733974/73089390-1787ef80-3f11-11ea-8abf-b18b993aefad.PNG)
+![capture2](https://user-images.githubusercontent.com/54733974/73089389-16ef5900-3f11-11ea-8513-1a96d4ed8218.PNG)
+
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/13#issuecomment-578399368" expanded>
+
+```java
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main {
+
+    // You can add more methods here
+    public static String[] filterExpenses(String[] words){
+        String[] results = new String[words.length];
+        int currCount = 0;  //keep track of the index of next free space in validItems
+        for (String word : words){
+            if (word.substring(0,1).equals("$")){
+                results[currCount] = word;
+                currCount++;
+            }
+        }
+        //print the 2nd line of output
+        System.out.println("Expenses in overseas currency:" + Arrays.toString(Arrays.copyOf(results, currCount)));
+        return Arrays.copyOf(results, currCount);
+    }
+
+    public static void printTotal(String[] args){
+        double total = 0;
+        //add floats together
+        for (String arg: args){
+            //get rid of the preceding $ char and convert value to double
+            double currItemValue = Double.parseDouble(arg.substring(1, arg.length()));
+            total += 1.7 * currItemValue;   //convert exchange rate
+        }
+        
+        //convert final value to string, print $ + final value
+        System.out.println("Total in local currency: $" + String.format("%.2f", total));
+    }
+
+    public static void main(String[] args) {
+        String line;
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Your expenses while overseas?");
+       // TODO: add your code here
+       line = in.nextLine();
+       String[] separated = line.split(" ");
+       printTotal(filterExpenses(separated));
+    }
+}
+```
+Apologies for the delay!
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/13#issuecomment-578401460" expanded>
+
+Hi Prof, have resolved the issue! I didn't realize the last test case differs from the other two in that it is preceded by a trailing whitespace. This is resolved by adding a `.trim()` before the split function in the 2nd last line of main.
+
+Thank you for your help!
+</panel>
+
+<panel  header="**8 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587226291" expanded>
+
+@damithc I feel it could become an issue if I create a duke.txt everytime I run the .jar file in a new directory without keeping track 😆 Is there anyway to redirect to the original duke.txt, maybe create a shortcut/symlink to data/duke.txt?
+</panel>
+
+<panel  header="**9 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-592296181" expanded>
+
+createNewFile will try to create the file according to the path you have specified in the File object. If the directory your jar file is located in does not have a subfolder path "src/main/java/data", it will throw an error. So maybe you could try to see how you can rectify this error.
+
+Note: the jar file should be run in an empty directory
+</panel>
+
+<panel  header="**10 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592299923" expanded>
+
+I think she is referring to your runtest.bat. It may compile and run as normal in the terminal but shows this response because the new classes have not been included in the batch script.
+</panel>
+
+<panel  header="**11 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-592302896" expanded>
+
+Relative path points to the path of the file relative to your current location/directory.  So say if I'm in "./src/main" and I want to access "./src/main/java/duke/duke.txt", the relative path would be "java/duke/duke.txt". 
+
+For the jar case, you could run it in an empty directory eg "test". So for this example, the jar file will try to locate the saved tasklist file in whatever relative path you specified ie "test/\<relativepath\>"
+</panel>
+
+<panel  header="**12 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/53#issuecomment-593073843" expanded>
+
+Yup, it works now. Thanks Prof!
+</panel>
+
+<panel  header="**13 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/67#issuecomment-597503352" expanded>
+
+Yes, it says build successful.
+![capture1](https://user-images.githubusercontent.com/54733974/76396765-c5ae0280-63b4-11ea-97eb-34286dbca453.PNG)
+
+</panel>
+
+<panel  header="**14 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/67#issuecomment-597987474" expanded>
+
+After uninstalling and reinstalling IntelliJ, it seems I can run the tests now. Very weird:
+![capture2](https://user-images.githubusercontent.com/54733974/76484204-10328c00-6454-11ea-8fef-7a516537c5d2.PNG)
+
+Thank you for the help Prof!
+
+</panel>
+
+<panel  header="**15 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/78#issuecomment-599041742" expanded>
+
+I think it depends not so much on the access modifier but the level of encapsulation and whether the rest of the program outside the class has a reference to it. Taking an example from an SO post:
+
+**Composition**
+```
+class Car {
+
+  private final Engine engine;
+
+  Car(EngineSpecs specs) {
+    engine = new Engine(specs);
+  }
+
+  void move() {
+    engine.work();
+  }
+}
+```
+Notice how the Car constructor creates an Engine object that exists only within the Car object. When the Car is destroyed, the Engine must be destroyed as well. (in your Email example, the Email and Subjects have a 'part-of' relationship meaning they co-depend on each other)
+
+**Aggregation**
+```
+final class Car {
+
+  private Engine engine;
+
+  void setEngine(Engine engine) {
+    this.engine = engine;
+  }
+
+  void move() {
+    if (engine != null)
+      engine.work();
+  }
+}
+```
+For this example, I can create a Car object at a certain time, then put in an Engine into that Car at a later time. The Engine object doesn't exist exclusively within the Car, and there is some way to reference it from outside. So when the Car is destroyed, the Engine can still exist and maybe be put into another Car. (like for your Team example, a Person can still live even if his Team is disbanded) In the example, there isn't a constructor but if there was, it probably wouldn't specify the Engine attribute at creation time.
+
+I could be wrong, please feel free to correct me!
+
+SO reference:
+https://stackoverflow.com/questions/11881552/implementation-difference-between-aggregation-and-composition-in-java
+
+
+</panel>
+
+<panel  header="**16 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/81#issuecomment-600406106" expanded>
+
+I feel that it refers to the latter as well. 
+
+https://www.youtube.com/watch?v=XQnytAeZrWE#t=16m15s In the diagram that he draws, he describes the function calls to the OS as the external couplings rather than between different functions. So a change in 1 function call wouldn't necessarily affect the other function call couplings, whereas if they changed the OS all the function call couplings would have to change as well.
+</panel>
+
+<panel  header="**17 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/110#issuecomment-612440734" expanded>
+
+Noted, thank you for your help!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### TAN DE JUN `@dejunnn` (16 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Error with Text-ui-testing multiple lines in input.txt**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/105" expanded>
+
+![image](https://user-images.githubusercontent.com/51941453/79035241-29fbf600-7bef-11ea-9423-e0720aee3691.png)
+
+The following error occurs when I enter more than 1 line in input.txt. Im not sure why this is happening and what I can do to solve it.
+
+I tried methods recommended by other forum posts such as deleting old jar files and running gradlew clean but nothing seems to work. Would really appreciate any help. Thanks!!!
+</panel>
+
+<panel  header="**2. :fas-info-circle: Facing a weird issue regarding the printing of lines and scanning of input**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/65" expanded>
+
+Hi everyone. I am facing a really weird issue and I honestly have no idea why it is happening.
+
+![image](https://user-images.githubusercontent.com/51941453/76331093-a1f1aa80-6329-11ea-9382-5f2ffc291e72.png)
+
+In the attached picture is a snippet of my code with a few checks to see how it prints. I would expect "Check 1" to be printed before I enter the user input but it only gets printed after scanning in userAge which is very weird. The same happens for userGender, where "Check 3" gets printed after the input.
+
+![image](https://user-images.githubusercontent.com/51941453/76330897-5a6b1e80-6329-11ea-96a9-92b14005c10a.png)
+
+When I change all the println() statements to print() statements it ends up becoming weirder as they do not get printed until all the inputs have been entered. May I know why this is the case and why this happens? Because it does not make much sense to me personally.
+
+![image](https://user-images.githubusercontent.com/51941453/76330986-779fed00-6329-11ea-9c41-5aa66fa75c72.png)
+
+This issue seems simple enough but I have no idea why it's happening this way. Hopefully, someone would be able to help me out :) 
+
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/38#issuecomment-592050935" expanded>
+
+Just to clarify, by all classes having to be in some package does that also include the Main class (Duke.java)? 
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-592051984" expanded>
+
+Im actually also having issues with saving the file. It only works if I use the absolute pathway but that will cause errors when using the jar file. Tried many variations but none of them is working :(
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/30#issuecomment-592052382" expanded>
+
+Hi may I ask what GSON actually helps with? Not familiar with this particular library
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/30#issuecomment-592054064" expanded>
+
+Ohh, not exactly sure how to do that. Guess I'm gonna have to go look it up
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/30#issuecomment-592054157" expanded>
+
+Thanks for the help :)
+</panel>
+
+<panel  header="**8 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-592295303" expanded>
+
+This was what I used previously. I actually redid a lot of my code so it looks different now.
+The brute force rewriting of the file was just a temporary measure as I was more focused on getting the reading and saving parts to work.
+
+![image](https://user-images.githubusercontent.com/51941453/75508023-b5457180-5a1d-11ea-8386-3b1ce0db9562.png)
+![image](https://user-images.githubusercontent.com/51941453/75508087-e756d380-5a1d-11ea-9fa4-2f7311941b8d.png)
+
+
+</panel>
+
+<panel  header="**9 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-592297082" expanded>
+
+The one above is an absolute path but that won't work when using a jar file, still trying to figure out the relative path. Though honestly not exactly sure how it would work in that case.
+
+</panel>
+
+<panel  header="**10 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/65#issuecomment-597166996" expanded>
+
+Why does this happen though? I tried using an online java compiler and runner and it works fine, where I can put my input on the same line as the printed prompt
+
+![image](https://user-images.githubusercontent.com/51941453/76332372-42949a00-632b-11ea-9c46-0bfaa576e97e.png)
+
+Why is there a difference with the 2 results?
+</panel>
+
+<panel  header="**11 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/65#issuecomment-597479477" expanded>
+
+![image](https://user-images.githubusercontent.com/51941453/76391805-36502180-63ab-11ea-8502-f2b8afe67b82.png)
+
+
+It works fine when i replace the println() to print(). The error only occurs when I run it using Intellij/Gradle. Not sure why that is happening.
+
+Oh, noted prof :) I was just doing this initially to test the input all at once when I encountered this issue.
+</panel>
+
+<panel  header="**12 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/65#issuecomment-597521852" expanded>
+
+Oh ok noted.  Makes testing a little harder but I guess I can work around it. Thanks a bunch :)
+</panel>
+
+<panel  header="**13 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/78#issuecomment-599688843" expanded>
+
+I have a related question regarding Composition and Aggregation. Based on the above example, its shown that there is an obvious difference between the 2, where
+
+![image](https://user-images.githubusercontent.com/51941453/76787632-69a00f80-67f4-11ea-831a-b16cfec3a227.png)
+![image](https://user-images.githubusercontent.com/51941453/76787667-7ae91c00-67f4-11ea-8d03-9d53249669ea.png)
+
+However, it was also mentioned in the textbook that the aggregation symbol can be omitted.
+![image](https://user-images.githubusercontent.com/51941453/76787765-a1a75280-67f4-11ea-95f6-4792eda87551.png)
+
+Would it be possible for an aggregation symbol to be replaced with a composition symbol?
+For example, in the example above, where a "whole-part" relationship is not present. Is replacing the aggregation with a composition be wrong in this case?
+
+This also applies for the example in the textbook:
+![image](https://user-images.githubusercontent.com/51941453/76788020-1d090400-67f5-11ea-8b26-1ef5c0946d30.png)
+where removing the club doesn't actually remove the person as well, and thus a whole-part relationship is not observed. Can the aggregation be replaced with a composition in this case?
+</panel>
+
+<panel  header="**14 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/78#issuecomment-599873761" expanded>
+
+Oh noted, thanks for the reply. So am I correct to assume that if we were told to not use aggregation we should in fact be replacing all non-whole-part relationships with normal associations? Which means that only strong whole-part relationships should be labelled with composition while all container-contained relationships are labelled with an aggregation/association?
+</panel>
+
+<panel  header="**15 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/81#issuecomment-600484159" expanded>
+
+I have a related question regarding coupling. If I have multiple classes utilising the same static class, is that considered high coupling? For example, multiple command classes utilising methods from a static class. 
+
+Alternatively, what if those multiple classes are utilising methods from another class (an instantiated object)? For example, multiple command classes utilising methods from an object passed in as a parameter. 
+
+Is there a difference if the class is static or not? 
+</panel>
+
+<panel  header="**16 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/105#issuecomment-612335895" expanded>
+
+Oh, I think I managed to figure out the issue already. I honestly have no idea what I did to fix it but I messed around with it a little and now it works. Thanks a bunch! :)
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### Zhang Yuanfang `@Jeremy733` (11 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Data files cant be found when running JAR**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35" expanded>
+
+I added the file duke.txt in /data and had
+ File file = new File("data/duke.txt");
+in my code.
+But when packaged as JAR, 
+"Exception in thread "main" java.io.FileNotFoundException: data/duke.txt (No such file or directory)"
+How should I package data folder into JAR.
+
+</panel>
+
+<panel  header="**2. :fas-info-circle: Do we have quiz this week?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/5" expanded>
+
+I saw on the Admin Notes that  we have a quiz this week but I coudn't find it
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/10#issuecomment-576359878" expanded>
+
+Did you have this issue with CompareNames? You will need a main class to run it. You can try your code on your local machine and just copy and paste it to repl.it as the lecturer said in an earlier post.
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-586721588" expanded>
+
+I got the JAR file running however it still does not save. Therefore if you shut down and rerun the JAR file, you will start with an empty file.
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587023819" expanded>
+
+@JTWang2000 This is also my temporary fix but I believe we should only be distributing JAR files when releasing it
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587042062" expanded>
+
+![image](https://user-images.githubusercontent.com/37642497/74666151-f8ad0e00-51db-11ea-9ad9-60bb9839c270.png)
+
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587042527" expanded>
+
+I have adopted the solution of creating a new file if it doesn't exist. As long as the user of the jar doesn't move around files into different folders I think it should work.
+</panel>
+
+<panel  header="**8 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587048609" expanded>
+
+@damithc Thank you for your advice, I'm refactoring the code to make it works better
+</panel>
+
+<panel  header="**9 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587050732" expanded>
+
+@JTWang2000 You need to check if data folder exists or not or to make life easier just cdo 
+File f = new File(duke.txt) 
+</panel>
+
+<panel  header="**10 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-587054526" expanded>
+
+@JTWang2000 From what I understand as long as you can save the file locally it's fine
+</panel>
+
+<panel  header="**11 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/56#issuecomment-595052598" expanded>
+
+Well it's always a good habit to have JavaDoc especially when you are working as a team
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### WANG QIN `@wangqinNick` (9 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Packaging a JavaFX application in a .jar is possible only with Java 8.**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/34" expanded>
+
+With Java 11, "Error:Java FX Packager: Can't build artifact – fx:deploy is not available in this JDK"
+
+issue: IDEA-200721 
+https://youtrack.jetbrains.com/issue/IDEA-200721?_ga=2.226103452.787797951.1581843904-766222336.1581314726
+
+Is it possible to build a jar file if I change the SDK to Java 8 ? 
+</panel>
+
+<panel  header="**2. :fas-info-circle: (A-TextUiTesting) Error: Could not find or load main class Main**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/12" expanded>
+
+I tried to implement the automated text ui texting and followed the Text UI Testing Tutorial in the repo. 
+I have trouble in updating the java / javac commands to match my main class. The terminal output is:
+      Error: Could not find or load main class Main
+      Caused by: java.lang.ClassNotFoundException: Main
+
+My main class's address is 
+      /Users/xxx/Documents/cs2113T/ip/src/seedu/duke
+
+How should I edited these two lines:
+      if ! javac -cp ../src -Xlint:none -d ../bin ../src/main/java/Duke.java
+      java -classpath ../bin Duke < input.txt > ACTUAL.TXT
+
+Thanks very much.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/34#issuecomment-587169291" expanded>
+
+The only working solution I found so far is build a shadowJar with shadow plug-in using Gradle. It works perfectly. 
+However, other methods I tried like, a normal fat jar with dependencies does not work. Maybe it is because I am using external library? 
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-587170008" expanded>
+
+Do you mean when you run the jar file, the initial task list is not loaded because can not find the file? 
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/40#issuecomment-590820788" expanded>
+
+> > Are you building the project before running it again? Normally if you made edits and then pressed run it should automatically build it before running, but maybe this feature could have been disabled in the settings. Have you tried going to Build -> Clean build?
+> 
+> Thanks for your suggestion, but there's no "clean Build" option under "Build" though
+
+Did you implement gradle? Gradle can help build and also can clean build. 
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/30#issuecomment-592053562" expanded>
+
+> Hi may I ask what Jason actually helps with? Not familiar with this particular library
+An open source library published by google. It can parse an obj to Json String or from the other way back. 
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/30#issuecomment-592064643" expanded>
+
+> > An open source library published by google. It can parse String obj to Gson obj or from the other way back.
+> 
+> Actually it is capable of parsing any Object to JSON (not GSON object). JSON is a format for storing data.
+
+Sorry my bad English, I mean Json String. 
+</panel>
+
+<panel  header="**8 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592300791" expanded>
+
+May I ask what kind of operation will produce “empty list” in your code, list or a message after you add a new task
+</panel>
+
+<panel  header="**9 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/46#issuecomment-592301312" expanded>
+
+So 2 possible reasons, is it because your duke.txt is empty or  when your program cannot find the file, it has a default constructor to build an empty task list?
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### GANAPATHY SANATH BALAJI `@GanapathySanathBalaji` (8 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Java CI check keeps getting cancelled**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/109" expanded>
+
+Hi Prof,
+
+![image](https://user-images.githubusercontent.com/59698024/79042966-99dda100-7c2e-11ea-8626-aa37009e98da.png)
+
+Our Java CI check keeps getting cancelled. What might the issue be?
+Our group retagged v2.1 because we had to make changes after we released.
+</panel>
+
+<panel  header="**2. :fas-info-circle: Video link for W12.1b seems to be invalid and a typo in W12.2b**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/94" expanded>
+
+1) The video link mentioned on the website for W12.1b leads to an invalid session on Panopto.
+
+![image](https://user-images.githubusercontent.com/59698024/78419996-cd905800-767d-11ea-94dd-c6b1ce65f0e8.png)
+
+2) Should the line (under W12.2b) be changed to the following?
+
+Testing all pairs between p1 and p3 only while ensuring all **~~p3~~ p2** values are tested at least once
+
+![image](https://user-images.githubusercontent.com/59698024/78420047-3ed00b00-767e-11ea-811d-7ae6950b2f74.png)
+
+
+
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/21#issuecomment-581005264" expanded>
+
+![image](https://user-images.githubusercontent.com/59698024/73588938-5b2eba80-450a-11ea-9e6e-4a0b88c37aaf.png)
+
+I think this would help you:
+https://nus-cs2113-ay1920s2.github.io/website/admin/appendixB-policies.html#policy-on-reuse
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/109#issuecomment-612410178" expanded>
+
+Thanks Prof, Will try
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/109#issuecomment-612412043" expanded>
+
+When I created a new PR, the CI doesn't run and it's stuck at the starting state.
+
+![image](https://user-images.githubusercontent.com/59698024/79043851-7f0e2b00-7c34-11ea-9a86-65d5c83fcd56.png)
+
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/109#issuecomment-612412540" expanded>
+
+Hi Prof, It ended up failing again.
+
+![image](https://user-images.githubusercontent.com/59698024/79043916-dca27780-7c34-11ea-9ef7-db132c2b50e2.png)
+
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/109#issuecomment-612417649" expanded>
+
+Pushing a dummy commit didn't resolve the issue. But thanks a lot Prof, we weren't planning to push any more code.
+
+The mysterious thing is that the code seems to still pass CI on the PR created at the nus-cs2113-AY1920S2 branch.
+
+![image](https://user-images.githubusercontent.com/59698024/79044551-538d3f80-7c38-11ea-898d-40cd4a2e828d.png)
+
+</panel>
+
+<panel  header="**8 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/109#issuecomment-612438068" expanded>
+
+Thanks for the update.  Our code passes Java CI now.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### DI MAIO RICCARDO `@rdimaio` (7 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Submit post-lecture quiz missing from Week 12 Admin info section**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/96" expanded>
+
+![image](https://user-images.githubusercontent.com/35903974/78468393-3218e900-774a-11ea-8b7f-38626b13831c.png)
+
+Whereas for week 11:
+
+![image](https://user-images.githubusercontent.com/35903974/78468397-38a76080-774a-11ea-9577-ec0af4a5626b.png)
+
+</panel>
+
+<panel  header="**2. :fas-info-circle: Arrow pointing the wrong way in the new UML video?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/75" expanded>
+
+I think the error may be in the diagram drawn for Q2(b) in the bottom left corner. 
+It says "one ActionX object containing one Task object has been created and added to the History"; I think it means that :ActionX should be added to :History (in which case History should point to :ActionX instead of :Task)
+(supported by the fact that History adds Repeatable objects, which is an interface implemented by Action, but not by Task)
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/23#issuecomment-581352650" expanded>
+
+> Also I am not sure what is wrong here, but there seems to ACTUAL.txt
+> ![image](https://user-images.githubusercontent.com/49228945/73646739-067b7300-46b5-11ea-8c4d-868995dc3a04.png)
+
+ACTUAL.TXT is generated by the script and contains the actual output from the program, so it doesn't need to be present before the script runs. If ACTUAL.TXT is present, the script deletes it before compiling and running the program again (e.g. in the .bat script on line 7):
+
+`del ACTUAL.TXT`
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/40#issuecomment-590330387" expanded>
+
+Are you building the project before running it again? Normally if you made edits and then pressed run it should automatically build it before running, but maybe this feature could have been disabled in the settings. Have you tried going to Build -> Clean build? 
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/50#issuecomment-592944902" expanded>
+
+HI, I am also having this issue; I uploaded my final .jar file in a [release called v0.2](https://github.com/rdimaio/duke/releases/tag/v0.2) on the 20th, but it shows up as gray on the iP progress dashboard.
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/88#issuecomment-603329337" expanded>
+
+GitHub uses a version of Markdown called [GitHub Flavored Markdown (GFM)](https://github.github.com/gfm/), which implements things in a slightly different way than standard Markdown. [This section in particular](https://github.github.com/gfm/#why-is-a-spec-needed-) talks about the `<p>` HTML tag.
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/106#issuecomment-612345204" expanded>
+
+A couple suggestions:
+- There may be an issue with the cache for the GitHub Pages page; you can try `Shift + F5` to load the page again, ignoring the cached content
+- If you 're linking your images using their relative path, you could try using their absolute paths instead (or viceversa)
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### LIM WEI JIE `@JosephLimWeiJie` (6 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Need help troubleshooting ##[error]Process completed with exit code 1.**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/74" expanded>
+
+Hi everyone, I am having some issues passing the Java CI / build for my PR. Specifically, the check that fails is the 'Perform IO redirection test (*NIX)' part. You can view it here: [https://github.com/AY1920S2-CS2113-T14-4/tp/pull/28/checks?check_run_id=505277833].
+
+I have tried to run my IO tests locally and it is working fine. See here:
+![image](https://user-images.githubusercontent.com/59989652/76609612-a056fb00-6552-11ea-991a-99616270d303.png)
+
+However, on Java CI, it is showing this error. See here:
+![image](https://user-images.githubusercontent.com/59989652/76609691-c41a4100-6552-11ea-9048-5a17ab52ad41.png)
+
+How should I approach to rectify this issue? The link to the source code is here: https://github.com/AY1920S2-CS2113-T14-4/tp/tree/branch-Joseph
+
+Thank you.
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/35#issuecomment-586721875" expanded>
+
+Hi, you might want to check your save function and see if it writes to the same file path as the one you use for your load function
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-587041283" expanded>
+
+
+![Capture](https://user-images.githubusercontent.com/59989652/74665910-82101080-51db-11ea-997b-cfa34c89016f.PNG)
+
+Well you may want to add the data/duke.txt into the runtest.bat. This is what I've got. 
+
+
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/74#issuecomment-598689400" expanded>
+
+Hi Prof Damith, 
+
+I have tried to reorder the I/O tests. Is it supposed to look like this?
+![image](https://user-images.githubusercontent.com/59989652/76619511-08630c80-6566-11ea-9d22-b1cc45e6c614.png)
+
+Also, I've tried to replace "\n" and it hasn't been working. May I know if there are other OS-specific characters that I should look out for?
+
+Thank you.
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/74#issuecomment-599068247" expanded>
+
+It seems that after I updated to the lastest gradle.yml, the CI test still fails. 
+
+You can see it here: https://github.com/AY1920S2-CS2113-T14-4/tp/pulls
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/74#issuecomment-602710436" expanded>
+
+Hi Prof, I managed to solve this issue by applying your solution in which to convert the `EXPECTED.txt` to a unix format. I figured that my IDE has set the default file format as `dos` that caused this issue to happen. I had since, configured the necessary settings and rectified this issue.
+
+Thank you for your help, prof.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### HONG WEI YANG `@MeLoveCarbs` (6 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Emulating destructor in C++**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/16" expanded>
+
+I understand that Java uses garbage collector and thus, there is no need for destructor methods. But without destructors, how can I know the total number of objects within a class during runtime? For eg, if I can only increment the number of objects in the constructor method but not decrement it under the destructor method, wouldn't the total count be inaccurate if an unreferenced object gets garbage collected without decrementing total object count explicitly?
+</panel>
+
+<panel  header="**2. :fas-info-circle: wrong method name in Week 2 Ex4: getMultipleGradeCaps method**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/6" expanded>
+
+The method we should create to prevent the wrong submission is :
+```java
+        double[] caps = getMultipleGradeCaps(grades);
+```
+insead of repl's skeleton code method:
+```java
+        double[] caps = getGradeCaps(grades);
+```
+
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/16#issuecomment-578716950" expanded>
+
+From what i understand, finalize method only cleans unreferenced objects when called, but my issue is that i want to have a static class member variable that has the total count of objects in runtime, and i want to decrement it whenever unreferenced object gets garbage collected, and increment it whenever a new object is created. 
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/16#issuecomment-579206069" expanded>
+
+Oh okay, thanks for explaining! Closing this issue now!
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/76#issuecomment-599005309" expanded>
+
+With regards to this arrow, The instructions for ActionFactory is: creates ActionsX, ActionY objects and adds them to the History object. 
+Since ActionFactory did not specify that History object is a member object within its class, the History object is transient within ActionFactory and the arrow should be a dotted arrow indicating ActionFactory depends on **History** as well as ActionX and ActionY.
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/104#issuecomment-612056387" expanded>
+
+Hi, I've encountered this issue too. It could be caused by an old jar file in your local build/lib directory, resulting in a false positive test pass. Try deleting the old jar and making a new jar via gradle shadowJar, after which your local test would be similar to the CI tool and you can fix accordingly.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### KEZIA KEW KAI YUN `@kcubey` (6 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Deletion of Branches (tP)**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/57" expanded>
+
+During the iP we have been told not to delete our completed branches in our individual forks. For the tP are we allowed to delete the branches in our local forks once we are done with them?
+</panel>
+
+<panel  header="**2. :fas-info-circle: Repl.it W3 Ex2 & Website W3.2b Exercise Typo**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/11" expanded>
+
+In both the main website and repl Ex2 (use Rectangle objects), the given code states:
+
+> //TODO: add a line here to set the size of r to 8x10 (width x height)
+    //Recommended: use the setSize(int height, int width) method of the Rectangle object
+
+However, the method should be setSize(int width, height) instead
+
+</panel>
+
+<panel  header="**3. :fas-info-circle: Sentence Phrasing Clarification**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/7" expanded>
+
+Under Week 2 > Project > iP > Point 4, it says 
+'In this initial skeletal version of Duke, it starts by greeting the user, simply echos commands entered by the user, and exits when the user types bye. '
+
+Wording should be corrected/added to, and state something along the lines of 'You are to modify the current duke project to implement the following:' to reduce confusion as to what the task actually is. The phrasing seems to imply that duke already does the above stated functions
+</panel>
+
+<panel  header="**4. :fas-info-circle: Clarification/Typo on Statement**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/1" expanded>
+
+Found on page https://nus-cs2113-ay1920s2.github.io/website/admin/ip-w2.html
+
+Potential clarification needed on above mentioned page, under Section 1, Admin - iP Grading > Project Management section:
+> Deliver some deliverables in least in 4 out of weeks 2-7)
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/37#issuecomment-590733604" expanded>
+
+If when you run the jar file alone, you're getting errors because there is no data folder, that probably means that you need to add code to your program that will create folder(s) if they do not already exist
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/57#issuecomment-595147152" expanded>
+
+Okay noted, thank you. 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### CHENG TZE NING `@chengTzeNing` (6 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Edits done in IntelliJ does not show when I run the code**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/40" expanded>
+
+Hello, I'm not sure when this problem started, but now any edits that I make on IntelliJ are not reflected when I run the code. I have tried printing strings when I greet the user to ensure that this is not caused by any error in logic, but it did not work.
+
+Did anyone face the same problem?
+</panel>
+
+<panel  header="**2. :fas-info-circle: SourceTree: Cant commit changes because of Binary file**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/19" expanded>
+
+Hello,
+
+I tried to commit some changes in SourceTree after editing. However, it says "No changes in this file have been detected, or it is a binary file".
+
+I tried to google and they suggested changing the Size Limit in settings but it still didn't work.
+
+I'm not sure what is the issue
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/19#issuecomment-580624748" expanded>
+
+![2020-01-31 (2)](https://user-images.githubusercontent.com/59819947/73521675-931dfb00-4441-11ea-9e3a-208e26318ec4.png)
+
+I'm not sure if this counts. Because when I click on the file to be staged, no preview comes out
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/19#issuecomment-580766411" expanded>
+
+Okay thank you Prof
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/40#issuecomment-590771249" expanded>
+
+> Are you building the project before running it again? Normally if you made edits and then pressed run it should automatically build it before running, but maybe this feature could have been disabled in the settings. Have you tried going to Build -> Clean build?
+
+Thanks for your suggestion, but there's no "clean Build" option under "Build" though
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/40#issuecomment-592946309" expanded>
+
+Thank you for all the suggestions! I have somewhat solved the issue.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### WONG JIN EN, SHANNON `@Shannonwje` (6 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Formatting problems of DG**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/108" expanded>
+
+Hi sir, my group's DG seems to be having some formatting issues in terms of the spaces for diagrams. We tried to resize our diagrams but the formatting still seems off. 
+
+Will we be penalised for this?
+
+<img width="389" alt="2020-04-11 (3)" src="https://user-images.githubusercontent.com/42537231/79041118-ce962c00-7c1f-11ea-8ce1-0d270fb5f4eb.png">
+
+
+<img width="439" alt="2020-04-11 (2)" src="https://user-images.githubusercontent.com/42537231/79041116-cd64ff00-7c1f-11ea-9af1-94795bf4f7e4.png">
+
+</panel>
+
+<panel  header="**2. :fas-info-circle: A-JavaDoc not in a branch**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/45" expanded>
+
+Hi I've been adding the headers and the comments for my code for a while and so throughout my code in all my branches, majority of my code already has headers so I won't be to do my A-Javadoc in a separate branch and merging it into my master. 
+
+How should I proceed? Please advise, thank you :)
+</panel>
+
+<panel  header="**3. :fas-info-circle: Wrong tagging and unable to change it**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/44" expanded>
+
+Hi, I did my A-MoreOOP but I realised I missed out one part of it after I pushed the incomplete commit with the tag A-MoreOOP. Now after I finished my A-MoreOOP increment, I tried to push that commit with the same tag but it told me that I couldn't do so due to a conflict.
+
+I tried to change the old tag name, and tried to delete the tag on github but it looks like nothing changed, even though now I can push the tag on my completed commit. Unsure if I did this retagging correctly, hope it doesn't affect my grades :(
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/45#issuecomment-592434255" expanded>
+
+Ok! Have created a branch for it and did some minor javadoc comments in it. Thank you!!
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/44#issuecomment-592434545" expanded>
+
+Ok thank you Sir!!!
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/108#issuecomment-612398449" expanded>
+
+Ok thank you Sir.
+</panel>
+
+</panel>
+
+
+
+<panel type="info" header="### LOPEZ MELISSA `@melylopez99` (5 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Java CI build Fails only for Windows**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/92" expanded>
+
+Hello, 
+When I was trying to merge some changes to the JUnit tests, some of the tests failed but just for windows, and they work locally on my windows machine. I have tried multiple times to change things in the code that might affect the CI build for windows, but I still can't figure out why it only fails on windows machines. 
+
+https://github.com/AY1920S2-CS2113-T14-2/tp/pull/51
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/89#issuecomment-603331511" expanded>
+
+https://github.com/AY1920S2-CS2113-T14-2/tp/pull/33/checks?check_run_id=530870712
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/89#issuecomment-603332493" expanded>
+
+I have also tried to run runtest.bat on my computer but it passed all tests so I am not able to figure out the error 
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/89#issuecomment-603486023" expanded>
+
+I created functions that sorts all of our data in our arraylist every time an action takes place and the error is still evident. I don't know what to do at this point now 
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/89#issuecomment-603908896" expanded>
+
+Since the build is successful on my windows computer, I am unable to test and find the error that is causing this. What do you recommend we do at this point in order to move forward with the project? 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### ALAUKIK NATH PANT `@alaukiknpant` (4 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Why does GitHub Pages not show images?**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/106" expanded>
+
+![Screen Shot 2020-04-11 at 13 34 37](https://user-images.githubusercontent.com/40881096/79036282-5fa5dc80-7bf9-11ea-92c1-888ef07b4617.png)
+
+
+I can see the image in my .md file but I cannot seem to see it in GitHub Pages. Is there any particular reason this happens?
+</panel>
+
+<panel  header="**2. :fas-info-circle: Java CI build failure only for windows**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/89" expanded>
+
+
+![Screen Shot 2020-03-24 at 23 52 40](https://user-images.githubusercontent.com/40881096/77447521-bd30df80-6e2a-11ea-9fcc-7d8313aca6b8.png)
+
+My build has been failing for Windows only as seen in the attached photo. I thought the error was in runtest.bat, but my friend could successfully run the test in runtest.bat in her Windows machine.
+
+Are there any potential reasons for this error?
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/89#issuecomment-603652235" expanded>
+
+Thank you Prof and @j-lum for helping us figure this out. I replaced all the "\n" with System.lineSeparator() and also removed the fancy ﹊ characters and replaced them with the normal straight line: "__". I am still getting the same error. Everything else seem seems to be fine as before though.
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/89#issuecomment-605468042" expanded>
+
+Thank you all, I was able to fix the issue eventually. The problem was @j-lum pointed out. It was basically characters that Windows didn't recognise.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### GUO LILIAN `@g-lilian` (4 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Build keeps failing with assertion error**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/70" expanded>
+
+After I opened a PR for some JUnit tests, the build keeps failing on Github with an assertion error in one of the tests. However, when I run the test locally, the build is successful. I'm not sure how to debug the test in Intellij because the local build doesn't have any errors.
+We initially suspected that this was due to the list (checked in the assertion) being modified in some other tests, but even after I reinitialized the list to be private to the failed test, the problem still persists.
+
+Any suggestions as to how to resolve this issue?
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/69#issuecomment-597766891" expanded>
+
+It was mentioned during tutorial that it's because the question stated to assume that we are trying to minimize the number of total objects.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/70#issuecomment-598108114" expanded>
+
+Noted, here is the link to the PR: https://github.com/AY1920S2-CS2113-T14-1/tp/pull/43
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/70#issuecomment-599019430" expanded>
+
+Thanks prof.  The issue has been resolved. The assertion error was caused by some other constants being modified. Strangely enough, the error did not show up in my Intellij but it did on my teammate's Intellij.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### KEITH CHAN JUN KAI `@Keith-JK` (4 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: iP Admin Tasks: Merged branch not found**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/55" expanded>
+
+Hi, 
+![image](https://user-images.githubusercontent.com/42379488/75623760-4f591580-5be8-11ea-8c54-655aaa512496.png)
+
+According to the iP Progress Dashboard, the merged branch-Level-X has not been found in the fork although I have merged the latest master to all the existing branches as a merge commit that is reflected in the branches itself. 
+
+Have i misunderstood the instructions? If so, please advise. Thank you
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/55#issuecomment-593084577" expanded>
+
+It seems that i had misunderstood the instructions here.
+![image](https://user-images.githubusercontent.com/42379488/75624511-c6de7300-5bef-11ea-8945-8e3623635a87.png)
+I had completed the merged branches-level-X (did the work in the branch and merge it to master) prior to this mistake and it seems that the script cannot detect them anymore when it could the last time. What are the steps i should take to allow the script to properly pick up the merged branches again? 
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/55#issuecomment-593096440" expanded>
+
+Prior to the merging the master to each of the branches, branches contain work done for the respective increments i.e. Branch-Level-6 contains the increment Level-6 which is subsequently merged to master in a merge commit as per Level-6 increments instructions in that particular week and left alone thereafter. This applies for Level-5, Level-6 and Level-7 increments as can be seen below:
+![image](https://user-images.githubusercontent.com/42379488/75626267-18dbc480-5c01-11ea-9c96-90a62d886ed2.png)
+Level-9 increments and A-JavaDoc were merged to master through a PR requests as seen below:
+![image](https://user-images.githubusercontent.com/42379488/75626289-4d4f8080-5c01-11ea-984a-5a10c08d3834.png)
+![image](https://user-images.githubusercontent.com/42379488/75626322-97d0fd00-5c01-11ea-97ed-e48ea5ddcdaf.png)
+However, due to the recent incorrect merges as can be seen above where i incorrectly merge master into all branches, all of them now contain the same code as master which is the most recent increment A-Release. 
+
+
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/55#issuecomment-593113288" expanded>
+
+Ok thank you
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### CHAN HONG YI, MATTHEW `@matthewc97` (4 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Committing Increments**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/9" expanded>
+
+I have followed the instructions given under the Week 2 Project tab to set up the project. After making changes for increment Level-1, committing and pushing it, I realised that my fork of Duke is public and I am unable to make it private without duplicating it. Can I check if we are supposed to leave it as public or otherwise? Thank you.
+![github](https://user-images.githubusercontent.com/47091828/72662353-0f1b4a80-3a21-11ea-9f29-f6540ce69195.JPG)
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/9#issuecomment-575890044" expanded>
+
+Perhaps I have misread the instructions given for adding increments. Are we supposed to just commit locally without pushing it?
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/9#issuecomment-575892316" expanded>
+
+> I believe the prof has mentioned during the first lecture that our repos are to remain public. Correct me if I'm wrong :)
+
+In that case, are we still supposed to push our commits to the public repo? 
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/9#issuecomment-575893827" expanded>
+
+> > I believe the prof has mentioned during the first lecture that our repos are to remain public. Correct me if I'm wrong :)
+> 
+> That's correct. Thanks @Zhilin-Huang
+> 
+> > In that case, are we still supposed to push our commits to the public repo?
+> 
+> Yes, but no need to push this week. You'll need to push your code from week 3.
+
+Thank you for the clarification! 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### LOW XI ZHI `@lowxizhi` (4 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: How to tell the difference between composition and aggregation association**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/78" expanded>
+
+1) In this case, there is a composition association between Email class and Subject object. Subject object cannot exist after the Email object is deleted.
+
+class Email {
+    private Subject subject;
+  ...
+}
+
+
+2) In this case, there is an aggregation association between Team class and Person object. Person object can exist even after the Team object is deleted (Why is this so?).
+
+class Team {
+    Person leader;
+    ...
+    void setLeader(Person p) {
+        leader = p;
+    }
+}
+
+
+Is the key difference how the part/containee object is declared in the whole/container class? Does declaring the object as a private variable result in composition association?
+
+
+
+
+</panel>
+
+<panel  header="**2. :fas-info-circle: 1. How to tell the difference between composition and aggregation**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/77" expanded>
+
+In this case, there is a composition association between Email class and Subject object
+
+class Email {
+    private Subject subject;
+  ...
+}
+
+
+In this case, there is an aggregation association between Team class and Person object.
+
+class Team {
+    Person leader;
+    ...
+    void setLeader(Person p) {
+        leader = p;
+    }
+}
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/78#issuecomment-599026588" expanded>
+
+Follow up question: Are composition and aggregation associations between 
+1. a class and a object
+2. two classes
+3. two objects
+?
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/77#issuecomment-599030735" expanded>
+
+I accidentally posted this issue by pressing Enter. Will take note!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### YAP KESIN `@itskesin` (4 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: UG submission**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/103" expanded>
+
+Hi, 
+For our team's UG, it is split into 4 markdown documents [UG link](https://ay1920s2-cs2113t-t12-2.github.io/tp/UserGuide.html). May I know whether I can convert each page into pdf and combine them together ? 
+
+For the team files, do everyone in the team have to submit the UG/DG/JAR file respectively? 
+</panel>
+
+<panel  header="**2. :fas-info-circle: Week 12 Quiz Typo**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/98" expanded>
+
+![image](https://user-images.githubusercontent.com/42372373/78505069-7ab0c080-77a3-11ea-9277-cdf3cd7b325e.png)
+
+May I know whether this is a typo or it is intended? 🤔 
+</panel>
+
+<panel  header="**3. :fas-info-circle: Failed I/O redirection test**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/79" expanded>
+
+
+![image](https://user-images.githubusercontent.com/42372373/76696865-1da57b80-66cb-11ea-8ad4-4f343d77a391.png)
+
+Hi,
+I failed my I/O redirection test in git when I tried to create a pull request. I have no idea how to resolve this problem? Can somebody give me some guidance? 
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/103#issuecomment-611946185" expanded>
+
+Alright thanks for the prompt reply 😄 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### MOK KAI SHENG DARYL `@DeetoMok` (4 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Submission of deliverable tonight**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/107" expanded>
+
+For the submission today, must everybody submit the Jar file, UG pdf and DG pdf to luminus? Or just one person of the team to submit?
+</panel>
+
+<panel  header="**2. :fas-info-circle: Error when merging master branch to another branch**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/93" expanded>
+
+I uploaded a png file on my local repo, and now am having trouble merging that particular branch to my master branch. This is the error that appears, and I am not sure how to solve it.
+
+
+
+![image](https://user-images.githubusercontent.com/54903425/77931021-31153100-72de-11ea-87fe-67ce727ca46e.png)
+
+
+</panel>
+
+<panel  header="**3. :fas-info-circle: Request to use GSON**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/30" expanded>
+
+## Library
+
+[GSON](https://github.com/google/gson)
+
+## Purpose
+
+{This library will be useful for completing Level-7}
+
+## License
+
+Apache 2.0
+
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/93#issuecomment-606078226" expanded>
+
+I have found the problem. The file was untracked, and once I removed it, and commited the new changes, it works fine. 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### LOH CHING WEI, JOSHUA `@JLoh579` (3 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Issues with runtest.bat for tp**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/71" expanded>
+
+Hi,
+Our team is having issues with the tp, when we try to run the runtest.bat in the terminal. The program works fine when we run it using Gradle in IntelliJ, however, we keep getting this error when we run the runtest.bat:
+BUILD SUCCESSFUL in 11s
+2 actionable tasks: 2 executed
+Exception in thread "main" java.util.NoSuchElementException: No line found
+        at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+        at seedu.duke.Duke.readCommand(Duke.java:68)
+        at seedu.duke.Duke.runCommandLoopUntilExitCommand(Duke.java:53)
+        at seedu.duke.Duke.run(Duke.java:30)
+        at seedu.duke.Duke.main(Duke.java:24)
+Test failed!
+
+Currently we have the following code to read commands from user input:
+private static Scanner in = new Scanner(System.in);
+
+// some other code
+
+public String readCommand() {
+        String input = "";
+        while (input.isEmpty()) {
+            input = in.nextLine();
+            input.trim();
+        }
+        return input;
+    }
+
+Please advise. Thanks in advance!
+</panel>
+
+<panel  header="**2. :fas-info-circle: Clarification on iP evaluation**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/59" expanded>
+
+When I was running an iP's Jar file for evaluation using the  `java -jar {file_name}` command, I got a "java.lang.UnsupportedClassVersionError" which says that it has been compiled by a more recent version of the Java Runtime (class file version 56.0). (Picture below)
+
+![Jar error](https://user-images.githubusercontent.com/42561929/76143536-24246980-60b3-11ea-9dc8-89b6a5dde8ac.PNG)
+
+According to this website: [https://mkyong.com/java/java-lang-unsupportedclassversionerror/](url) , class file version 56 refers to JDK 12. So I'm guessing I can't run it because I'm using JDK 11. 
+May I clarify how I should go about the peer evaluation? More specifically, is it ok for me to download the source files and compile it myself for testing and evaluation? Or do I evaluate the program as is (not able to run)?
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/59#issuecomment-596092683" expanded>
+
+Ok, issue posted, thanks Prof! 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### CHAN YONG AN BENNY `@bennychanya` (3 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Release quiz answer for online quiz.**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/86" expanded>
+
+Dear Prof Damith,
+
+Is it possible to release the results of the online quiz on luminus so that we know which questions were answered incorrectly, so as to be able to correct any misconception.
+</panel>
+
+<panel  header="**2. :fas-info-circle: Unable to run my code on repl.it**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/10" expanded>
+
+I could not run my code on repl.it as it kept giving me this error.
+"Error: Could not find or load main class Main
+exit status 1"
+
+I do not encounter this issue when I compile and run my code on cmd.exe.
+Unable to resolve this issue. Should I just submit my code?
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/10#issuecomment-576363724" expanded>
+
+Thanks for your input. I manage to get past the problem. Now I'm having this error "Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Main.main(Main.java:3)
+exit status 1"
+I googled that it means that there is no additional argument as I compile and run the code on repl.it, which causes my code to get that error
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### CAI RUNZE `@RenzoTsai` (3 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: New update cannot be found in tp code dashboard.**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/73" expanded>
+
+Our tp PR was closed by mistake and I have reopened it. But after reopening, it seems that the new update of our code cannot be tracked in tp code dashboard. Here is the link of our [tp PR](https://github.com/nus-cs2113-AY1920S2/tp/pull/27)
+How can I fix this problem? Thanks in advance!
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/73#issuecomment-598274569" expanded>
+
+> tP code dashboard is not linked to the team PR. It is only based on the code in the `master` branch of your team repo, and is updated only once per 24 hours. Does that clarify the situation or is something still amiss?
+
+Yeah, and our code is updated now. Thank you, professor!
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/89#issuecomment-605184683" expanded>
+
+I also meet this problem. And I find it is because there is something wrong with storage and runtest.bat. e.g, if your storage file path is `data/example.csv`, then when you run runtest.sh, it will create a folder under text-ui-test and will get `text-ui-test/data/example.csv`. But for runtest.bat, it will create a folder under `build/libs` and will get `build/libs/data/example.csv`. So I edit runtest.bat in this way:
+<img width="612" alt="image" src="https://user-images.githubusercontent.com/38337361/77786795-61b85900-7099-11ea-9ac6-1cb623b4cb5d.png">
+And now when I run runtest.bat, the storage file will in the same folder as the runtest.sh's.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### TERRY TAY HOE KIAT `@terrytay` (2 contributions)"  expanded>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/4#issuecomment-575466683" expanded>
+
+Filename and class name should be the same. You can try doing a copy of it on your desktop and save the file as WordComparator.java and try running it. If it works, you can just paste the code and submit. Hope it helps!
+
+https://netjs.blogspot.com/2015/04/why-file-name-and-class-name-same-in-java.html
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/76#issuecomment-599029743" expanded>
+
+In the Object Diagram, I think that :History should be linked to :ActionX instead of :Task. This will then align with the Class Diagram. Correct me I'm wrong. I'm still learning :-p
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### GOH RUI PING SAMANTHA `@Yukilite` (2 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: Possible bug in Week 2: Ex 2 Compare Names??**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/4" expanded>
+
+Keeps throwing either the error of class Main cannot be found.
+or 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Main.main(Main.java:3).
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/4#issuecomment-574660728" expanded>
+
+mm I see, where did I go wrong here?
+
+class WordComparator {
+  public static void main(String[] args) {
+      if (args.length > 0) {
+      String x = args[0];
+      String y = args[1];
+      System.out.println("Words given: " + x + ", " + y);
+      boolean isSame = y.equals(x);
+      System.out.println("They are the same: "+ isSame);
+    }
+  }
+}
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### WEI CHEN KUN `@synCKun` (2 contributions)"  expanded>
+
+
+<panel  header="**1. :fas-info-circle: iP Continuation**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/62" expanded>
+
+May i ask if we can continue to update our iP for testing/exploration/fun?
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/62#issuecomment-596494057" expanded>
+
+Thank you! 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### WEE JIN XING `@JensonWee` (1 contributions)"  expanded>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/89#issuecomment-603335065" expanded>
+
+Hi, I've encountered similar issue. I've found out that it could be the result of Hashmap or Arraylist. For different OS, if your array is not sorted, it could result in failing runtest for different OS.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### YAP JIN FA `@jinfayap` (1 contributions)"  expanded>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/109#issuecomment-612437230" expanded>
+
+Github status for workflow actions is up now.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### NGUYEN THANH DUC `@thanhduc2000` (1 contributions)"  expanded>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/4#issuecomment-574659772" expanded>
+
+Then may be you have accessed out of bound index in array i guess
+</panel>
+
+</panel>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

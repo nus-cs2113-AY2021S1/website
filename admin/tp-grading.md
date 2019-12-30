@@ -6,7 +6,12 @@
 
 Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. Given below is the marking scheme.
 
-**Total**: 45 marks ({{ icon_individual }} 35 individual marks + {{ icon_team }} 10 team marks)
+**Total**: ~~35~~ 55 marks ({{ icon_individual }} ~~25~~ 45 individual marks + {{ icon_team }} 10 team marks)
+
+<!-- box type="important">
+
+We have reduced total marks of tP from 45 to 35 this semester, as a clear indication that the amount of time you are expected to spend on the tP this semester is much lower compared to previous semesters.
+</box -->
 
 See the sections below for details of how we assess each aspect.
 
@@ -28,11 +33,16 @@ In addition, feature flaws reported in the PE will be considered when grading th
 <box>
 <include src="tp-grading-bugs.mbdf#featureFlaws" />
 </box>
+
+<box type="tip">
+
+Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, ==the bar you need to reach to get full 5 marks will be quite low==. For example, the `Medium` level in the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of _excessive_ 'feature flaw' bugs will affect the score.
+</box>
 </div>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning p-1">2. Project Grading: Implementation %%[{{ icon_individual }} 10 marks]%%</div>
+#### <div class="bg-warning p-1">2. Project Grading: Implementation %%[{{ icon_individual }} ~~10~~ 20 marks]%%</div>
 
 **<big>2A. Code quality</big>**
 
@@ -48,9 +58,8 @@ In addition, feature flaws reported in the PE will be considered when grading th
   * logging
   * exceptions
   * assertions
-  * defensive coding
 
-* No [coding standard]({{java_coding_standard}}) violations %%e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
+* No [coding standard]({{java_coding_standard}}) violations %%e.g. all boolean variables/methods sounds like booleans%%.
 
 * [SLAP]({{baseUrl}}/se-book-adapted/chapters/codeQuality.html#slap-hard) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP.
 
@@ -66,17 +75,17 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **Method:**
 
-* Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
+* This is evaluated by peers who tested your product, and tutors.
 
-{{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Questions used for Implementation Effort==", "3", indent="2") }}
+{{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Question used for Implementation Effort==", "3", indent="2") }}
 
-* Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
+* The score could be further moderated by this question answered by team members.
 
 {{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_individual }} 10 marks]%%</div>
+#### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_individual }} ~~10~~ 15 marks]%%</div>
 
 
 <big>**3A. Developer Testing:**</big>
@@ -109,7 +118,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-documentation">
 
-#### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_individual }} 10 marks]%%</div>
+#### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_individual }} ~~5~~ 10 marks]%%</div>
 
 **Evaluates:** your contribution to project documents
 
@@ -141,7 +150,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 </div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning p-1">5. Project Grading: Project Management %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%</div>
+#### <div class="bg-warning p-1">5. Project Grading: Project Management %%[{{ icon_team }}/{{ icon_individual }} = 5 marks]%%</div>
 
 <div id="project-management-grading"> 
 
@@ -153,13 +162,8 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **Grading criteria:**
 
-* Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. ==To get a good grade for this aspect, achieve at least 60% of the recommended milestone progress.==
-* Good use of GitHub milestones
-* Good use of GitHub release mechanism
-* Good version control, based on the repo
-* Reasonable attempt to use the forking workflow
-* Good task definition, assignment and tracking, based on the issue tracker
-* Good use of buffers %%(opposite: everything at the last minute)%%
+* No <tooltip content="e.g., the product is not working at all by the milestone deadline">major mishaps</tooltip> at v1.0 and v2.0.
+* Good attempt to use of at least _some_ Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)
 * Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%%
 
 
@@ -171,7 +175,9 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **Based on:** peer evaluations, tutor observations
 
-**Grading criteria:** To earn full marks, you should have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.
+**Grading criteria:** To earn full marks, 
+* you have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.
+* you have merged code in at least four of weeks 7, 8, 9, 10, 11, 12
 
 
 </div>

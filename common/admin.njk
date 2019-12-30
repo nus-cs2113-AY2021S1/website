@@ -100,11 +100,11 @@ pageNav: 4
     {level: 2, id: "tp-teams", title: "tP: Forming Teams", link: "tp-teams.html", priority: 2},
     {level: 2, id: "tp-w3", title: "tP: Kickoff [week 3]", link: "tp-w3.html", priority: 2},
     {level: 2, id: "tp-w4", title: "tP: Inception [week 4]", link: "tp-w4.html", priority: 3},
-    {level: 2, id: "tp-w5", title: "tP: v1.0 [week 5]", link: "tp-w5.html", priority: 2},
-    {level: 2, id: "tp-w6", title: "tP: mid-v1.1 [week 6]", link: "tp-w6.html", priority: 2},
-    {level: 2, id: "tp-w7", title: "tP: v1.1 [week 7]", link: "tp-w7.html", priority: 2},
-    {level: 2, id: "tp-w8", title: "tP: mid-v1.2 [week 8]", link: "tp-w8.html", priority: 3},
-    {level: 2, id: "tp-w9", title: "tP: v1.2 [week 9]", link: "tp-w9.html", priority: 2},
+    {level: 2, id: "tp-w5", title: "tP: User Stories [week 5]", link: "tp-w5.html", priority: 2},
+    {level: 2, id: "tp-w6", title: "tP: Product Concept [week 6]", link: "tp-w6.html", priority: 2},
+    {level: 2, id: "tp-w7", title: "tP: Plan v1.0 [week 7]", link: "tp-w7.html", priority: 2},
+    {level: 2, id: "tp-w8", title: "tP: mid-v1.0 [week 8]", link: "tp-w8.html", priority: 3},
+    {level: 2, id: "tp-w9", title: "tP: v1.0 [week 9]", link: "tp-w9.html", priority: 2},
     {level: 2, id: "tp-w10", title: "tP: mid-" + penultimate_version + " [week 10]", link: "tp-w10.html", priority: 2},
     {level: 2, id: "tp-w11", title: "tP: " + penultimate_version + " [week 11]", link: "tp-w11.html", priority: 2},
     {level: 2, id: "tp-w12", title: "tP: mid-" + final_version + " [week 12]", link: "tp-w12.html", priority: 3},
@@ -153,7 +153,7 @@ pageNav: 4
   {id: "policy-plagiarism", title: "Policy on plagiarism", priority: 1},
   {id: "policy-reuse", title: "Policy on reuse", priority: 2},
   {id: "policy-outsiderHelp", title: "Policy on help from outsiders", priority: 2},
-  {id: "policy-deadlineExtensions", title: "Policy on deadline extensions", priority: 4}
+  {id: "policy-deadlineExtensions", title: "Policy on deadline extensions", priority: 3}
 ]%}
 
 {% set admin_topics_to_read = {
@@ -161,6 +161,55 @@ week1: [
   {faq_id: "admin-faq-whereIsEverything"},
   {topic_id: "tp-teams"},
   {topic_id: "programmingLanguages"},
+  {topic_id: "textbooks"},
+  {topic_id: "gradeBreakdown"},
+  {topic_id: "participation"},
+  {faq_id: "admin-faq-tVsNonT"},
+  {faq_id: "admin-faq-highWorkload"},
+  {faq_id: "admin-faq-aPlus"}],
+week2: [
+  {policy_id: "policy-plagiarism"},
+  {policy_id: "policy-reuse"},
+  {policy_id: "policy-outsiderHelp"},
+  {policy_id: "policy-followingInstructions"},
+  {policy_id: "policy-techHelp"},
+  {topic_id: "appendixA-principles"},
+  {faq_id: "admin-faq-separateWebsite"},
+  {faq_id: "admin-faq-slideFormat"},
+  {faq_id: "admin-faq-selfStudy"},
+  {faq_id: "admin-faq-noLaptop"}],
+week3: [
+  {topic_id: "tutorials"},
+  {topic_id: "peerEvaluations"},
+  {topic_id: "tp-supervision"},
+  {policy_id: "policy-teamSize"}],
+week4: [
+  {faq_id: "admin-faq-narrowScope"},
+  {faq_id: "admin-faq-favoriteTool"},
+  {policy_id: "policy-publishingSubmissions"}],
+week5: [
+  {topic_id: "tp-grading"},
+  {policy_id: "policy-workDistribution"},
+  {policy_id: "policy-responseTime"},
+  {faq_id: "admin-faq-beanCounting"}],
+week6: [
+  {topic_id: "exams"},
+  {topic_id: "appendixF-teamworkIssues"},
+  {faq_id: "admin-faq-manySubmissions"},
+  {faq_id: "admin-faq-cs2101Differences"}],
+week7: [],
+week8: [],
+week9: [],
+week10: [],
+week11: [],
+week12: [],
+week13: []
+}%}
+
+{% set cs2113_admin_topics_to_read = {
+week1: [
+  {faq_id: "admin-faq-whereIsEverything"},
+  {topic_id: "tp-teams"},
   {topic_id: "textbooks"},
   {topic_id: "gradeBreakdown"},
   {topic_id: "participation"},

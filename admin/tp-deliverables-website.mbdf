@@ -1,5 +1,11 @@
-#### <span class="badge badge-info">Website</span> <span class="text-info">README</span>
-  * ==Ensure the `Ui.png` matches the current product==
+* **Use the GitHub Pages feature to publish your tP** repo as a website.
+
+#### <span class="badge badge-info">Website</span> <span class="text-info">[optional] README</span>
+
+==**This deliverable is optional.**==
+
+* ==Ensure the `Ui.png` matches the current product==
+
 <div class="indented-level3" id="tips-for-product-screenshot">
 
 <box>
@@ -56,7 +62,9 @@ Reason: screenshot not cropped cleanly (contains extra background details)
 </box>
 </div>
 
-#### <span class="badge badge-info">Website</span> <span class="text-info">AboutUs Page</span>
+#### <span class="badge badge-info">Website</span> <span class="text-info">[optional] AboutUs Page</span>
+
+==**This deliverable is optional.**==
 
 * **Use a suitable profile photo.**
 <div id="profile-photo" class="indented-level2">

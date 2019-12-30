@@ -13,8 +13,7 @@
 ==**The main language** used in this module is Java==. You should use
 Java for all programming activities, the project, and exam answers.
 
-The module doesn’t “teach” Java. We assume you already know Java basics.
-We expect you to learn on your own any Java constructs not covered in your previous modules.
+The exam expects you to know Java to the extent that you should be familiar with it by virtue of using it in the module exercises/projects.
 
 </td>
 </tr>

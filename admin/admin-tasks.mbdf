@@ -1,4 +1,4 @@
-{% from "common/admin.njk" import admin_topics_to_read, faqs, policies, show_admin_summary, topics with context %}
+{% from "common/admin.njk" import cs2113_admin_topics_to_read, faqs, policies, show_admin_summary, topics with context %}
 {% from "common/macros.njk" import embed_topic, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
 {% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
 
@@ -35,7 +35,7 @@ week7: [
 ],
 week8: [
   {id: 'submit_post_lecture_quiz'},
-  {id: 'submit_midterm_peer_evaluations', deadline: "by Sunday"}
+  {id: 'submit_midterm_peer_evaluations', deadline: "by Sunday 15th March"}
 ],
 week9: [
   {id: 'submit_post_lecture_quiz'}
@@ -50,6 +50,58 @@ week12: [
 ],
 week13: [
   {id: 'submit_final_peer_evaluations', deadline: "by Thursday 2359"}
+]
+} %}
+
+{% set cs2113_admin_schedule = {
+week1: [
+  {id: 'set_up_tools', deadline: "before the lecture"},
+  {id: 'submit_pre_module_survey', deadline: "by Wednesday 2359"},
+  {id: 'learn_about_the_module'},
+  {id: 'attend_the_first_lecture'}
+],
+week2: [
+  {id: 'submit_first_repl_exercises', deadline: "Tuesday midnight"},
+  {id: 'get_connect_with_comm_channels'}
+],
+week3: [
+  {id: 'submit_repl_exercises', deadline: "midnight before tutorial"},
+  {id: 'form_teams'}
+],
+week4: [
+  {id: 'accept_github_invitations'},
+  {id: 'submit_repl_exercises'}
+],
+week5: [
+  {id: 'submit_repl_exercises'},
+  {id: 'practice_peer_evaluations_on_TEAMMATES', deadline: "by Sunday (Feb 16th)"}
+],
+week6: [
+  {id: 'submit_repl_exercises'},
+  {id: 'submit_post_lecture_quiz', deadline: "before the lecture"},
+  {id: 'submit_midterm_feedback_for_the_module', deadline: "by Sunday (Feb 23rd)", deadline_type: 'info'}
+],
+week7: [
+  {id: 'submit_post_lecture_quiz'}
+],
+week8: [
+  {id: 'submit_post_lecture_quiz', deadline: "before the tutorial"}
+],
+week9: [
+  {id: 'submit_post_lecture_quiz', deadline: "before the tutorial"},
+  {id: 'submit_midterm_peer_evaluations', deadline: "by Sunday 15th March"}
+],
+week10: [
+  {id: 'submit_post_lecture_quiz'}
+],
+week11: [
+  {id: 'submit_post_lecture_quiz'}
+],
+week12: [
+  {id: 'submit_post_lecture_quiz'}
+],
+week13: [
+  {id: 'submit_final_peer_evaluations', deadline: "by Tuesday 14th 2359"}
 ]
 } %}
 {#====================================================================================================================#}
@@ -70,6 +122,7 @@ week13: [
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="2") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "2", indent="2") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2", indent="2") }}
+{{ embed_topic("tools.md#repl", "Admin " + icon_embedding + " **Tools - repl.it**", "2", indent="2") }}
 </span>
 {#====================================================================================================================#}
 <span id="heading_submit_pre_module_survey">Submit the pre-module survey</span>
@@ -104,6 +157,21 @@ week13: [
 * **Read weekly topics** allocated for this week. **Submit the `Post-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
 </span>
 {#====================================================================================================================#}
+<span id="heading_submit_first_repl_exercises">Submit coding exercises on repl.it</span>
+<span id="desc_submit_first_repl_exercises">
+
+* Submit the coding exercises allocated for the current week. Most exercises are auto-graded. Keep trying until the system accepts your code as the correct solution.
+* If you encounter problems, post in the [forum]({{ forum_link }}).
+
+{{ embed_topic("tools.md#repl", "Admin " + icon_embedding + " **Tools - repl.it**", "2", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_repl_exercises">Submit coding exercises on repl.it</span>
+<span id="desc_submit_repl_exercises">
+
+* As before, submit the coding exercises allocated for the current week, and any pending exercises from previous weeks.
+</span>
+{#====================================================================================================================#}
 <span id="heading_get_connect_with_comm_channels">Subscribe to the module forum</span>
 <span id="desc_get_connect_with_comm_channels">
 
@@ -115,7 +183,7 @@ week13: [
 <span id="heading_submit_post_lecture_quiz">Submit post-lecture quiz</span>
 <span id="desc_submit_post_lecture_quiz">
 
-* **Post-lecture quiz**: As usual, read weekly topics allocated for this week and submit the post-lecture quiz by the midnight before the lecture.
+* **Post-lecture quiz**: Read weekly topics allocated for this week and submit the post-lecture quiz before the following lecture.
 </span>
 {#====================================================================================================================#}
 <span id="heading_form_teams">[{{ module }} students only] Form teams during the tutorial</span>
@@ -139,10 +207,10 @@ week13: [
 {{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Module Policies → Policy on Deadline Extensions**", "3", indent="2", type="primary") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_submit_midterm_feedback_for_the_module">[optional] Submit mid-term feedback for the module</span>
+<span id="heading_submit_midterm_feedback_for_the_module">[optional] Submit mid-term feedback to tutors</span>
 <span id="desc_submit_midterm_feedback_for_the_module">
 
-* **An anonymous survey to submit feedback about the teaching team** will open on LumiNUS around Monday. You will receive an email when it opens. Please take a few minutes to give feedback to your tutors.
+* **An anonymous survey to submit feedback about tutors** will open on LumiNUS by Monday. Please take a few minutes to give feedback to your tutors.
 </span>
 {#====================================================================================================================#}
 <span id="heading_submit_midterm_peer_evaluations">Submit Midterm Peer Evaluations on TEAMMATES</span>
@@ -156,7 +224,7 @@ week13: [
 <span id="heading_submit_final_peer_evaluations">Submit Final Peer Evaluation on TEAMMATES</span>
 <span id="desc_submit_final_peer_evaluations">
 
-* Submission will open on Tuesday morning (after the final submission deadline).
+* Submission will open on Sunday morning (after the final submission deadline).
 
 {{ embed_topic("peerEvaluations.md#finalPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Final Peer Evaluation", "1", indent="2", status="expanded") }}
 </span>
@@ -164,10 +232,10 @@ week13: [
 {#====================================================================================================================#}
 
 {% macro show_weekly_admin_tasks(week_num) %}
-{{ show_xp_page(week_num, admin_schedule['week' + week_num], '../../admin/admin-tasks.mbdf') }}
+{{ show_xp_page(week_num, cs2113_admin_schedule['week' + week_num], '../../admin/admin-tasks.mbdf') }}
 
-{% set admin_topics_to_show = admin_topics_to_read['week' + week_num] %}
+{% set admin_topics_to_show = cs2113_admin_topics_to_read['week' + week_num] %}
 {% if (admin_topics_to_show | length) != 0 %}
-{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read['week' + week_num], is_flat=false ) }}
+{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_show, is_flat=false ) }}
 {% endif %}
 {% endmacro %}
