@@ -1,14 +1,14 @@
 <!-- ===========================  primary module configuration ============================================= -->
 
-<variable name="module">CS2103</variable>
+<variable name="module">CS2113</variable>
 <variable name="module_pair">{{ module }}/T</variable>
-<variable name="module_name">Software Engineering</variable>
-<variable name="module_color">success</variable>
+<variable name="module_name">Software Engineering & Object-Oriented Programming</variable>
+<variable name="module_color">primary</variable>
 
 <variable name="S">1</variable>
 <variable name="semester">AY2021S{{ S }}</variable>
 <variable name="period">2020 Aug-Dec</variable>
-<variable name="current_week">-1</variable>
+<variable name="current_week">0</variable>
 
 <variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
 <variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
@@ -31,10 +31,10 @@
 
 <variable name="tp_first_week">3</variable>
 <variable name="version_practice">v1.1</variable>
-<variable name="version_first">v1.2</variable>
-<variable name="version_penultimate">v1.3</variable>
-<variable name="version_final">v1.4</variable>
-<variable name="version_future">v2.0</variable>
+<variable name="version_first">v1.0</variable>
+<variable name="version_penultimate">v2.0</variable>
+<variable name="version_final">v2.1</variable>
+<variable name="version_future">v3.0</variable>
 <variable name="example_team_id">{{ module }}-T09-2</variable>
 
 <variable name="date_final_submission">2020-11-09</variable>
@@ -42,9 +42,9 @@
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
 
-<variable name="marks_ip">30</variable>
-<variable name="marks_ip_implementation">15</variable>
-<variable name="marks_ip_pm">10</variable>
+<variable name="marks_ip">20</variable>
+<variable name="marks_ip_implementation">10</variable>
+<variable name="marks_ip_pm">5</variable>
 <variable name="marks_ip_documentation">5</variable>
 <variable name="marks_tp">45</variable>
 <variable name="marks_tp_design">5</variable>
@@ -54,8 +54,8 @@
 <variable name="marks_tp_pm_individual">5</variable>
 <variable name="marks_tp_pm_team">5</variable>
 <variable name="marks_tp_qa">10</variable>
-<variable name="marks_tp_individual">35</variable>
-<variable name="marks_tp_team">10</variable>
+<variable name="marks_tp_individual">40</variable>
+<variable name="marks_tp_team">5</variable>
 <variable name="marks_participation">5</variable>
 <variable name="marks_exam">30</variable>
 <variable name="marks_exam_essay">0</variable>
