@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.14.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2113/T - Week 9 - Tutorial</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="stylesheet" href="/website/css/schedule.css">
+  <link rel="icon" href="/website/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header fixed>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Aug-Dec</small></span></a>
+        <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
+          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
+          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
+          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
+          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
+          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
+          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
+          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
+          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
+          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
+          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
+          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li>
+        </dropdown>
+        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">**Links**</div>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
+          <li><a href="https://github.com/nus-cs2113-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="https://gitter.im/nus-cs2113-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
+          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
+          <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+          <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
+          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/forum-activities.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
+          <hr>
+          <span><strong> Individual Project (iP):</strong></span>
+          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/ip-progress.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
+          <hr>
+          <span><strong> Team Project (tP):</strong></span>
+          <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+
+          <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+
+      <div id="content-wrapper">
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/website/schedule/week8"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week9/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week9/admin.html"><span><span><span aria-hidden="true" class="fas fa-info-circle"></span></span></span> Admin Info</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week9/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week9/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
+              <li class="page-item active"><a class="page-link" href="/website/schedule/week9/tutorial.html"><span><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span></span> Tutorial</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week10"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-9-fri-oct-9th-tutorial">Week 9 <small><small><span class="dimmed">[Fri, Oct 9th]</span> - Tutorial</small></small><span id="week-9-fri-oct-9th-tutorial" class="anchor"></span><a class="fa fa-anchor" href="#week-9-fri-oct-9th-tutorial" onclick="event.stopPropagation()"></a></h1>
+          <div>
+
+            <h4 id="1-demo-an-assertion-failure"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Demo an assertion failure<span id="1-demo-an-assertion-failure" class="anchor"></span><a class="fa fa-anchor" href="#1-demo-an-assertion-failure" onclick="event.stopPropagation()"></a></h4>
+            <div>
+              <ul>
+                <li>Temporarily edit the tP code to cause an assertion failure. Demo the assertion failure by running the app.<br>
+                  For example, you can add the following assertion at the start of the <code v-pre>main</code> method and then run <code v-pre>gradlew run</code>.<div class="code-block">
+                    <div class="code-block-heading"><span>your main class</span></div>
+                    <div class="code-block-content">
+                      <pre><code class="no-line-numbers hljs java" heading="your main class" v-pre><span>...<br></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{<br></span><span class="highlighted">    <span class="hljs-keyword">assert</span> <span class="hljs-keyword">false</span> : <span class="hljs-string">"dummy assertion set to fail"</span>;<br></span><span>    ...<br></span><span>}<br></span></code></pre>
+                    </div>
+                  </div>
+                </li>
+                <li>Post a screenshot of the assertion failure in the <em>tutorial workspace</em> document.</li>
+              </ul>
+            </div>
+            <h4 id="2-exercise-interpret-an-intermediate-level-cd"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Exercise: interpret an intermediate level CD<span id="2-exercise-interpret-an-intermediate-level-cd" class="anchor"></span><a class="fa fa-anchor" href="#2-exercise-interpret-an-intermediate-level-cd" onclick="event.stopPropagation()"></a></h4>
+            <div>
+              <ul>
+                <li><span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> 10 minutes</span></span> With the tutor's guidance, interpret the following class diagram, focusing on the new CD notations that you learned this week.</li>
+              </ul>
+              <div class="indented-level2">
+                <div>
+                  <panel class="algolia-no-index"><template slot="_header">
+                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain notations in the class diagram</p>
+                    </template>
+                    <question>
+                      <p>Explain the meaning of various class diagram notations in the following class diagram:</p>
+                      <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="750">
+                    </question>
+                  </panel>
+                </div>
+                <p></p>
+              </div>
+              <ul>
+                <li>Some questions you can try to answer:
+                  <ol>
+                    <li>What does this mean? <img src="/website/admin/images/interpret-module-cd/extract-interface.png"></li>
+                    <li>What does this mean? <img src="/website/admin/images/interpret-module-cd/extract-inheritance.png"></li>
+                    <li>Of the above two, why the lines in one are dashed?</li>
+                    <li>What does this mean? <img src="/website/admin/images/interpret-module-cd/extract-dependence.png"></li>
+                    <li>What's the difference (w.r. t. what it means) between the above and a normal association?</li>
+                    <li>What does this mean? <img src="/website/admin/images/interpret-module-cd/extract-composition.png"></li>
+                    <li>What's the difference if the diamond is empty?</li>
+                    <li>Can a <code v-pre>PR</code> object exist without any <code v-pre>Commit</code> objects attached to it?</li>
+                    <li>Can a <code v-pre>Commit</code> object exist without a corresponding <code v-pre>PR</code> object?</li>
+                    <li>A <code v-pre>Student</code> can belong to how many teams?<img src="/website/admin/images/interpret-module-cd/extract-team.png"></li>
+                    <li>A <code v-pre>Team</code> can have how many <code v-pre>Student</code> objects?</li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+            <h4 id="3-exercise-draw-an-intermediate-level-cd"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Exercise: draw an intermediate level CD<span id="3-exercise-draw-an-intermediate-level-cd" class="anchor"></span><a class="fa fa-anchor" href="#3-exercise-draw-an-intermediate-level-cd" onclick="event.stopPropagation()"></a></h4>
+            <div>
+
+
+              <div class="indented">
+                <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Question adapted from past exam paper.</p>
+              </div>
+              <ul>
+                <li><span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> 15 minutes</span></span> <strong>Each student do the part (a)</strong> of the following exercise, by <mark>hand-drawing</mark> the answer.
+                  <ul>
+                    <li>Use the following layout:<br>
+                      <img src="/website/admin/images/draw-stock-cd/classLayout.png" width="600"></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="indented-level2">
+                <div>
+                  <panel class="algolia-no-index"><template slot="_header">
+                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Class Diagram for the code (<code v-pre>StokItem</code>, <code v-pre>Inventory</code>, <code v-pre>Review</code> etc.)</p>
+                    </template>
+                    <question>
+                      <p>Consider the code below:</p>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span><br></span><span><span class="hljs-class">         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> Review review;<br></span><span>    <span class="hljs-keyword">private</span> String name;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(</span></span><br></span><span><span class="hljs-function"><span class="hljs-params">        String name, Rating rating)</span></span>{<br></span><span><br></span><span>        <span class="hljs-keyword">this</span>.name = name;<br></span><span>        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                        </div>
+                        <div class="col-sm-6">
+                          <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {<br></span><span>    GOOD, OK, POOR<br></span><span>}<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.rating = rating;<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.util.List;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-keyword">return</span> items.size();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{<br></span><span>        items.add(s);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                        </div>
+                      </div>
+                      <p>(a) Draw a class diagram to represent the code. Show all attributes, methods, associations, navigabilities, visibilities, known multiplicities, and association roles. Show associations as lines.<br>
+                        (b) Draw an object diagram to represent the situation where the inventory has one item with a name <code v-pre>spanner</code> and a review of <code v-pre>POOR</code> rating.</p>
+                    </question>
+                  </panel>
+                </div>
+                <p></p>
+                <ul>
+                  <li>Paste the diagram (take a photo if you drew on paper) in the <em>tutorial workspace</em> document.</li>
+                  <li><span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> 10 minutes</span></span> <strong>Discuss answers</strong> as guided by the tutor.</li>
+                  <li><span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> 10+5=15 minutes</span></span> <strong>Do part (b)</strong> in the same manner.</li>
+                </ul>
+              </div>
+
+              <div id="demo-test-coverage">
+                <ul>
+                  <li>Measure test coverage in your own IDE. Take a screenshot showing test coverage details such as lines covered, lines not covered, percentage of coverage for different files etc.</li>
+                  <li>Post a screenshot in the <em>tutorial workspace</em> document. An example is given below:<br>
+                    <pic src="/website/admin/images/demo-test-coverage/CoverageReportExample.png"></pic>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="interpret-parserfactory-sd">
+                <ul>
+                  <li>Do the following exercise, as guided by the tutor.</li>
+                </ul>
+                <div class="indented-level2">
+                  <div>
+                    <panel class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code v-pre>ParserFactory</code>)</p>
+                      </template>
+                      <question>
+                        <p>Explain the interactions depicted in this sequence diagram.</p>
+                        <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
+                        <p></p>
+                        <div slot="hint" class="algolia-no-index">
+                          <p>First, the <code v-pre>createParser()</code> method of an existing <code v-pre>ParserFactory</code> object is called. Then, ...</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <p></p>
+                </div>
+              </div>
+
+              <div id="draw-quote-sd">
+                <ul>
+                  <li>Do following exercise. Remember to hand-draw the diagram and post a scan/photo in the <em>tutorial workspace</em> after you ar done.</li>
+                </ul>
+                <div class="indented-level2">
+                  <div>
+                    <panel class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Sequence Diagram for printing a quote</p>
+                      </template>
+                      <question>
+                        <p>Draw a sequence diagram to represent this code snippet.</p>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">if</span> (isFirstPage) {<br></span><span>    <span class="hljs-keyword">new</span> Quote().print();<br></span><span>}<br></span></code></pre>
+                        <p>The <code v-pre>Quote</code> class:</p>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{<br></span><span><br></span><span>    String q;<br></span><span><br></span><span>    Quote(){<br></span><span>        q = generate();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{<br></span><span>        System.out.println(q);<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre>
+                        <div slot="hint" class="algolia-no-index">
+                          <ul>
+                            <li>Show <code v-pre>new Quote().print();</code> as two method calls.</li>
+                            <li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code v-pre>print()</code> method is called.</li>
+                          </ul>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <p></p>
+                </div>
+                <ul>
+                  <li>Discuss answers, as guided by the tutor.</li>
+                </ul>
+              </div>
+
+              <div id="review_others_dg">
+                <box type="info">
+                  Do the following tP task.
+                </box>
+                <div>
+
+                  <ul>
+                    <li>To be done during the tutorial. Please don't do this task before the tutorial as others need time to update their DGs.</li>
+                    <li><mark>Read <em>all</em> instructions</mark> before you start the activity.</li>
+                    <li><strong>Find the team choices you have been allocated to review</strong>, as given in the panel below.</li>
+                  </ul>
+                  <div class="indented-level2">
+                    <panel class="algolia-no-index"><template slot="_header">
+                        <p>Allocation for DG review</p>
+                      </template>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>Your GitHub</th>
+                              <th>First choice</th>
+                              <th>Second choice</th>
+                              <th>Third choice</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><code v-pre>A11riseforme</code></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>Anqi-nus</code></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>Bencotti</code></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>DDzuikeai</code></td>
+                              <td><code v-pre>CS2113T-T13-2</code> <a href="https://AY2021S1-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>DeetoMok</code></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>GanapathySanathBalaji</code></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>HAOYUN49</code></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>JLoh579</code></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>JTWang2000</code></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>Janicetyy</code></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-2</code> <a href="https://AY2021S1-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>JensonWee</code></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>JeremiasLiew</code></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>Jeremy733</code></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-2</code> <a href="https://AY2021S1-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>JosephLimWeiJie</code></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>JustinnT</code></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>Keith-JK</code></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>MeLoveCarbs</code></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>NizarMohd</code></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>NyanWunPaing</code></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-2</code> <a href="https://AY2021S1-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>RenzoTsai</code></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>Shannonwje</code></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>SibingWu</code></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>Yukilite</code></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>Zhilin-Huang</code></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>alaukiknpant</code></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>alexlim510</code></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>alwayshuizhen</code></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>ananda-lye</code></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>andy-aw-why</code></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>benchan911</code></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>bennychanya</code></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>brandoncjh</code></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>btricec</code></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>chengTzeNing</code></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>cheongisabella</code></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>dejunnn</code></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>e0309556</code></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>g-lilian</code></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>gmuthu17</code></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>harithadiv</code></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>hongquan448</code></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>iceclementi</code></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>itskesin</code></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-2</code> <a href="https://AY2021S1-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>jiajuinphoon</code></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>jichngan</code></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>jinfayap</code></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>joelczk</code></td>
+                              <td><code v-pre>CS2113-T14-1</code> <a href="https://AY2021S1-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>katelo731</code></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>kcubey</code></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>kokjoon97</code></td>
+                              <td><code v-pre>CS2113-T14-4</code> <a href="https://AY2021S1-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>lamyuewei</code></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>lowjiayee</code></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>lowxizhi</code></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-2</code> <a href="https://AY2021S1-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>lwxymere</code></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>matthewc97</code></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>melylopez99</code></td>
+                              <td><code v-pre>CS2113T-T13-2</code> <a href="https://AY2021S1-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>nguan1</code></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>nigellenl</code></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>quinnyyy</code></td>
+                              <td><code v-pre>CS2113T-T13-2</code> <a href="https://AY2021S1-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>rdimaio</code></td>
+                              <td><code v-pre>CS2113T-T12-2</code> <a href="https://AY2021S1-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>rsanchez-macias</code></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>sitinadiah25</code></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-2</code> <a href="https://AY2021S1-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>siuhian</code></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>sliu107</code></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>synCKun</code></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>terrytay</code></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>thanhduc2000</code></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>trishaangelica</code></td>
+                              <td><code v-pre>CS2113T-M16-2</code> <a href="https://AY2021S1-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-1</code> <a href="https://AY2021S1-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>wangqinNick</code></td>
+                              <td><code v-pre>CS2113-T14-2</code> <a href="https://AY2021S1-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-4</code> <a href="https://AY2021S1-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>yantingsanity</code></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-1</code> <a href="https://AY2021S1-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>yolanmz</code></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-2</code> <a href="https://AY2021S1-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>yuchenlichuck</code></td>
+                              <td><code v-pre>CS2113T-T13-2</code> <a href="https://AY2021S1-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T15-3</code> <a href="https://AY2021S1-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-M16-1</code> <a href="https://AY2021S1-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>yuxianglim</code></td>
+                              <td><code v-pre>CS2113T-T12-3</code> <a href="https://AY2021S1-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113-T14-3</code> <a href="https://AY2021S1-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                            <tr>
+                              <td><code v-pre>zi-hui</code></td>
+                              <td><code v-pre>CS2113T-T12-1</code> <a href="https://AY2021S1-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T13-3</code> <a href="https://AY2021S1-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+" class="badge badge-primary">PR</a></td>
+                              <td><code v-pre>CS2113T-T12-4</code> <a href="https://AY2021S1-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY2021S1/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+" class="badge badge-primary">PR</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </panel>
+                  </div>
+                  <ul>
+                    <li>
+                      <p><strong>Decide which of the given team(s) to review</strong>:</p>
+                      <ul>
+                        <li>Open the <span class="badge badge-primary">DG</span> link of the team allocated as 'First choice'.</li>
+                        <li>Confirm that the DG has significant updates, to the diagrams in particular. If it doesn't, you can try the DG of the 'Second choice' team, and failing that, 'Third choice' team.</li>
+                        <li>If neither <em>one</em> of the three has enough updates but collectively they have enough updates, you can also review all of them.</li>
+                        <li>Failing all above, you can pick any other team(s) to review.</li>
+                        <li>Try to give at least 4 comments in total.</li>
+                        <li>If the PR already has reviews, you can give your own input of the existing review comments too.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Go to the <span class="badge badge-primary">PR</span></strong> of the team(s) you have chosen to review.</p>
+                    </li>
+                    <li>
+                      <p><strong>Review the <code v-pre>Design</code> and the <code v-pre>Implementation</code> sections w.r.t possible DG bugs</strong> (given further down); add your observations as comments.<br></p>
+                    </li>
+                  </ul>
+                  <div class="indented-level2">
+                    <box>
+                      <ul>
+                        <li>In the PR, add <em>review comments</em> (i.e., in the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-diff" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M8.75 1.75a.75.75 0 00-1.5 0V5H4a.75.75 0 000 1.5h3.25v3.25a.75.75 0 001.5 0V6.5H12A.75.75 0 0012 5H8.75V1.75zM4 13a.75.75 0 000 1.5h8a.75.75 0 100-1.5H4z" /></svg> files changed</small></span> tab) in the corresponding place of the code.
+                          <ul>
+                            <li>In this case, choose the <button type="button" class="btn btn-success btn-sm ">Start a review</button> option rather than <button type="button" class="btn btn-light btn-sm border">Add single comment</button> option.</li>
+                          </ul>
+                        </li>
+                        <li>But <mark>if the 'files changed' tab is too laggy, you can add a normal comment instead</mark> in the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment-discussion" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M1.5 2.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v5.5a.25.25 0 01-.25.25h-3.5a.75.75 0 00-.53.22L3.5 11.44V9.25a.75.75 0 00-.75-.75h-1a.25.25 0 01-.25-.25v-5.5zM1.75 1A1.75 1.75 0 000 2.75v5.5C0 9.216.784 10 1.75 10H2v1.543a1.457 1.457 0 002.487 1.03L7.061 10h3.189A1.75 1.75 0 0012 8.25v-5.5A1.75 1.75 0 0010.25 1h-8.5zM14.5 4.75a.25.25 0 00-.25-.25h-.5a.75.75 0 110-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0114.25 12H14v1.543a1.457 1.457 0 01-2.487 1.03L9.22 12.28a.75.75 0 111.06-1.06l2.22 2.22v-2.19a.75.75 0 01.75-.75h1a.25.25 0 00.25-.25v-5.5z" /></svg> conversation</small></span> tab.<br>
+                          <ul>
+                            <li>In this case, enter each observation as a separate comment <span class="dimmed">(reason: our bot will count the number of comments you have given to determine if you qualify for participation points)</span></li>
+                          </ul>
+                        </li>
+                        <li>As you know, it is better to phrase your comments as question/doubts (e.g., <code v-pre>Is this format correct? Should it be ... instead?</code>) rather than directives (e.g., <code v-pre>Change this to ...</code>).<br>
+                          Where possible, use screenshots from their DG in your comments, preferably with annotations. This is particularly useful when commenting on diagrams. An example given below:<br>
+                          <img src="/website/admin/images/ReviewCommentExample.png"></li>
+                        <li>The understanding you gain from this exercise can indirectly determine how well you do in your own project. Note that your comments will be reviewed by a tutor later.</li>
+                      </ul>
+                    </box>
+                    <box border-left-color="green">
+                      <h5 id="dg-possible-bugs"><span class="text-success">DG - Possible Bugs</span><span id="dg-possible-bugs" class="anchor"></span><a class="fa fa-anchor" href="#dg-possible-bugs" onclick="event.stopPropagation()"></a></h5>
+                      <p>
+                        <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Pay attention to these as they are same as the final evaluation criteria of the DG.<br>
+                      </p>
+                      <div class="indented-level1">
+                        <panel type="danger" class="embedding" expanded><template slot="_header">
+                            <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → DG Bugs → UML Diagrams → Possible Bugs <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                          </template>
+                          <div>
+                            <p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
+                            <ul>
+                              <li>Notation incorrect or not compliant with the notation covered in the module.</li>
+                              <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
+                              <li>The diagram used is not suitable for the purpose it is used.</li>
+                              <li>The diagram is too complicated.</li>
+                            </ul>
+                          </div>
+                        </panel>
+                      </div>
+                      <p></p>
+                      <div class="indented-level1">
+                        <panel type="danger" class="embedding" expanded><template slot="_header">
+                            <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → General Documentation Bugs <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                          </template>
+                          <div>
+                            <span id="visualsBugs">
+                              <p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                              <ul>
+                                <li>Not enough visuals e.g., screenshots/diagrams</li>
+                                <li>The visuals are not well integrated to the explanation</li>
+                                <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                                </li>
+                              </ul>
+                            </span>
+                            <span id="examplesBugs">
+
+                              <p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                              <ul>
+                                <li>Not enough or too many examples e.g., sample inputs/outputs
+                                </li>
+                              </ul>
+                            </span>
+                            <span id="explanationBugs">
+
+                              <p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                              <ul>
+                                <li>The explanation is too brief or unnecessarily long.</li>
+                                <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                                </li>
+                              </ul>
+                            </span>
+                            <span id="neatnessBugs">
+
+                              <p><span aria-hidden="true" class="fas fa-bug"></span> Neatness/correctness:</p>
+                              <ul>
+                                <li>looks messy</li>
+                                <li>not well-formatted</li>
+                                <li>broken links, other inaccuracies, typos, etc.
+                                </li>
+                              </ul>
+                            </span></div>
+                        </panel>
+                      </div>
+                      <p></p>
+                      <p>Also see:</p>
+                      <div class="indented-level1">
+                        <panel type="success" class="embedding" expanded><template slot="_header">
+                            <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP: Deliverables → DG → Tips <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                          </template>
+                          <div>
+                            <ul>
+                              <li><strong>Aim to showcase your documentation skills.</strong> The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v2.1 (hypothetically).<br>
+                                For an example, see <a href="https://nus-cs2113-ay2021s1.github.io/tp/DeveloperGuide.html#proposed-undoredo-feature">the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide</a>.</li>
+                              <li><strong>Diagramming tools</strong>:
+                                <ul>
+                                  <li>
+                                    <p>AB3 uses PlantUML (see the guide <a href="https://se-education.org/guides/tutorials/plantUml.html"><em>Using PlantUML</em> @SE-EDU/guides</a> for more info).<br></p>
+                                  </li>
+                                  <li>
+                                    <p>You may use any other tool too (e.g., PowerPoint). But if you do, note the following:<br>
+                                      <mark>Choose a diagramming tool that allows incremental updates</mark> to diagrams <span class="dimmed">(reason: because diagrams need to be updated multiple times as the product evolves)</span>. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams later.</p>
+                                  </li>
+                                  <li>
+                                    <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Can IDE-generated UML diagrams be used in project submissions? Not a good idea. Given are three reasons each of which can be reported by evaluators as 'bugs' in your diagrams, costing you marks:</p>
+                                    <ul>
+                                      <li>They often don't follow the standard UML notation (e.g., they add extra icons).</li>
+                                      <li>They tend to include <em>every</em> little detail whereas we want to limit UML diagrams to important details only, to improve readability.</li>
+                                      <li>Diagrams reverse-engineered by an IDE might not represent the actual design as some design concepts cannot be deterministically identified from the code. e.g., differentiating between multiplicities <code v-pre>0..1</code> vs <code v-pre>1</code>, composition vs aggregation</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li><strong>Use multiple UML diagram types.</strong> Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.</li>
+                              <li><strong>Keep diagrams simple.</strong> The aim is to make diagrams <mark><em>comprehensible</em>, not necessarily <em>comprehensive</em></mark>.<br>
+                                Ways to simplify diagrams:
+                                <ul>
+                                  <li><strong>Omit less important details</strong>. Examples:
+                                    <ul>
+                                      <li>a class diagram can omit minor utility classes, private/unimportant members; some less-important associations can be shown as attributes instead.</li>
+                                      <li>a sequence diagram can omit less important interactions, self-calls.</li>
+                                    </ul>
+                                  </li>
+                                  <li><strong>Omit repetitive details</strong> e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <span trigger="click" for="modal:ipWeek10-logicClassDiagram" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipWeek10-logicClassDiagram'].show()" class="trigger-click">AB3 Logic class diagram</span> shows concrete <code v-pre>*Command</code> classes).</li>
+                                  <li><strong>Limit the scope of a diagram.</strong> Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not related to it.</li>
+                                  <li><strong>Break diagrams into smaller fragments</strong> when possible.
+                                    <ul>
+                                      <li>If a component has a lot of classes, consider further dividing into sub-components (e.g., a Parser sub-component inside the Logic component). After that, sub-components can be shown as black-boxes in the main diagram and their details can be shown as separate diagrams.</li>
+                                      <li>You can use <code v-pre>ref</code> frames to break sequence diagrams to multiple diagrams.</li>
+                                    </ul>
+                                  </li>
+                                  <li><strong>Use visual representations</strong> as much as possible. E.g., show associations and navigabilities using lines and arrows connecting classes, rather than adding a variable in one of the classes.</li>
+                                  <li>For some more examples, see <span trigger="click" for="modal:ipWeek10-umlExamples" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipWeek10-umlExamples'].show()" class="trigger-click">here</span>.</li>
+                                </ul>
+                              </li>
+                              <li><strong>Integrate diagrams into the description.</strong> Place the diagram close to where it is being described.</li>
+                              <li><strong>Use code snippets sparingly.</strong> The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only.</li>
+                              <li><strong>Resize diagrams</strong> so that the text size in the diagram matches the the text size of the main text of the diagram. See <span trigger="click" for="modal:ipWeek10-diagramSizeNegative" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipWeek10-diagramSizeNegative'].show()" class="trigger-click">example</span>.</li>
+                            </ul>
+                            <b-modal id="modal:ipWeek10-umlExamples" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-umlExamples" class="algolia-no-index"><template slot="modal-title">UML Diagrams: Negative Examples </template>
+                              <p>These class diagrams seem to have lot of member details, which can get outdated pretty quickly:<br>
+                                <img src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750"><br>
+                                <img src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750"></p>
+                              <hr>
+                              This class diagram seems to have too many classes:
+                              <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/ModelClassDiagram.png" width="750">
+                              <hr>
+                              These sequence diagrams are bordering on 'too complicated':
+                              <img src="https://cs2103-ay1819s1-w13-1.github.io/main/images/TagCommandSequenceDiagram.png" width="750">
+                              <p></p>
+                              <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750">
+                            </b-modal>
+                            <b-modal id="modal:ipWeek10-diagramSizeNegative" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-diagramSizeNegative" class="algolia-no-index"><template slot="modal-title">Diagram resizing: a negative example</template>
+                              <p>In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br>
+                                <img src="/website/admin/images/diagramSizeNegativeExample.png" width="200"><br>
+                                It will look more 'polished' if the two text sizes match.
+                              </p>
+                            </b-modal>
+                            <p></p>
+                            <b-modal id="modal:ipWeek10-logicClassDiagram" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-logicClassDiagram" class="algolia-no-index"><template slot="modal-title">AB3 - Class Diagram of the Logic Component</template>
+                              <img src="https://se-education.org/addressbook-level3/images/LogicClassDiagram.png" width="900"></b-modal>
+                            <b-modal id="modal:ipWeek10-deleteSd" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-deleteSd" class="algolia-no-index"><template slot="modal-title">AB3 - Sequence Diagram for the <code v-pre>delete</code> command</template>
+                              <img src="https://se-education.org/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"></b-modal>
+                            <b-modal id="modal:ipWeek10-archiSd" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-archiSd" class="algolia-no-index"><template slot="modal-title">AB3 - Architecture-Level Sequence Diagram</template>
+                              <img src="https://se-education.org/addressbook-level3/images/ArchitectureSequenceDiagram.png"></b-modal>
+                          </div>
+                        </panel>
+                      </div>
+                      <p></p>
+                    </box>
+                  </div>
+
+                  <ul>
+                    <li><strong>After the tutorial</strong>, if you are unsure about a concern raised by a reviewer, you can post in the <a href="https://github.com/nus-cs2113-AY2021S1/forum/issues">forum</a> to seek the opinion of the teaching team.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="design-test-cases-isvalidday">
+                <ul>
+                  <li><s>Divide into two sub-teams and do the following exercises on the white board.</s></li>
+                </ul>
+                <div class="indented-level2">
+                  <div>
+                    <panel class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Design test cases for the <code v-pre>day</code> parameter</p>
+                      </template>
+                      <question>
+                        <ol>
+                          <li>What are the EPs for the parameter <code v-pre>day</code> of this method?
+                            <pre><code class="hljs java" v-pre><span><span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"> * Returns true if the three values represent a valid day</span><br></span><span><span class="hljs-comment"> */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidDay</span><span class="hljs-params">(<span class="hljs-keyword">int</span> year, <span class="hljs-keyword">int</span> month, <span class="hljs-keyword">int</span> day)</span></span>{<br></span><span><br></span><span>} <br></span></code></pre>
+                          </li>
+                          <li>What are the boundary values for the parameter <code v-pre>day</code> in the question above?</li>
+                        </ol>
+                      </question>
+                    </panel>
+                  </div>
+                </div>
+
+                <div id="no-tutorial-take-a-break">
+                  <box type="info">
+                    <p>No tutorial this week. <strong>Take a break</strong> and prepare for the last burst of tP activities coming up soon.</p>
+                  </box>
+                </div>
+
+                <div id="tp-project-demo">
+                  <box type="info">
+                    <p>This tutorial is used for tP project demos. Demo instructions are repeated below for your easy reference.
+                    </p>
+                  </box>
+                  <p></p>
+                  <div>
+                    <div class="indented-level2">
+                      <p><img src="/website/admin/images/v05demo.png" style="width: 250px"></p>
+                      <p></p>
+                      <p></p>
+                      <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                          <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Demo <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                        </template>
+                        <div>
+                          <div>
+                            <ul>
+                              <li><strong>Record a demo</strong> of all the product features, in a reasonable order.
+                                <ul>
+                                  <li>You may choose to screen record each feature and tie it up (see the &quot;Suggested tools&quot; below for options), OR</li>
+                                  <li>Schedule + record a zoom meeting within the team, where you share your screens and do the demo.</li>
+                                </ul>
+                              </li>
+                              <li><strong>The quality of the demo will not affect marks</strong> as long as it serves the purpose (i.e., demonstrates the product features). Hence, don't waste too much time on creating the video.</li>
+                              <li><strong>Audio explanations</strong> are strongly encouraged (but not compulsory) -- alternatively, you can switch between slides and the app to give additional explanations.</li>
+                              <li><strong>Annotations and other enhancements</strong> to the video are optional (those will not earn any extra marks).</li>
+                              <li><strong>All members taking part</strong> in the demo video is encouraged but not compulsory.</li>
+                              <li><strong>File name:</strong> <code v-pre>[TEAM_ID][product Name].mp4</code> <span class="dimmed">e.g.[CS2113-T09-2][Contacts Plus].mp4</span> (other video formats are acceptable but use a format that works on all major OS'es).</li>
+                              <li><strong>File size:</strong> Recommended to keep below 200Mb. You can use a low resolution as long as the video is in usable quality.</li>
+                              <li><strong>Submission:</strong> Submit to LumiNUS (different folder).</li>
+                              <li><strong>Deadline:</strong> 2 days after the main deadline</li>
+                              <li><strong>Suggested tools:</strong>
+                                <ul>
+                                  <li>Ink2Go: You can use this to record your screen and annotate if necessary. <a href="https://wiki.nus.edu.sg/display/cit/Ink2go+Instructions+for+Students">Here</a> are some instructions from NUS CIT to help you get started.</li>
+                                  <li><a href="https://handbrake.fr/">Handbrake</a>: A free/open-source tool to help convert videos to MP4.</li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <h4 id="demo-duration"><span class="badge badge-info">Demo</span> <span class="text-info">Duration</span><span id="demo-duration" class="anchor"></span><a class="fa fa-anchor" href="#demo-duration" onclick="event.stopPropagation()"></a></h4>
+                            <ul>
+                              <li><strong>Strictly 18 minutes for a 5-person team, 15 minutes for a 4-person team</strong>, 21 minutes for a 6-person team. Exceeding this limit will be penalized.</li>
+                            </ul>
+
+                            <h4 id="demo-target-audience"><span class="badge badge-info">Demo</span> <span class="text-info">Target audience</span><span id="demo-target-audience" class="anchor"></span><a class="fa fa-anchor" href="#demo-target-audience" onclick="event.stopPropagation()"></a></h4>
+                            <ul>
+                              <li><strong>Assume you are giving a demo to a higher-level manager of your company</strong>, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed. The actual audience are the evaluators (the team supervisor and another tutor).</li>
+                            </ul>
+                            <h4 id="demo-scope"><span class="badge badge-info">Demo</span> <span class="text-info">Scope</span><span id="demo-scope" class="anchor"></span><a class="fa fa-anchor" href="#demo-scope" onclick="event.stopPropagation()"></a></h4>
+                            <ul>
+                              <li><mark><strong>Start by giving an overview of the product</strong></mark> so that the evaluators get a sense of the full picture early. Include the following:
+                                <ul>
+                                  <li><strong>What</strong> is it? <span class="dimmed">e.g., FooBar is a product to ensure the user takes frequent standing-breaks while working.</span></li>
+                                  <li><strong>Who</strong> is it for? <span class="dimmed">e.g., It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods of sitting.</span></li>
+                                  <li><strong>How</strong> does it help? Give an overview of how the product's features help to solve the target problem for the target user</li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <div class="indented-level2">
+                              <box>
+                                <p>Here is an example:</p>
+                                <pre><code class="no-line-numbers hljs" v-pre><span>Hi, welcome to the demo of our product FooBar. It is a product to ensure the user takes<br></span><span>frequent standing-breaks while working.<br></span><span>It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods<br></span><span>of sitting.<br></span><span>The user first sets the parameters such as frequency and targets, and then enters a<br></span><span>command to record the start of the sitting time, ... The app shows the length of the<br></span><span>sitting periods, and alerts the user if ...<br></span><span>...<br></span></code></pre>
+                              </box>
+                            </div>
+                            <ul>
+                              <li>There is no need to introduce team members or explain who did what. <span class="dimmed">Reason: to save time.</span></li>
+                            </ul>
+
+                            <ul>
+                              <li><strong>Present the features in a reasonable order</strong>: Organize the demo to present a cohesive picture of the product as a whole, presented in a logical order.</li>
+                              <li><strong>No need to cover design/implementation details</strong> as the manager is not interested in those details.</li>
+                            </ul>
+                            <h4 id="demo-structure"><span class="badge badge-info">Demo</span> <span class="text-info">Structure</span><span id="demo-structure" class="anchor"></span><a class="fa fa-anchor" href="#demo-structure" onclick="event.stopPropagation()"></a></h4>
+                            <ul>
+                              <li><strong>Demo the product using the same executable</strong> you submitted </li>
+                              <li><strong>Use a sufficient amount of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code v-pre>Mr aaa</code> is not a realistic person name</span><em>realistic</em></span> demo data.</strong> <span class="dimmed">e.g at least 20 data items</span>. Trying to demo a product using just 1-2 sample data creates a bad impression.</li>
+                            </ul>
+
+                            <h4 id="demo-tips"><span class="badge badge-info">Demo</span> <span class="text-info">Tips</span><span id="demo-tips" class="anchor"></span><a class="fa fa-anchor" href="#demo-tips" onclick="event.stopPropagation()"></a></h4>
+                            <ul>
+                              <li><strong>Plan the demo to be in sync with the impression you want to create.</strong> For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </panel>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#week-9-fri-oct-9th-tutorial">Week 9 [Fri, Oct 9th] - Tutorial&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#1-demo-an-assertion-failure">1 Demo an assertion failure&#x200E;</a>
+              <a class="nav-link py-1" href="#2-exercise-interpret-an-intermediate-level-cd">2 Exercise: interpret an intermediate level CD&#x200E;</a>
+              <a class="nav-link py-1" href="#3-exercise-draw-an-intermediate-level-cd">3 Exercise: draw an intermediate level CD&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+
+      <div class="text-center">
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Mon, 20 Jul 2020, 0:00:12 GMT+8]</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/website'
+  const enableSearch = true
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "3855d3d0d62585efc4f4841564bc73ca",
+      indexName: "nus-cs2113-ay1920s2",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>

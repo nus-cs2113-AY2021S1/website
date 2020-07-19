@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.14.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2113/T - Week 7 - Topics</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="stylesheet" href="/website/css/schedule.css">
+  <link rel="icon" href="/website/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header fixed>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Aug-Dec</small></span></a>
+        <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
+          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
+          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
+          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
+          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
+          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
+          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
+          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
+          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
+          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
+          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
+          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li>
+        </dropdown>
+        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">**Links**</div>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
+          <li><a href="https://github.com/nus-cs2113-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="https://gitter.im/nus-cs2113-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
+          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
+          <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+          <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
+          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/forum-activities.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
+          <hr>
+          <span><strong> Individual Project (iP):</strong></span>
+          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/ip-progress.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
+          <hr>
+          <span><strong> Team Project (tP):</strong></span>
+          <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+
+          <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+
+      <div id="content-wrapper">
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/website/schedule/week6"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week7/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week7/admin.html"><span><span><span aria-hidden="true" class="fas fa-info-circle"></span></span></span> Admin Info</a></li>
+              <li class="page-item active"><a class="page-link" href="/website/schedule/week7/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week7/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week7/tutorial.html"><span><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span></span> Tutorial</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week8"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-7-fri-sep-18th-topics">Week 7 <small><small><span class="dimmed">[Fri, Sep 18th]</span> - Topics</small></small><span id="week-7-fri-sep-18th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-7-fri-sep-18th-topics" onclick="event.stopPropagation()"></a></h1>
+          <panel type="seamless" class="algolia-no-index"><template slot="_header">
+              <p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p>
+            </template>
+            <span id="toc">
+              <ul>
+                <li>[<a href="/website/schedule/week7/topics.html#W7-1">W7.1</a>] <strong>Java: Varargs</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+                  <ul>
+                    <li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-1a">W7.1a</a>] <span>C++ to Java → Miscellaneous Topics →
+                        </span></span> <span>Varargs</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></li>
+                  </ul>
+                </small></div>
+              <ul>
+                <li>[<a href="/website/schedule/week7/topics.html#W7-2">W7.2</a>] <strong>Java: streams</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+                  <ul>
+                    <li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-2a">W7.2a</a>] <span>C++ to Java → Miscellaneous Topics →
+                        </span></span> <span>Streams: Basic</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></li>
+                  </ul>
+                </small></div>
+              <ul>
+                <li>[<a href="/website/schedule/week7/topics.html#W7-3">W7.3</a>] <strong>Java: JavaFX</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+                  <ul>
+                    <li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-3a">W7.3a</a>] <span>C++ to Java → Miscellaneous Topics →
+                        </span></span> <span>JavaFX</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></li>
+                  </ul>
+                </small></div>
+              <p></p>
+              <ul>
+                <li>[<a href="/website/schedule/week7/topics.html#W7-4">W7.4</a>] <strong>Documentation Tools</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+                  <p>   <strong>Javadoc</strong></p>
+                  <ul>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-4a">W7.4a</a>] <span>Implementation → Documentation → Tools → JavaDoc →
+                          </span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-4b">W7.4b</a>] <span>Implementation → Documentation → Tools → JavaDoc →
+                          </span></span> <span>How</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                  </ul>
+                </small></div>
+              <p></p>
+              <ul>
+                <li>[<a href="/website/schedule/week7/topics.html#W7-5">W7.5</a>] <strong>Code Quality: Code Comments</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+                  <ul>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-5a">W7.5a</a>] <span>Implementation → Code Quality → Comments →
+                          </span></span> <span>Introduction</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-5b">W7.5b</a>] <span>Implementation → Code Quality → Comments → Basic →
+                          </span></span> <span>Do not repeat the obvious</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-5c">W7.5c</a>] <span>Implementation → Code Quality → Comments → Basic →
+                          </span></span> <span>Write to the reader</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-5d">W7.5d</a>] <span>Implementation → Code Quality → Comments → Intermediate →
+                          </span></span> <span>Explain WHAT and WHY, not HOW</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                  </ul>
+                </small></div>
+              <p></p>
+              <ul>
+                <li>[<a href="/website/schedule/week7/topics.html#W7-6">W7.6</a>] <strong>Continuous Integration/Deployment</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+                  <ul>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6a">W7.6a</a>] <span>Implementation → Integration → Introduction →
+                          </span></span> <span>What</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6b">W7.6b</a>] <span>Implementation → Integration → Build Automation →
+                          </span></span> <span>What</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6c">W7.6c</a>] <span>Implementation → Integration → Build Automation →
+                          </span></span> <span>Continuous integration and continuous deployment</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                  </ul>
+                </small></div>
+              <ul>
+                <li>[<a href="/website/schedule/week7/topics.html#W7-7">W7.7</a>] <strong>RCS: Merging PRs</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+                  <ul>
+                    <li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-7a">W7.7a</a>] <span>Tools → Git and GitHub →
+                        </span></span> <span>Merging PRs</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                  </ul>
+                </small></div>
+              <ul>
+                <li>[<a href="/website/schedule/week7/topics.html#W7-8">W7.8</a>] <strong>RCS: Workflows</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+                  <ul>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-8a">W7.8a</a>] <span>Project Management → Revision Control →
+                          </span></span> <span>Forking flow</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-8b">W7.8b</a>] <span>Tools → Git and GitHub →
+                          </span></span> <span>Forking workflow</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-8c">W7.8c</a>] <span>Project Management → Revision Control →
+                          </span></span> <span>DRCS vs CRCS</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-8d">W7.8d</a>] <span>Project Management → Revision Control →
+                          </span></span> <span>Feature branch flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-8e">W7.8e</a>] <span>Project Management → Revision Control →
+                          </span></span> <span>Centralized flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                    </li>
+                  </ul>
+                </small></div>
+              <p></p>
+            </span></panel>
+          <hr style="border: 1px dotted #cccccc;">
+          <p><span id="W7-1"></span></p>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>While the next few topics are optional, we recommend that you <mark>have a quick look anyway</mark>, just so that you know their existence at least.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w7-1-java-varargs-optional">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="w7-1-java-varargs-optional"><span class="dimmed">[W7.1]</span> <strong>Java: Varargs</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><span id="w7-1-java-varargs-optional" class="anchor"></span><a class="fa fa-anchor" href="#w7-1-java-varargs-optional" onclick="event.stopPropagation()"></a></h2>
+              </div>
+            </span>
+            <div class="indented-level1">
+              <p><span id="W7-1a"></span></p>
+              <div></div>
+              <panel type="seamless" popup-url="/website/book/cppToJava/misc/varargs" id="c-to-java-miscellaneous-topics-varargs" class="algolia-no-index">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.1a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
+                  <h4 id="c-to-java-miscellaneous-topics-varargs"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Varargs</span></strong><span id="c-to-java-miscellaneous-topics-varargs" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-varargs" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Java varargs feature</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p>Variable Arguments (Varargs) is a <em>syntactic sugar</em> type feature that allows writing a methods that can take a variable number of arguments.</p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>search</code> method below can be called as <code v-pre>search()</code>, <code v-pre>search(&quot;book&quot;)</code>, <code v-pre>search(&quot;book&quot;, &quot;paper&quot;)</code>, etc.</p>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">search</span><span class="hljs-params">(String ... keywords)</span></span>{<br></span><span>   <span class="hljs-comment">// method body</span><br></span><span>}<br></span></code></pre>
+                      </box>
+                      <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:</p>
+                      <ul>
+                        <li><a href="http://docs.oracle.com/javase/1.5.0/docs/guide/language/varargs.html">Java Varargs feature (from Oracle.com)</a></li>
+                        <li><a href="https://www.javatpoint.com/varargs">Java Varargs tutorial (for javaTpoint.com)</a></li>
+                      </ul>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+            </div>
+          </panel>
+          <p></p>
+          <div class="indented">
+            <div></div>
+          </div>
+          <p><span id="W7-2"></span></p>
+          <div></div>
+          <panel type="seamless" no-close expandable="true" expanded id="w7-2-java-streams-optional">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="w7-2-java-streams-optional"><span class="dimmed">[W7.2]</span> <strong>Java: streams</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><span id="w7-2-java-streams-optional" class="anchor"></span><a class="fa fa-anchor" href="#w7-2-java-streams-optional" onclick="event.stopPropagation()"></a></h2>
+              </div>
+            </span>
+            <div class="indented-level1">
+              <p><span id="W7-2a"></span></p>
+              <div></div>
+              <panel type="seamless" popup-url="/website/book/cppToJava/misc/streams" id="c-to-java-miscellaneous-topics-streams-basic" class="algolia-no-index">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.2a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
+                  <h4 id="c-to-java-miscellaneous-topics-streams-basic"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Streams: Basic</span></strong><span id="c-to-java-miscellaneous-topics-streams-basic" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-streams-basic" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Java8 streams</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p><strong>Java 8 introduced a number of new features (e.g. Lambdas, Streams)</strong> that are not trivial to learn but also extremely useful to know.</p>
+                      <p><a href="http://winterbe.com/posts/2014/03/16/java-8-tutorial/">Here</a> is an overview of new Java 8 features <span class="dimmed">(written by Benjamin Winterberg)</span>.</p>
+                    </div>
+                    <div>
+                      <div>
+                        <panel expanded><template slot="_header">
+                            <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
+                          </template>
+                          <p><strong>Tutorials</strong>:</p>
+                          <tabs>
+                            <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
+                              <ul>
+                                <li>
+                                  <p><a href="https://www.tutorialspoint.com/java8/"><strong>Java 8 Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a>. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Also provides a way to try out code online</p>
+                                </li>
+                                <li>
+                                  <p><strong>Tutorials from Oracle</strong>: [<a href="http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Lambdas</a>][<a href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">Streams</a>]</p>
+                                </li>
+                              </ul>
+                            </tab>
+                            <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
+
+
+                              <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
+                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                              <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                                  <p>A a more detailed version covering similar grounds</p>
+                                </template>
+                                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                              </panel>
+                            </tab>
+                          </tabs>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+            </div>
+          </panel>
+          <p></p>
+          <div class="indented">
+            <div></div>
+          </div>
+          <p><span id="W7-3"></span></p>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p><strong>JavaFX is not required for this module</strong> as we strongly discourage you from creating a GUI app. If you are still interest to learn JavaFX, you can refer to the JavaFX tutorial in the <a href="https://github.com/nus-cs2113-AY2021S1/ip#tutorials">repo you used for the iP</a> (reason: the tutorials in the section below are outdated).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w7-3-java-javafx-optional">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="w7-3-java-javafx-optional"><span class="dimmed">[W7.3]</span> <strong>Java: JavaFX</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><span id="w7-3-java-javafx-optional" class="anchor"></span><a class="fa fa-anchor" href="#w7-3-java-javafx-optional" onclick="event.stopPropagation()"></a></h2>
+              </div>
+            </span>
+            <div class="indented-level1">
+              <p><span id="W7-3a"></span></p>
+              <div></div>
+              <panel type="seamless" popup-url="/website/book/cppToJava/misc/javaFX" id="c-to-java-miscellaneous-topics-javafx" class="algolia-no-index">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.3a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
+                  <h4 id="c-to-java-miscellaneous-topics-javafx"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>JavaFX</span></strong><span id="c-to-java-miscellaneous-topics-javafx" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-javafx" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use JavaFX to build a simple GUI</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p>JavaFX is a technology for building Java-based GUIs. Previously it was a part Java itself, but has become a third-party dependency since then. It is now being maintained by <a href="https://wiki.openjdk.java.net/display/OpenJFX">OpenJDK</a>.</p>
+                      <p>Refer to the <a href="https://se-education.org/guides/tutorials/javaFx.html"><em>JavaFX tutorial</em> @SE-EDU/guides</a> to learn how to get started with JavaFX.</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+            </div>
+          </panel>
+          <p></p>
+          <div class="indented">
+            <div></div>
+          </div>
+          <p></p>
+          <p><span id="W7-4"></span></p>
+          <div></div>
+          <panel type="seamless" no-close expandable="true" expanded id="w7-4-documentation-tools">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="w7-4-documentation-tools"><span class="dimmed">[W7.4]</span> <strong>Documentation Tools</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-4-documentation-tools" class="anchor"></span><a class="fa fa-anchor" href="#w7-4-documentation-tools" onclick="event.stopPropagation()"></a></h2>
+              </div>
+            </span>
+            <div class="indented-level1">
+              <br>
+              <div></div>
+              <h3 id="javadoc"><span class="dimmed"><strong>Javadoc</strong></span><span id="javadoc" class="anchor"></span><a class="fa fa-anchor" href="#javadoc" onclick="event.stopPropagation()"></a></h3>
+              <p><span id="W7-4a"></span></p>
+              <div>
+                <div>
+                  <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                    <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                    <div class="indented">
+                      <div>
+                        <p><strong>You'll need to add JavaDoc comments to the iP code this week.</strong> Let's learn how to do that.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/what" id="implementation-documentation-tools-javadoc-what">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.4a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="implementation-documentation-tools-javadoc-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>What</span></strong><span id="implementation-documentation-tools-javadoc-what" class="anchor"></span><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-what" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain JavaDoc</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p><strong>Javadoc is a tool for generating API documentation in HTML format from doc comments in source.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tool tips.</p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example method header comment in JavaDoc format (adapted from <a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">Oracle's Java documentation</a>)</p>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"> * Returns an Image object that can then be painted on the screen.</span><br></span><span><span class="hljs-comment"> * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name</span><br></span><span><span class="hljs-comment"> * argument is a specifier that is relative to the url argument.</span><br></span><span><span class="hljs-comment"> * &lt;p&gt;</span><br></span><span><span class="hljs-comment"> * This method always returns immediately, whether or not the</span><br></span><span><span class="hljs-comment"> * image exists. When this applet attempts to draw the image on</span><br></span><span><span class="hljs-comment"> * the screen, the data will be loaded. The graphics primitives</span><br></span><span><span class="hljs-comment"> * that draw the image will incrementally paint on the screen.</span><br></span><span><span class="hljs-comment"> *</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> url an absolute URL giving the base location of the image</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> name the location of the image, relative to the url argument</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> the image at the specified URL</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@see</span> Image</span><br></span><span><span class="hljs-comment"> */</span><br></span><span> <span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">(URL url, String name)</span> </span>{<br></span><span>        <span class="hljs-keyword">try</span> {<br></span><span>            <span class="hljs-keyword">return</span> getImage(<span class="hljs-keyword">new</span> URL(url, name));<br></span><span>        } <span class="hljs-keyword">catch</span> (MalformedURLException e) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br></span><span>        }<br></span><span> }<br></span></code></pre>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Generated HTML documentation:</p>
+                        <p><a href="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" target="_self"><img src="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" alt class="img-fluid"></a></p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Tooltip generated by Intellij IDE:</p>
+                        <p><img src="/website/book/documentation/tools/javaDoc/what/images/intellijTooltip.png"></p>
+                        <p></p>
+                        <p></p>
+                      </box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W7-4b"></span></p>
+              <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/how" id="implementation-documentation-tools-javadoc-how">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.4b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="implementation-documentation-tools-javadoc-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>How</span></strong><span id="implementation-documentation-tools-javadoc-how" class="anchor"></span><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-how" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can write Javadoc comments</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p>In the absence of more extensive guidelines (e.g., given in a coding standard adopted by your project), you can follow the two examples below in your code.</p>
+                      <p><strong>A minimal javadoc comment example for methods:</strong></p>
+                      <pre><code class="hljs java" v-pre><span><span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"> * Returns lateral location of the specified position.</span><br></span><span><span class="hljs-comment"> * If the position is unset, NaN is returned.</span><br></span><span><span class="hljs-comment"> *</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> x  X coordinate of position.</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> y Y coordinate of position.</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> zone Zone of position.</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> Lateral location.</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@throws</span> IllegalArgumentException  If zone is &lt;= 0.</span><br></span><span><span class="hljs-comment"> */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span></span><br></span><span><span class="hljs-function">    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{<br></span><span>  ...<br></span><span>}<br></span></code></pre>
+                      <p><strong>A minimal javadoc comment example for classes:</strong></p>
+                      <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">package</span> ...<br></span><span><br></span><span><span class="hljs-keyword">import</span> ...<br></span><span><br></span><span><span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"> * Represents a location in a 2D space. A &lt;code&gt;Point&lt;/code&gt; object corresponds to</span><br></span><span><span class="hljs-comment"> * a coordinate represented by two integers e.g., &lt;code&gt;3,6&lt;/code&gt;</span><br></span><span><span class="hljs-comment"> */</span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span></span>{<br></span><span>    <span class="hljs-comment">//...</span><br></span><span>}<br></span></code></pre>
+                    </div>
+                    <div>
+                      <div>
+                        <panel expanded><template slot="_header">
+                            <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
+                          </template>
+                          <div>
+                            <ul>
+                              <li><a href="https://www.tutorialspoint.com/java/java_documentation.htm">A short tutorial on writing JavaDoc comments</a> <span class="dimmed">-- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></span></li>
+                              <li><a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">A more detailed description</a> <span class="dimmed">--from Oracle</span></li>
+                            </ul>
+                          </div>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+            </div>
+          </panel>
+          <p></p>
+          <div class="indented">
+            <div></div>
+          </div>
+          <p></p>
+          <p><span id="W7-5"></span></p>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p><strong>This is the final installment of the <em>code quality</em> topics.</strong> As you are learning about JavaDoc comments this week, you can also learn these guidelines to write better code comments.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w7-5-code-quality-code-comments">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="w7-5-code-quality-code-comments"><span class="dimmed">[W7.5]</span> <strong>Code Quality: Code Comments</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-5-code-quality-code-comments" class="anchor"></span><a class="fa fa-anchor" href="#w7-5-code-quality-code-comments" onclick="event.stopPropagation()"></a></h2>
+              </div>
+            </span>
+            <div class="indented-level1">
+              <p><span id="W7-5a"></span></p>
+              <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/introduction" id="implementation-code-quality-comments-introduction">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.5a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="implementation-code-quality-comments-introduction"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments →</span></span></small> <strong><span>Introduction</span></strong><span id="implementation-code-quality-comments-introduction" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-comments-introduction" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain the need for commenting minimally but sufficiently</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <blockquote>
+                        <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer. <sub>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a>, Author of <em>Clean Code</em></sub></p>
+                      </blockquote>
+                      <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W7-5b"></span></p>
+              <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/basic/dontRepeatObvious" id="implementation-code-quality-comments-basic-do-not-repeat-the-obvious">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.5b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="implementation-code-quality-comments-basic-do-not-repeat-the-obvious"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments → Basic →</span></span></small> <strong><span>Do not repeat the obvious</span></strong><span id="implementation-code-quality-comments-basic-do-not-repeat-the-obvious" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-comments-basic-do-not-repeat-the-obvious" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can improve code quality using technique: do not repeat the obvious </span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p>If the code is self-explanatory, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
+                      <div class="alt-java">
+                        <p>
+                          <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
+                        </p>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-comment">//increment x</span><br></span><span>x++;<br></span><span><br></span><span><span class="hljs-comment">//trim the input</span><br></span><span>trimInput();<br></span></code></pre>
+                      </div>
+                      <div class="alt-python">
+                        <p>
+                          <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
+                        </p>
+                        <pre><code class="hljs python" v-pre><span><span class="hljs-comment"># increment x</span><br></span><span>x = x + <span class="hljs-number">1</span><br></span><span><br></span><span><span class="hljs-comment"># trim the input</span><br></span><span>trim_input()<br></span></code></pre>
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W7-5c"></span></p>
+              <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/basic/writeToReader" id="implementation-code-quality-comments-basic-write-to-the-reader">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.5c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="implementation-code-quality-comments-basic-write-to-the-reader"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments → Basic →</span></span></small> <strong><span>Write to the reader</span></strong><span id="implementation-code-quality-comments-basic-write-to-the-reader" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-comments-basic-write-to-the-reader" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can improve code quality using technique: write to the reader </span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p>Do not write comments as if they are private notes to yourself. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a class or an operation to explain its purpose.</p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples:</p>
+                        <div class="alt-java">
+                          <div>
+                            <p>
+                              <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
+                            </p>
+                            <pre><code class="hljs java" v-pre><span><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{<br></span><span>    ....<br></span><span>}<br></span></code></pre>
+                            <p>
+                              <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
+                            </p>
+                            <pre><code class="hljs java" v-pre><span><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{<br></span><span>    ....<br></span><span>}<br></span></code></pre>
+                          </div>
+                        </div>
+                        <div class="alt-python">
+                          <div>
+                            <p>
+                              <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
+                            </p>
+                            <pre><code class="hljs python" v-pre><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span><br></span><span><span class="hljs-string">"""a quick trim function used to fix bug I detected overnight"""</span><br></span><span>    ...<br></span></code></pre>
+                            <p>
+                              <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
+                            </p>
+                            <pre><code class="hljs python" v-pre><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span><br></span><span><span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span><br></span><span>    ...<br></span></code></pre>
+                          </div>
+                        </div>
+                      </box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W7-5d"></span></p>
+              <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow" id="implementation-code-quality-comments-intermediate-explain-what-and-why-not-how">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.5d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="implementation-code-quality-comments-intermediate-explain-what-and-why-not-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments → Intermediate →</span></span></small> <strong><span>Explain WHAT and WHY, not HOW</span></strong><span id="implementation-code-quality-comments-intermediate-explain-what-and-why-not-how" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-comments-intermediate-explain-what-and-why-not-how" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can improve code quality using technique: explain what and why, not how </span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p>Comments should explain <em>what</em> and <em>why</em> aspect of the code, rather than the <em>how</em> aspect.</p>
+                      <p><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span> <strong>What</strong> : The specification of what the code <em>supposed</em> to do. The reader can compare such comments to the implementation to verify if the implementation is correct</p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: This method is possibly buggy because the implementation does not seem to match the comment. In this case the comment could help the reader to detect the bug.</p>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-comment">/** Removes all spaces from the {<span class="hljs-doctag">@code</span> input} */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">compact</span><span class="hljs-params">(String input)</span></span>{<br></span><span>    input.trim();<br></span><span>}<br></span></code></pre>
+                      </box>
+                      <p><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span> <strong>Why</strong> : The rationale for the current implementation.</p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: Without this comment, the reader will not know the reason for calling this method.</p>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-comment">// Remove spaces to comply with IE23.5 formatting rules</span><br></span><span>compact(input);<br></span></code></pre>
+                      </box>
+                      <p><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span> <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
+                        <p>
+                          <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font> <span class="dimmed">Reason: Comment explains how the code works.</span>
+                        </p>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span><br></span><span><span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);<br></span></code></pre>
+                        <p>
+                          <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span>
+                        </p>
+                        <pre><code class="hljs java" v-pre><span><br></span><span><span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;<br></span><span><span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;<br></span></code></pre>
+                      </box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+            </div>
+          </panel>
+          <p></p>
+          <div class="indented">
+            <div></div>
+          </div>
+          <p></p>
+          <p><span id="W7-6"></span></p>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p><strong>Modern software projects, and your tP, make heavy use of build/CI/CD tools</strong> The topics below give you an overview of those tools, to prepare you to start using them yourself.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w7-6-continuous-integration-deployment">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="w7-6-continuous-integration-deployment"><span class="dimmed">[W7.6]</span> <strong>Continuous Integration/Deployment</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-6-continuous-integration-deployment" class="anchor"></span><a class="fa fa-anchor" href="#w7-6-continuous-integration-deployment" onclick="event.stopPropagation()"></a></h2>
+              </div>
+            </span>
+            <div class="indented-level1">
+              <p><span id="W7-6a"></span></p>
+              <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/integration/introduction/what" id="implementation-integration-introduction-what">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.6a</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="implementation-integration-introduction-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Introduction →</span></span></small> <strong><span>What</span></strong><span id="implementation-integration-introduction-what" class="anchor"></span><a class="fa fa-anchor" href="#implementation-integration-introduction-what" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain integration</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p><strong>Combining parts of a software product to form a whole is called <em>integration</em></strong>. It is also one of the most troublesome tasks and it rarely goes smoothly.</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W7-6b"></span></p>
+              <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/integration/buildAutomation/what" id="implementation-integration-build-automation-what">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.6b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="implementation-integration-build-automation-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Build Automation →</span></span></small> <strong><span>What</span></strong><span id="implementation-integration-build-automation-what" class="anchor"></span><a class="fa fa-anchor" href="#implementation-integration-build-automation-what" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain build automation tools</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p><strong>Build automation tools automate the steps of the build process, usually by means of build scripts.</strong></p>
+                      <p>In a non-trivial project, building a product from source code can be a complex multi-step process. <span class="dimmed">For example, it can include steps such as to pull code from the revision control system, compile, link, run automated tests, automatically update release documents (e.g. build number), package into a distributable, push to repo, deploy to a server, delete temporary files created during building/testing, email developers of the new build, and so on. Furthermore, this build process can be done ‘on demand’, it can be scheduled (e.g. every day at midnight) or it can be triggered by various events (e.g. triggered by a code push to the revision control system).</span></p>
+                      <p>Some of these build steps such as to compile, link and package are already automated in most modern IDEs. <span class="dimmed">For example, several steps happen automatically when the ‘build’ button of the IDE is clicked. Some IDEs even allow customization to this build process to some extent.</span></p>
+                      <p>However, most big projects use specialized build tools to automate complex build processes.</p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some popular build tools relevant to Java developers: <a href="https://gradle.org/">Gradle</a>, <a href="http://maven.apache.org/">Maven</a>, <a href="http://ant.apache.org/">Apache Ant</a>, <a href="http://www.gnu.org/software/make/">GNU Make</a></p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <span class="dimmed">Some other build tools : Grunt (JavaScript), Rake (Ruby)</span></p>
+                      </box>
+                      <p><strong>Some build tools also serve as <em>dependency management tools</em></strong>. Modern software projects often depend on third party libraries that evolve constantly. That means developers need to download the correct version of the required libraries and update them regularly. Therefore, dependency management is an important part of build automation. Dependency Management tools can automate that aspect of a project.</p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Maven and Gradle, in addition to managing the build process, can play the role of dependency management tools too.</p>
+                      </box>
+                    </div>
+                    <div>
+                      <div>
+                        <panel expanded><template slot="_header">
+                            <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
+                          </template>
+                          <ul>
+                            <li><a href="https://gradle.org/docs/#getting-started"><strong>Getting Started with Gradle</strong></a> -- Documentation from Gradle</li>
+                            <li><a href="http://www.tutorialspoint.com/gradle/"><strong>Gradle Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+                          </ul>
+                          <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                              <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Working With Gradle in Intellij IDEA (6 minutes)</p>
+                            </template>
+                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/JwPYjnhah3g" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                          </panel>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel expandable class="algolia-no-index"><template slot="_header">
+                            <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
+                          </template>
+                          <div>
+                            <panel class="algolia-no-index"><template slot="_header">
+                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> <em>Gradle</em> is a tool for ...</p>
+                              </template>
+                              <question>
+                                <p>Gradle_is used used for,</p>
+                                <ul class="contains-task-list">
+                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. better revision control</li>
+                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. build automation</li>
+                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. UML diagramming</li>
+                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. project collaboration</li>
+                                </ul>
+                                <div slot="answer" class="algolia-no-index">
+                                  <p>(b)</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W7-6c"></span></p>
+              <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/integration/buildAutomation/continuousIntegrationDeployment" id="implementation-integration-build-automation-continuous-integration-and-continuous-deployment">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.6c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="implementation-integration-build-automation-continuous-integration-and-continuous-deployment"><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Build Automation →</span></span></small> <strong><span>Continuous integration and continuous deployment</span></strong><span id="implementation-integration-build-automation-continuous-integration-and-continuous-deployment" class="anchor"></span><a class="fa fa-anchor" href="#implementation-integration-build-automation-continuous-integration-and-continuous-deployment" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain continuous integration and continuous deployment</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p><strong>An extreme application of build automation is called <em>continuous integration (CI)</em> in which integration, building, and testing happens automatically after each code change.</strong></p>
+                      <p><strong>A natural extension of CI is <em>Continuous Deployment (CD)</em> where the changes are not only integrated continuously, but also deployed to end-users at the same time.</strong></p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of CI/CD tools: <a href="https://travis-ci.org/">Travis</a>, <a href="http://jenkins-ci.org">Jenkins</a>, <a href="https://www.appveyor.com">Appveyor</a>, <a href="https://circleci.com">CircleCI</a>, <a href="https://github.com/features/actions">GitHub Actions</a></p>
+                      </box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+            </div>
+          </panel>
+          <p></p>
+          <div class="indented">
+            <div></div>
+          </div>
+          <p><span id="W7-7"></span></p>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>Let's learn how to merge a PR on GitHub; you need to do that in the tP later, and you'll be practicing PR merging in the iP this week.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w7-7-rcs-merging-prs">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="w7-7-rcs-merging-prs"><span class="dimmed">[W7.7]</span> <strong>RCS: Merging PRs</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-7-rcs-merging-prs" class="anchor"></span><a class="fa fa-anchor" href="#w7-7-rcs-merging-prs" onclick="event.stopPropagation()"></a></h2>
+              </div>
+            </span>
+            <div class="indented-level1">
+              <p><span id="W7-7a"></span></p>
+              <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/managePRs" id="tools-git-and-github-merging-prs">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.7a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="tools-git-and-github-merging-prs"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Merging PRs</span></strong><span id="tools-git-and-github-merging-prs" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-merging-prs" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can review and merge PRs on GitHub</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p>Let's look at the steps involved in merging a PR, assuming the PR has been reviewed, refined, and approved for merging already.</p>
+                      <p>Preparation: If you would like to try merging a PR yourself, you can create a dummy PR in the following manner.</p>
+                      <ol>
+                        <li>Fork any repo (e.g., <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a>).</li>
+                        <li>Clone in to your computer.</li>
+                        <li>Create a new branch e.g., (<code v-pre>feature1</code>) and add some commits to it.</li>
+                        <li>Push the new branch to the fork.</li>
+                        <li>Create a PR from that branch to the <code v-pre>master</code> branch in your fork. Yes, it is possible to create a PR within the same repo.</li>
+                      </ol>
+                      <p><strong>1. Locate the PR</strong> to be merged in your repo's GitHub page.</p>
+                      <p><strong>2. Click on the <span class="tab"><span aria-hidden="true" class="far fa-comments"></span> Conversation</span> tab</strong> and scroll to the bottom. You'll see a panel containing the PR status summary.<br>
+                        <img src="/website/book/gitAndGithub/managePRs/images/mergePr.png" width="800"></p>
+                      <p><strong>3. If the PR is not merge-able in the current state</strong>, the <span class="btn btn-light pl-1 pr-1 pb-0 pt-0 border">Merge pull request <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-hidden="true">
+                            <path d="M4.427 6.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 6H4.604a.25.25 0 00-.177.427z" /></svg></span> will not be green. Here are the possible reasons and remedies:</p>
+                      <ul>
+                        <li><strong>Problem: The PR code is out-of-date</strong>, indicated by the message <strong><span class="dimmed">This branch is out-of-date with the base branch</span></strong>. That means the repo's <code v-pre>master</code> branch has been updated since the PR code was last updated.
+                          <ul>
+                            <li>If the PR author has allowed you to update the PR and you have sufficient permissions, GitHub will allow you to update the PR simply by clicking the <span class="btn btn-light pl-1 pr-1 pb-0 pt-0 border">Update branch</span> on the right side of the 'out-of-date' error message.
+                              If that option is not available, post a message in the PR requesting the PR author to update the PR.</li>
+                          </ul>
+                        </li>
+                        <li><strong>Problem: There are merge conflicts</strong>, indicated by the message <strong><span class="dimmed">This branch has conflicts that must be resolved</span></strong>. That means the repo's <code v-pre>master</code> branch has been updated since the PR code was last updated, in a way that the PR code conflicts with the current <code v-pre>master</code> branch. Those <span trigger="click" for="modal:managePRs-mergeConflics" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:managePRs-mergeConflics'].show()" class="trigger-click">conflicts must be resolved</span> before the PR can be merged.
+                          <ul>
+                            <li>If the conflicts are simple, GitHub might allow you to resolve them using the Web interface.</li>
+                            <li>If that option is not available, post a message in the PR requesting the PR author to update the PR.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <b-modal id="modal:managePRs-mergeConflics" hide-footer size="lg" modal-class="mb-zoom" ref="modal:managePRs-mergeConflics" class="algolia-no-index"><template slot="modal-title">Tools → Git &amp; GitHub → Merge Conflicts</template>
+                        <div>
+                          <div></div>
+                          <p></p>
+                          <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+                                </span></strong></span></p>
+                          <div id="title-and-body">
+                            <div>
+                              <h4 id="dealing-with-merge-conflicts"><span>Dealing with merge conflicts</span><span id="dealing-with-merge-conflicts" class="anchor"></span><a class="fa fa-anchor" href="#dealing-with-merge-conflicts" onclick="event.stopPropagation()"></a></h4>
+                            </div>
+                            <div id="main">
+                              <div>
+                                <p><strong>Merge conflicts happen when you try to combine two incompatible versions</strong> (e.g., merging a branch to another but each branch changed the same part of the code in a different way).</p>
+                                <p>Here are the steps to simulate a merge conflict and use it to learn how to resolve merge conflicts.</p>
+                                <p><strong>0. Create an empty repo or clone an existing repo</strong>, to be used for this activity.</p>
+                                <p><strong>1. Start a branch named <code v-pre>fix1</code> in the repo. Create a commit</strong> that adds a line with some text to one of the files.</p>
+                                <p><strong>2. Switch back to <code v-pre>master</code> branch. Create a commit with a conflicting change</strong> i.e. it adds a line with some different text in the exact location the previous line was added.</p>
+                                <img src="/website/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
+                                <p></p>
+                                <p><strong>3. Try to merge the <code v-pre>fix1</code> branch onto the <code v-pre>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
+                                <pre><code class="hljs" v-pre><span>COLORS<br></span><span>------<br></span><span>blue<br></span><span class="highlighted">&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br></span><span>black<br></span><span class="highlighted">=======<br></span><span>green<br></span><span class="highlighted">&gt;&gt;&gt;&gt;&gt;&gt; fix1<br></span><span>red<br></span><span>white<br></span></code></pre>
+                                <p><strong>4. Observe how the conflicted part is marked</strong> between a line starting with <code v-pre>&lt;&lt;&lt;&lt;&lt;&lt; </code> and a line starting with <code v-pre>&gt;&gt;&gt;&gt;&gt;&gt;</code>, separated by another line starting with <code v-pre>=======</code>.</p>
+                                <p>Highlighted below is the conflicting part that is coming from the <code v-pre>master</code> branch:</p>
+                                <pre><code style="counter-reset: line 2;" class="hljs" v-pre><span>blue<br></span><span>&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br></span><span class="highlighted">black<br></span><span>=======<br></span><span>green<br></span><span>&gt;&gt;&gt;&gt;&gt;&gt; fix1<br></span><span>red<br></span></code></pre>
+                                <p>This is the conflicting part that is coming from the <code v-pre>fix1</code> branch:</p>
+                                <pre><code style="counter-reset: line 2;" class="hljs" v-pre><span>blue<br></span><span>&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br></span><span>black<br></span><span>=======<br></span><span class="highlighted">green<br></span><span>&gt;&gt;&gt;&gt;&gt;&gt; fix1<br></span><span>red<br></span></code></pre>
+                                <p><strong>5. Resolve the conflict by editing the file</strong>. Let us assume you want to keep both lines in the merged version. You can modify the file to be like this:</p>
+                                <pre><code class="hljs" v-pre><span>COLORS<br></span><span>------<br></span><span>blue<br></span><span class="highlighted">black<br></span><span class="highlighted">green<br></span><span>red<br></span><span>white<br></span></code></pre>
+                                <p><strong>6. Stage the changes, and commit.</strong></p>
+                              </div>
+                              <div></div>
+                            </div>
+                          </div>
+                        </div>
+                      </b-modal>
+                      <p><strong>3. Merge the PR</strong> by clicking on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Merge pull request <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-hidden="true">
+                            <path d="M4.427 6.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 6H4.604a.25.25 0 00-.177.427z" /></svg></span> button, followed by the <code v-pre>Confirm merge</code> button. You should see a <code v-pre>Pull request successfully merged and closed</code> message after the PR is merged.<br></p>
+                      <ul>
+                        <li>You can choose between three merging options by clicking on the down-arrow in the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Merge pull request <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-hidden="true">
+                              <path d="M4.427 6.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 6H4.604a.25.25 0 00-.177.427z" /></svg></span> button. If you are new to Git and GitHub, the <code v-pre>Create merge commit</code> options are recommended.</li>
+                      </ul>
+                      <p><strong>Next, sync your local repos (and forks).</strong> Merging a PR simply merges the code in the upstream remote repository in which it was merged. The PR author (and other members of the repo) needs to pull the merged code from the upstream repo to their local repos and push the new code to their respective forks to syn the fork with the upstream repo.</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+            </div>
+          </panel>
+          <p></p>
+          <div class="indented">
+            <div></div>
+          </div>
+          <p><span id="W7-8"></span></p>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p><strong>Next, you will learn a workflow called the 'Forking Flow'</strong>, which combines the various Git and GitHub techniques you have been learning over the past few weeks. It is also the workflow you will use in the tP.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w7-8-rcs-workflows">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="w7-8-rcs-workflows"><span class="dimmed">[W7.8]</span> <strong>RCS: Workflows</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-8-rcs-workflows" class="anchor"></span><a class="fa fa-anchor" href="#w7-8-rcs-workflows" onclick="event.stopPropagation()"></a></h2>
+              </div>
+            </span>
+            <div class="indented-level1">
+              <p><span id="W7-8a"></span></p>
+              <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/revisionControl/forkingWorkflow" id="project-management-revision-control-forking-flow">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.8a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="project-management-revision-control-forking-flow"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Forking flow</span></strong><span id="project-management-revision-control-forking-flow" class="anchor"></span><a class="fa fa-anchor" href="#project-management-revision-control-forking-flow" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain forking workflow</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <img src="/website/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
+                      <p></p>
+                      <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
+                      <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
+                      <ol>
+                        <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.</li>
+                        <li>Jean pushes the branch to her fork.</li>
+                        <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
+                        <li>Other members review Jean’s pull request.</li>
+                        <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
+                        <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated 'maintainer' of the main repo) merges the PR, which brings Jean’s code to the main repo.</li>
+                        <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own fork.</li>
+                      </ol>
+                    </div>
+                    <div>
+                      <div>
+                        <panel expanded><template slot="_header">
+                            <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
+                          </template>
+                          <ul>
+                            <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
+                          </ul>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W7-8b"></span></p>
+              <div>
+                <div>
+                  <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                    <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                    <div class="indented">
+                      <div>
+                        <p><mark>The activity in the section below can be skipped</mark> as you will be doing a similar activity in a coming tutorial.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/forkingWorkflow" id="tools-git-and-github-forking-workflow">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.8b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="tools-git-and-github-forking-workflow"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Forking workflow</span></strong><span id="tools-git-and-github-forking-workflow" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-forking-workflow" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div>
+                      <p>
+                        <panel src="/website/book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/forkingWorkflow" class="algolia-no-index"><template slot="_header">
+                            <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control → Forking Workflow</span></p>
+                          </template></panel>
+                      </p>
+                    </div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can follow Forking Workflow</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p>You can follow the steps in the simulation of a forking workflow given below to learn how to follow the such a workflow.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> This activity is best done as a team.</p>
+                      <p><strong>Step 1. One member: set up the team org and the team repo.</strong></p>
+                      <ol>
+                        <li>
+                          <p><a href="https://help.github.com/articles/creating-a-new-organization-from-scratch/"><strong>Create a GitHub organization</strong></a> for your team. The org name is up to you. We'll refer to this organization as <em>team org</em> from now on.</p>
+                        </li>
+                        <li>
+                          <p><a href="https://help.github.com/enterprise/2.10/admin/guides/user-management/creating-teams/"><strong>Add a team</strong></a> called <code v-pre>developers</code> to your team org.</p>
+                        </li>
+                        <li>
+                          <p><a href="https://help.github.com/enterprise/2.0/admin/guides/user-management/adding-or-inviting-people-to-teams/"><strong>Add team members</strong></a> to the <code v-pre>developers</code> team.</p>
+                        </li>
+                        <li>
+                          <p><strong>Fork</strong> <a href="https://github.com/se-edu/samplerepo-workflow-practice">se-edu/samplerepo-workflow-practice</a> to your team org. We'll refer to this as the <em>team repo</em>.</p>
+                        </li>
+                        <li>
+                          <p><strong><a href="https://help.github.com/articles/managing-team-access-to-an-organization-repository/">Add the forked repo</a> to the <code v-pre>developers</code> team.</strong> Give write access.</p>
+                        </li>
+                      </ol>
+                      <p><strong>Step 2. Each team member: create PRs via own fork</strong></p>
+                      <ol>
+                        <li>
+                          <p><strong>Fork that repo</strong> from your team org to your own GitHub account.</p>
+                        </li>
+                        <li>
+                          <p><strong>Create a branch</strong> named <code v-pre>add-{your name}-info</code> (e.g. <code v-pre>add-johnTan-info</code>) in the local repo.</p>
+                        </li>
+                        <li>
+                          <p><strong>Add a file</strong> <code v-pre>yourName.md</code> into the <code v-pre>members</code> directory (e.g., <code v-pre>members/jonhTan.md</code>) containing some info about you into that branch.</p>
+                        </li>
+                        <li>
+                          <p><strong>Push that branch to your fork</strong>.</p>
+                        </li>
+                        <li>
+                          <p><strong>Create a PR</strong> from that branch to the <code v-pre>master</code> branch of the team repo.</p>
+                        </li>
+                      </ol>
+                      <p><strong>Step 3. For each PR: review, update, and merge.</strong></p>
+                      <ol>
+                        <li>
+                          <p><strong>[A team member (not the PR author)] Review the PR</strong> by adding comments (can be just dummy comments).</p>
+                        </li>
+                        <li>
+                          <p><strong>[PR author] Update the PR</strong> by pushing more commits to it, to simulate updating the PR based on review comments.</p>
+                        </li>
+                        <li>
+                          <p><strong>[Another team member] Approve and merge</strong> the PR using the GitHub interface.</p>
+                        </li>
+                        <li>
+                          <p><strong>[All members]</strong> <a href="https://help.github.com/articles/syncing-a-fork/"><strong>Sync your local repo (and your fork)</strong> with upstream repo</a>. In this case, your <em>upstream repo</em> is the repo in your team org.</p>
+                        </li>
+                      </ol>
+                      <p><strong>Step 4. Create conflicting PRs.</strong></p>
+                      <ol>
+                        <li>
+                          <p><strong>[One member]: Update README:</strong> In the <code v-pre>master</code> branch, remove John Doe and Jane Doe from the <code v-pre>README.md</code>, commit, and push to the main repo.</p>
+                        </li>
+                        <li>
+                          <p><strong>[Each team member] Create a PR</strong> to add yourself under the <code v-pre>Team Members</code> section in the <code v-pre>README.md</code>. Use a new branch for the PR e.g., <code v-pre>add-johnTan-name</code></p>
+                        </li>
+                      </ol>
+                      <p><strong>Step 5. Merge conflicting PRs</strong> one at a time. Before merging a PR, you’ll have to resolve conflicts.</p>
+                      <ol>
+                        <li>
+                          <p>[Optional] A member can inform the PR author (by posting a comment) that there is a conflict in the PR.</p>
+                        </li>
+                        <li>
+                          <p><strong>[PR author] Resolve the conflict locally</strong>:</p>
+                          <ol>
+                            <li>Pull the <code v-pre>master</code> branch from the repo in your team org.</li>
+                            <li>Merge the pulled <code v-pre>master</code> branch to your PR branch.</li>
+                            <li>Resolve the merge conflict that crops up during the merge.</li>
+                            <li>Push the updated PR branch to your fork.</li>
+                          </ol>
+                        </li>
+                        <li>
+                          <p><strong>[Another member or the PR author]: Merge the de-conflicted PR</strong>: When GitHub does not indicate a conflict anymore, you can go ahead and merge the PR.</p>
+                        </li>
+                      </ol>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W7-8c"></span></p>
+              <div>
+                <div>
+                  <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                    <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                    <div class="indented">
+                      <div>
+                        <p><strong>Git is considered a DRCS</strong>. Read the topic below to learn what that means and how it differs from the alternative.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <panel type="seamless" expanded popup-url="/website/book/revisionControl/drcsVsCrcs" id="project-management-revision-control-drcs-vs-crcs">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.8c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="project-management-revision-control-drcs-vs-crcs"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>DRCS vs CRCS</span></strong><span id="project-management-revision-control-drcs-vs-crcs" class="anchor"></span><a class="fa fa-anchor" href="#project-management-revision-control-drcs-vs-crcs" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain DRCS vs CRCS</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p><strong>RCS can be done in two ways: the <em>centralized</em> way and the <em>distributed</em> way.</strong></p>
+                      <p><strong>Centralized RCS (CRCS for short)uses a central remote repo that is shared by the team.</strong> Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository. Older RCS tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo either. Instead, they force users to do all the versioning with the remote repo.</p>
+                      <pic src="/website/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png" width="300">
+                        <p><em>The centralized RCS approach without any local repos (e.g., CVS, SVN)</em></p>
+                      </pic>
+                      <p></p>
+                      <p><strong>Distributed RCS (DRCS for short, also known as Decentralized RCS) allows multiple remote repos</strong> and pulling and pushing can be done among them in arbitrary ways. The workflow can vary differently from team to team. For example, every team member can have his/her own remote repository in addition to their own local repository, as shown in the diagram below. Git and Mercurial are some prominent RCS tools that support the distributed approach.</p>
+                      <pic src="/website/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png" width="300">
+                        <p><em>The decentralized RCS approach</em></p>
+                      </pic>
+                      <p></p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W7-8d"></span></p>
+              <div>
+                <div>
+                  <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                    <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                    <div class="indented">
+                      <div>
+                        <p><strong>These are two workflows that are riskier (but simpler) than the forking flow</strong>. After following the forking flow for a while, you may switch to one of these, but at your own risk.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <panel type="seamless" popup-url="/website/book/revisionControl/featureBranchFlow" id="project-management-revision-control-feature-branch-flow" class="algolia-no-index">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.8d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
+                  <h4 id="project-management-revision-control-feature-branch-flow"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Feature branch flow</span></strong><span id="project-management-revision-control-feature-branch-flow" class="anchor"></span><a class="fa fa-anchor" href="#project-management-revision-control-feature-branch-flow" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div>
+                      <p>
+                        <panel src="/website/book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/forkingWorkflow" class="algolia-no-index"><template slot="_header">
+                            <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control → Forking Workflow</span></p>
+                          </template></panel>
+                      </p>
+                    </div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain feature branch flow</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p><strong><em>Feature branch</em> workflow is similar to forking workflow except there are no forks.</strong> Everyone is pushing/pulling from the same remote repo. The phrase <em>feature branch</em> is used because each new feature (or bug fix, or any other modification) is done in a separate branch and merged to <code v-pre>master</code> branch when ready.</p>
+                      <img src="/website/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
+                      <p></p>
+                    </div>
+                    <div>
+                      <div>
+                        <panel expanded><template slot="_header">
+                            <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
+                          </template>
+                          <ul>
+                            <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">A detailed explanation of the Feature Branch Workflow</a> - From Atlassian</li>
+                          </ul>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W7-8e"></span></p>
+              <div></div>
+              <panel type="seamless" popup-url="/website/book/revisionControl/centralizedFlow" id="project-management-revision-control-centralized-flow" class="algolia-no-index">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W7.8e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
+                  <h4 id="project-management-revision-control-centralized-flow"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Centralized flow</span></strong><span id="project-management-revision-control-centralized-flow" class="anchor"></span><a class="fa fa-anchor" href="#project-management-revision-control-centralized-flow" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div>
+                      <p>
+                        <panel src="/website/book/revisionControl/featureBranchFlow/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/featureBranchFlow" class="algolia-no-index"><template slot="_header">
+                            <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control → Feature Branch Workflow</span></p>
+                          </template></panel>
+                      </p>
+                    </div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain centralized flow</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p><strong>The <em>centralized workflow</em> is similar to the feature branch workflow except all changes are done in the <code v-pre>master</code> branch.</strong></p>
+                    </div>
+                    <div>
+                      <div>
+                        <panel expanded><template slot="_header">
+                            <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
+                          </template>
+                          <ul>
+                            <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">A detailed explanation of the Centralized Workflow</a> - From Atlassian</li>
+                          </ul>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+            </div>
+          </panel>
+          <p></p>
+          <div class="indented">
+            <div></div>
+          </div>
+          <p></p>
+        </div>
+      </div>
+
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#week-7-fri-sep-18th-topics">Week 7 [Fri, Sep 18th] - Topics&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#w7-1-java-varargs-optional">[W7.1] Java: Varargs : OPTIONAL&#x200E;</a>
+              <a class="nav-link py-1" href="#w7-2-java-streams-optional">[W7.2] Java: streams : OPTIONAL&#x200E;</a>
+              <a class="nav-link py-1" href="#w7-3-java-javafx-optional">[W7.3] Java: JavaFX : OPTIONAL&#x200E;</a>
+              <a class="nav-link py-1" href="#w7-4-documentation-tools">[W7.4] Documentation Tools &#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#javadoc">Javadoc&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#w7-5-code-quality-code-comments">[W7.5] Code Quality: Code Comments &#x200E;</a>
+              <a class="nav-link py-1" href="#w7-6-continuous-integration-deployment">[W7.6] Continuous Integration/Deployment &#x200E;</a>
+              <a class="nav-link py-1" href="#w7-7-rcs-merging-prs">[W7.7] RCS: Merging PRs &#x200E;</a>
+              <a class="nav-link py-1" href="#w7-8-rcs-workflows">[W7.8] RCS: Workflows &#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+
+      <div class="text-center">
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Mon, 20 Jul 2020, 0:00:12 GMT+8]</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/website'
+  const enableSearch = true
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "3855d3d0d62585efc4f4841564bc73ca",
+      indexName: "nus-cs2113-ay1920s2",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>
