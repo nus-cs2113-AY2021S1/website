@@ -62,21 +62,21 @@
           <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/forum-activities.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
+          <li tags="m--cs2103 m--cs2113"><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/forum-activities.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
           <hr>
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
           <li><a href="https://nus-cs2113-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/ip-progress.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
           <hr>
           <span><strong> Team Project (tP):</strong></span>
           <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
 
           <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
           <li><a href="https://nus-cs2113-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -137,9 +137,7 @@
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → TEAMMATES <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
-                            <h4 id="tool-teammates-for-peer-evaluations-feedback">
-                              <div class="text-white bg-dark p-1">Tool: TEAMMATES (for Peer Evaluations/Feedback)</div><span id="tool-teammates-for-peer-evaluations-feedback" class="anchor"></span><a class="fa fa-anchor" href="#tool-teammates-for-peer-evaluations-feedback" onclick="event.stopPropagation()"></a>
-                            </h4>
+                            <h2 id="tool-teammates-for-peer-evaluations">Tool: TEAMMATES (for Peer Evaluations)<span id="tool-teammates-for-peer-evaluations" class="anchor"></span><a class="fa fa-anchor" href="#tool-teammates-for-peer-evaluations" onclick="event.stopPropagation()"></a></h2>
                             <p>We use the <a href="http://teammatesv4.appspot.com/">TEAMMATES</a> online peer evaluation system. <span class="dimmed">TEAMMATES is a project run by NUS SoC students and used by over 0.5 million users from over 1000 universities.</span></p>
                             <box>
                               <p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation:</strong></span>
@@ -761,9 +759,8 @@
                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: from each student <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                       </template>
                       <div>
-                        <h3 id="individual-expectations">
-                          <div class="text-white bg-info p-1"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual Expectations</div><span id="individual-expectations" class="anchor"></span><a class="fa fa-anchor" href="#individual-expectations" onclick="event.stopPropagation()"></a>
-                        </h3>
+
+                        <h2 class="text-white bg-info p-1" id="fas-user-individual-expectations"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual Expectations<span id="fas-user-individual-expectations" class="anchor"></span><a class="fa fa-anchor" href="#fas-user-individual-expectations" onclick="event.stopPropagation()"></a></h2>
                         <h4 id="individual-expectations-on-implementation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Implementation</span><span id="individual-expectations-on-implementation" class="anchor"></span><a class="fa fa-anchor" href="#individual-expectations-on-implementation" onclick="event.stopPropagation()"></a></h4>
                         <ul>
                           <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Contribute to the functional code of the product.</strong></span>
@@ -932,7 +929,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Wed, 22 Jul 2020, 2:12:24 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 25 Jul 2020, 1:19:07 GMT+8]</small></div>
     </footer>
   </div>
 </body>

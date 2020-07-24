@@ -93,14 +93,14 @@
       "layout": "default",
       "headings": {
         "apdx-e-using-github": "Apdx E: Using GitHub ",
-        "creating-a-github-account": "\r\n              Creating a GitHub Account\r\n            ",
-        "guidelines-for-reviewing-prs": "\r\n              Guidelines for Reviewing PRs\r\n            ",
-        "tp-team-organization-setup": "\r\n                tP Team Organization Setup\r\n              ",
-        "tp-team-repo-setup": "\r\n                tP Team Repo Setup\r\n              ",
-        "tp-issue-tracker-setup": "\r\n                tP Issue Tracker Setup\r\n              ",
-        "tp-individual-fork-setup": "\r\n                tP Individual Fork Setup\r\n              ",
-        "tp-workflow": "\r\n                tP Workflow\r\n              ",
-        "tp-project-schedule-tracking": "\r\n                tP Project Schedule Tracking\r\n              ",
+        "creating-a-github-account": "Creating a GitHub Account",
+        "guidelines-for-reviewing-prs": "Guidelines for Reviewing PRs",
+        "tp-team-organization-setup": "tP Team Organization Setup",
+        "tp-team-repo-setup": "tP Team Repo Setup",
+        "tp-issue-tracker-setup": "tP Issue Tracker Setup",
+        "tp-individual-fork-setup": "tP Individual Fork Setup",
+        "tp-workflow": "tP Workflow",
+        "tp-project-schedule-tracking": "tP Project Schedule Tracking",
         "using-issues": "Using Issues:",
         "using-milestones": "Using Milestones:"
       },
@@ -131,7 +131,6 @@
       "layout": "default",
       "headings": {
         "exams": "Exams ",
-        "final-exam": "Final Exam",
         "early-preparations": "Early preparations",
         "30-minutes-before-the-exam": "30 minutes before the exam",
         "during-the-exam": "During the exam",
@@ -155,7 +154,7 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: CS2113/T Software Engineering & Object-Oriented Programming",
+      "title": "Admin: CS2113/T: Software Engineering & Object-Oriented Programming",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -164,7 +163,7 @@
       "src": "admin/index.md",
       "layout": "default",
       "headings": {
-        "cs2113-t-software-engineering-and-amp-object-oriented-programming-optional": "CS2113/T Software Engineering &amp; Object-Oriented Programming : OPTIONAL"
+        "cs2113-t-software-engineering-and-amp-object-oriented-programming": "CS2113/T: Software Engineering &amp; Object-Oriented Programming "
       },
       "headingKeywords": {}
     },
@@ -789,7 +788,7 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: CS2113/T Software Engineering & Object-Oriented Programming",
+      "title": "Admin: CS2113/T: Software Engineering & Object-Oriented Programming",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -798,7 +797,7 @@
       "src": "admin/moduleOverview.md",
       "layout": "default",
       "headings": {
-        "cs2113-t-software-engineering-and-amp-object-oriented-programming-optional": "CS2113/T Software Engineering &amp; Object-Oriented Programming : OPTIONAL"
+        "cs2113-t-software-engineering-and-amp-object-oriented-programming": "CS2113/T: Software Engineering &amp; Object-Oriented Programming "
       },
       "headingKeywords": {}
     },
@@ -849,8 +848,7 @@
       "src": "admin/programmingLanguages.md",
       "layout": "default",
       "headings": {
-        "programming-language": "Programming Language ",
-        "java-coding-standard": "Java coding standard"
+        "programming-language": "Programming Language "
       },
       "headingKeywords": {}
     },
@@ -1004,16 +1002,16 @@
       "layout": "default",
       "headings": {
         "tools": "Tools ",
-        "tool-learning-management-system": "\r\n              Tool: Learning Management System\r\n            ",
-        "tool-github-for-code-hosting": "\r\n                Tool: GitHub (for Code Hosting)\r\n              ",
-        "tool-git-for-revision-control": "\r\n                Tool: Git (for Revision Control)\r\n              ",
-        "tool-repl-it-for-coding-exercises": "\r\n                Tool: Repl.it (for Coding Exercises)\r\n              ",
-        "tools-used-for-communication": "\r\n                Tools Used: for Communication\r\n              ",
+        "tool-learning-management-system": "Tool: Learning Management System",
+        "tool-github-for-code-hosting": "Tool: GitHub (for code hosting)",
+        "tool-git-for-revision-control": "Tool: Git (for revision control)",
+        "tool-repl-it-for-coding-exercises": "Tool: Repl.it (for coding exercises)",
+        "tools-for-communication": "Tools: for communication",
         "forum-for-longer-running-discussions": " Forum (for longer-running discussions)",
         "gitter-for-quick-chats": " Gitter (for quick chats)",
-        "tool-intellij-ide": "\r\n                Tool: Intellij IDE\r\n              ",
-        "tool-reposense-for-analyzing-code-authorship": "\r\n                Tool: RepoSense (for Analyzing Code Authorship)\r\n              ",
-        "tool-teammates-for-peer-evaluations-feedback": "\r\n                Tool: TEAMMATES (for Peer Evaluations/Feedback)\r\n              "
+        "tool-intellij-ide": "Tool: Intellij IDE",
+        "tool-reposense-for-authorship-tracking": "Tool: RepoSense (for authorship tracking)",
+        "tool-teammates-for-peer-evaluations": "Tool: TEAMMATES (for Peer Evaluations)"
       },
       "headingKeywords": {}
     },
@@ -1094,12 +1092,12 @@
       "layout": "default",
       "headings": {
         "tp-team-project-expectations": "tP (team project): Expectations ",
-        "outcomes": "\r\n              Outcomes\r\n            ",
-        "direction": "\r\n                Direction\r\n              ",
-        "target-user-and-amp-value-proposition": "\r\n              Target User &amp; Value Proposition\r\n            ",
-        "functionality-expectations": "\r\n                Functionality Expectations\r\n              ",
-        "team-expectations": "\r\n                 Team Expectations\r\n              ",
-        "individual-expectations": "\r\n                 Individual Expectations\r\n              ",
+        "outcomes": "Outcomes",
+        "direction": "Direction",
+        "target-user-and-amp-value-proposition": "Target User &amp; Value Proposition",
+        "functionality-expectations": "Functionality Expectations",
+        "fas-users-team-expectations": " Team Expectations",
+        "fas-user-individual-expectations": " Individual Expectations",
         "individual-expectations-on-implementation": " Individual Expectations on Implementation",
         "individual-expectations-on-documentation": " Individual Expectations on Documentation",
         "individual-expectations-on-testing": " Individual Expectations on Testing",
@@ -1445,7 +1443,6 @@
         "information-layers": "Information layers",
         "conventions-used": "Conventions used",
         "shorthand-headings": "Shorthand headings",
-        "boxed-text-styles": "Boxed-text styles",
         "meaning-of-icons": "Meaning of icons",
         "searching-for-keywords": "Searching for keywords",
         "saving-as-pdf-files": "Saving as PDF files",

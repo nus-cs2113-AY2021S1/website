@@ -62,21 +62,21 @@
           <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/forum-activities.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
+          <li tags="m--cs2103 m--cs2113"><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/forum-activities.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
           <hr>
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
           <li><a href="https://nus-cs2113-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/ip-progress.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
           <hr>
           <span><strong> Team Project (tP):</strong></span>
           <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
 
           <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
           <li><a href="https://nus-cs2113-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
+          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -104,6 +104,7 @@
           </nav>
           <p></p>
           <h1 id="week-8-fri-oct-2nd-topics">Week 8 <small><small><span class="dimmed">[Fri, Oct 2nd]</span> - Topics</small></small><span id="week-8-fri-oct-2nd-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-8-fri-oct-2nd-topics" onclick="event.stopPropagation()"></a></h1>
+          <div></div>
           <panel type="seamless" class="algolia-no-index"><template slot="_header">
               <p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p>
             </template>
@@ -762,7 +763,7 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <p>Design in the creative process of transforming the problem into a solution; the solution is also called design. <sub>-- 📖 <em>Software Engineering Theory and Practice</em>, Shari Lawrence; Atlee, Joanne M. Pfleeger</sub></p>
                       </box>
                       <p><strong>Software design has two main aspects:</strong></p>
@@ -817,7 +818,7 @@
                             </div>
                             <div id="main">
                               <div>
-                                <box type="definition">
+                                <box type="definition" seamless>
                                   <div>
                                     <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                                   </div>
@@ -1898,7 +1899,7 @@
                         <li>The shortest possible completion time. <span class="dimmed">In the example above, there is a path (indicated by the shaded boxes) from start to end that determines the shortest possible completion time.</span></li>
                         <li>The Critical Path. <span class="dimmed">In the example above, the shortest possible path is also the critical path</span>.</li>
                       </ul>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <p><strong>Critical path</strong> is the path in which any delay can directly affect the project duration. It is important to ensure tasks on the critical path are completed on time.</p>
                       </box>
                     </div>
@@ -2014,7 +2015,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Wed, 22 Jul 2020, 2:12:24 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 25 Jul 2020, 1:19:07 GMT+8]</small></div>
     </footer>
   </div>
 </body>
