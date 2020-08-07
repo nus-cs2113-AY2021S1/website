@@ -95,6 +95,19 @@ Next, let's get started learning Java. First, a bit about the language itself.
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: HelloWorld") }}">
 As with any language, the first step is to install the language in your computer. After that, you write a simple HelloWorld program, and get it running.
+
+Java 11 can be downloaded from [here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("cppToJava-gettingStarted-running") }}">
+<span tags="m--tic2002">
+
+At the end of the next section, there is an exercise (_[Key Exercise] ByeWorld_) that you need to submit on repl.it. From this point onwards, programming exercises marked as <span class="bg-dark text-white p-1">[Key Exercise]</span> need to be submitted on repl.
+
+{{ embed_topic("index-tic2002.mbdf#repl-info", "Admin " + icon_embedding + " Tools → Repl.it", "3") }}
+<p/>
+
+</span>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Data Types") }}">
@@ -111,6 +124,10 @@ Now that you know what _objects_ are, let's see how they are used in Java, which
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Classes") }}">
 Having seen how to use objects in Java, the next step is learn how to define new _kinds_ of objects (aka _classes_) in Java.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("OOP: Class-level members") }}">
+Now that we know about classes, let's learn what _class-level members_ are and how to use them in Java.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Constants") }}">
@@ -251,7 +268,9 @@ When working with Git, sooner or later you will face a problem called _merge con
 <div id="{{ slugify("IDEs: Basic Features") }}">
  As you are likely to be using an IDE for the {{ ip_name }}, let's learn at least enough about IDEs to get you started using one.
 
-<div tags="m--cs2103">:thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
+<div tags="m--cs2103">
+
+:thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
 
 {{ embed_topic("moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
 <p/>

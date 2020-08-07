@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.14.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T - Admin: Module Expectations</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -56,10 +56,10 @@
           <li><a href="https://github.com/nus-cs2113-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-cs2113-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/dd7206fb-b22d-4a82-9c3b-f761a1f77ac8/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/dd7206fb-b22d-4a82-9c3b-f761a1f77ac8/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
           <li tags="m--cs2113 m--cs2103"><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
+          <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/sclqjqn" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
           <li tags="m--cs2103 m--cs2113"><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/forum-activities.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
@@ -282,16 +282,19 @@
 
             <p></p>
             <h2 id="workload">Workload<span id="workload" class="anchor"></span><a class="fa fa-anchor" href="#workload" onclick="event.stopPropagation()"></a></h2>
-            <p>As 70% of this module is based on CA, it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., if this module is core for you, it should not take more time than other core modules at the same level in your program</span>peer modules</span></strong>.</p>
+            <p>As 70% of this module is based on CA (see <span trigger="click" for="modal:expectations-gradeBreakdown" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:expectations-gradeBreakdown'].show()" class="trigger-click">grade breakdown</span>), it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., if this module is core for you, it should not take more time than other core modules at the same level in your program</span>peer modules</span></strong>.</p>
             <ul>
               <li>Note that the <strong>module contains more things than a typical students can do</strong>, in order to provide enough things for even the strongest students to learn as much as they wish to.</li>
               <li>This means it is <mark>perfectly OK if you don't have time to learn everything the module offers</mark>. Control your workload based on time you spend for the module in a week e.g., 1-1.5 days per week.</li>
               <li>We have provided a star rating system to guide you when prioritizing which things to do.</li>
             </ul>
+            <b-modal id="modal:expectations-gradeBreakdown" hide-footer size="lg" modal-class="mb-zoom" ref="modal:expectations-gradeBreakdown" class="algolia-no-index"><template slot="modal-title">Grade breakdown</template>
+              <pic src="/website/admin/gradeBreakdown.png"></pic>
+            </b-modal>
             <div id="starRatingSystem">
               <h4 id="star-rating-system">Star Rating System<span id="star-rating-system" class="anchor"></span><a class="fa fa-anchor" href="#star-rating-system" onclick="event.stopPropagation()"></a></h4>
               <div class="indented">
-                <p class="lead"><span>We use a <em>star rating system</em> indicate the importance of module components. <strong>Start with things that are rated one-star and progress to things with more stars.</strong> Things rated four stars are optional.</span></p>
+                <p class="lead"><span>We use a <em>star rating system</em> to indicate the importance of module components. <strong>Start with things that are rated one-star and progress to things with more stars.</strong> Things rated four stars are optional.</span></p>
                 <p><strong>Star ratings for topics</strong> (and textbook sections):</p>
                 <ul>
                   <li><strong>One-star topics</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> are essential to keep up with the module. We recommend you to <mark>learn these topics if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).</li>
@@ -336,7 +339,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Wed, 29 Jul 2020, 11:39:54 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, Aug 7, 2020, 9:24:31 PM GMT+8]</small></div>
     </footer>
   </div>
 </body>
