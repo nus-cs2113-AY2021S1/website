@@ -471,3 +471,77 @@ fatal: Authentication failed for 'https://github.com/nus-cs2113-AY2021S1/website
 
 2020-08-07T13:24:24.017Z - info: Website generation started at 9:24:20 PM
 2020-08-07T13:24:28.473Z - info: Building assets...
+2020-08-07T13:24:31.494Z - info: Assets built
+2020-08-07T13:24:31.494Z - info: Generating pages...
+2020-08-07T13:24:43.099Z - debug:  
+2020-08-07T13:24:43.100Z - debug:  
+2020-08-07T13:24:43.100Z - debug:  
+2020-08-07T13:24:43.101Z - debug:  
+2020-08-07T13:24:50.788Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:24:50.790Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:24:57.457Z - debug:  
+2020-08-07T13:24:57.459Z - debug:  
+2020-08-07T13:24:57.461Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:24:57.461Z - debug:  
+2020-08-07T13:24:57.461Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:24:57.462Z - debug:  
+2020-08-07T13:24:57.462Z - debug:  
+2020-08-07T13:25:03.814Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:25:03.814Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:25:04.354Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:25:04.356Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:25:06.211Z - debug:  
+2020-08-07T13:25:06.898Z - debug:  
+2020-08-07T13:25:08.480Z - debug:  
+2020-08-07T13:25:08.481Z - debug:  
+2020-08-07T13:25:52.614Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:25:52.615Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:25:56.087Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:25:56.091Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:25:59.575Z - debug:  
+2020-08-07T13:25:59.612Z - debug:  
+2020-08-07T13:26:02.884Z - debug:  
+2020-08-07T13:26:03.003Z - debug:  
+2020-08-07T13:26:10.900Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:26:12.772Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-07T13:26:13.634Z - debug:  
+2020-08-07T13:26:38.476Z - debug:  
+2020-08-07T13:26:38.476Z - debug:  
+2020-08-07T13:26:38.700Z - debug:  
+2020-08-07T13:26:38.700Z - debug:  
+2020-08-07T13:26:43.389Z - debug:  
+2020-08-07T13:26:43.523Z - debug:  
+2020-08-07T13:26:54.643Z - debug:  
+2020-08-07T13:26:54.644Z - debug:  
+2020-08-07T13:26:54.644Z - debug:  
+2020-08-07T13:26:54.644Z - debug:  
+2020-08-07T13:26:55.553Z - debug:  
+2020-08-07T13:27:02.487Z - debug:  
+2020-08-07T13:27:02.705Z - debug:  
+2020-08-07T13:27:08.176Z - debug:  
+2020-08-07T13:27:47.956Z - debug:  
+2020-08-07T13:27:47.957Z - debug:  
+2020-08-07T13:27:47.957Z - debug:  
+2020-08-07T13:28:16.819Z - debug:  
+2020-08-07T13:28:33.593Z - debug:  
+2020-08-07T13:28:34.428Z - debug:  
+2020-08-07T13:28:46.006Z - info: Pages built
+2020-08-07T13:29:18.599Z - info: Website generation complete! Total build time: 298.26s
+2020-08-07T13:29:18.604Z - info: Build success!
+2020-08-07T13:29:18.605Z - debug:  
+2020-08-07T13:29:18.613Z - info: Site data built
+2020-08-07T13:30:38.427Z - info: Deployed!
