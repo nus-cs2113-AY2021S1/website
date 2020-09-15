@@ -172,7 +172,7 @@
                         </tr>
                         <tr>
                           <td><a href="https://en.wikipedia.org/wiki/Functional_programming"><em>Functional Programming</em> paradigm</a></td>
-                          <td>F#, Haskel, Scala</td>
+                          <td>F#, Haskell, Scala</td>
                         </tr>
                         <tr>
                           <td><a href="https://en.wikipedia.org/wiki/Logic_programming"><em>Logic Programming</em> paradigm</a></td>
@@ -928,9 +928,10 @@
                 <div>
                   <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em> : the ability to substitute a child class object where a parent class object is expected.</p>
                   <box>
-                    <img src="/website/book/oop/inheritance/substitutability/images/staff.png" height="80">
-                    <p></p>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> an <code v-pre>Academic</code> is an instance of a <code v-pre>Staff</code>, but a <code v-pre>Staff</code> is not necessarily an instance of an <code v-pre>Academic</code>. i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
+                    <p>
+                      <pic src="/website/book/oop/inheritance/substitutability/67968c10181cfb0e3ad27fd3dc6425ae.png"></pic>
+                    </p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> an <code v-pre>AcademicStaff</code> is an instance of a <code v-pre>Staff</code>, but a <code v-pre>Staff</code> is not necessarily an instance of an <code v-pre>AcademicStaff</code>. i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
                     <p>The following code is valid because an <code v-pre>AcademicStaff</code> object is substitutable as a <code v-pre>Staff</code> object.</p>
                     <pre><code class="hljs java" v-pre><span>Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span><br></span></code></pre>
                     <p>But the following code is not valid <span class="dimmed">because <code v-pre>staff</code> is declared as a <code v-pre>Staff</code> type and therefore its value may or may not be of type <code v-pre>AcademicStaff</code>, which is the type expected by variable <code v-pre>academicStaff</code>.</span></p>
@@ -1851,18 +1852,20 @@
                     <box>
                       <h4 id="a-recipe-for-brainstorming-user-stories">A recipe for brainstorming user stories<a class="fa fa-anchor" href="#a-recipe-for-brainstorming-user-stories" onclick="event.stopPropagation()"></a></h4>
                       <p>Given below is a possible <em>recipe</em> you can take when using user stories for early stages of requirement gathering.</p>
+                      <p><strong><strong>Step 0:</strong></strong> <strong>Clear your mind of preconceived product ideas</strong></p>
+                      <p>Even if you already have some idea of what your product will look/behave like in the end, clear your mind of those ideas. The product is the <em>solution</em>. At this point, we are still at the stage of figuring out the <em>problem</em> (i.e., user requirements). Let's try to get from the problem to the solution in a systematic way, one step at a time.</p>
                       <p><strong><strong>Step 1:</strong></strong> <strong>Define the <em>target user</em> as a <em>persona</em>:</strong></p>
                       <p>Decide your target user's profile (e.g. a student, office worker, programmer, sales person) and work patterns (e.g. Does he work in groups or alone? Does he share his computer with others?). A clear understanding of the target user will help when deciding the importance of a user story. You can even narrow it down to a <em>persona</em>. Here is an example:</p>
                       <blockquote>
                         <p>Jean is a university student studying in a non-IT field. She interacts with a lot of people due to her involvement in university clubs/societies. ...</p>
                       </blockquote>
                       <p><strong><strong>Step 2:</strong></strong> <strong>Define the <em>problem scope</em>:</strong></p>
-                      <p>Decide that exact problem you are going to solve for the target user. It is also useful to specify what related problems it will <em>not</em> solve so that the exact scope is clear.</p>
+                      <p>Decide the exact problem you are going to solve for the target user. It is also useful to specify what related problems it will <em>not</em> solve so that the exact scope is clear.</p>
                       <blockquote>
                         <p>ProductX helps Jean keep track of all her school contacts. It does not cover communicating with contacts.</p>
                       </blockquote>
                       <p><strong><strong>Step 3:</strong></strong> <strong>List <em>scenarios</em> to form a <em>narrative</em>:</strong></p>
-                      <p>Think of the various likely scenarios your target user is likely to go through as she uses your app. Following a chronological sequence as if you are telling a story might be helpful.</p>
+                      <p>Think of the various scenarios your target user is likely to go through as she uses your app. Following a chronological sequence as if you are telling a story might be helpful.</p>
                       <blockquote>
                         <p><strong>A. First use:</strong></p>
                         <ol>
@@ -4896,7 +4899,7 @@ Extensions:
                     <p><strong>Java disables assertions by default.</strong> This could create a situation where you think all assertions are being verified as <code v-pre>true</code> while in fact they are not being verified at all. Therefore, remember to enable assertions when you run the program if you want them to be in effect.</p>
                   </box>
                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Enable assertions in Intellij (<a href="https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea">how?</a>) and get an assertion to fail temporarily (e.g. insert an <code v-pre>assert false</code> into the code temporarily) to confirm assertions are being verified.</p>
-                  <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <strong>Java <code v-pre>assert</code> vs JUnit assertions: They are similar in purpose but JUnit assertions are more powerful and customized for testing.</strong> In addition, JUnit assertions are not disabled by default. You recommend you use JUnit assertions in test code and Java <code v-pre>assert</code> in functional code.</p>
+                  <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <strong>Java <code v-pre>assert</code> vs JUnit assertions: They are similar in purpose but JUnit assertions are more powerful and customized for testing.</strong> In addition, JUnit assertions are not disabled by default. We recommend you use JUnit assertions in test code and Java <code v-pre>assert</code> in functional code.</p>
                 </div>
               </div>
             </div>
@@ -5227,8 +5230,9 @@ Extensions:
                       <p><strong>Static analysis</strong>: Static analysis is the analysis of code without actually executing the code.</p>
                     </div>
                   </box>
-                  <p>Static analysis of code can find useful information such unused variables, unhandled exceptions, style errors, and statistics. Most modern IDEs come with some inbuilt static analysis capabilities. For example, an IDE can highlight unused variables as you type the code into the editor.</p>
-                  <p>Higher-end static analyzer tools can perform more complex analysis such as locating potential bugs, memory leaks, inefficient code structures etc.</p>
+                  <p><strong>Static analysis of code can find useful information such unused variables</strong>, unhandled exceptions, style errors, and statistics. Most modern IDEs come with some inbuilt static analysis capabilities. For example, an IDE can highlight unused variables as you type the code into the editor.</p>
+                  <p>The term <em>static</em> in static analysis refers to the fact that the code is analyzed without executing the code. <strong>In contrast, <em>dynamic analysis</em> requires the code to be executed to gather additional information about the code</strong> e.g., performance characteristics.</p>
+                  <p><strong>Higher-end static analyzer tools can perform more complex analysis such as locating potential bugs</strong>, memory leaks, inefficient code structures etc.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some example static analyzer for Java: <a href="http://checkstyle.sourceforge.net/">CheckStyle</a>, <a href="https://pmd.github.io/">PMD</a>, <a href="http://findbugs.sourceforge.net/">FindBugs</a></p>
                   </box>
@@ -5879,7 +5883,7 @@ Extensions:
                   <p><strong>A test driver is the code that ‘drives’ the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre>PayrollTest</code> ‘drives’ the <code v-pre>Payroll</code> class by sending it test inputs and verifies if the output is as expected.</p>
-                    <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{<br></span><span><br></span><span>        <span class="hljs-comment">//test setup</span><br></span><span>        Payroll p = <span class="hljs-keyword">new</span> Payroll();<br></span><span><br></span><span>        <span class="hljs-comment">//test case 1</span><br></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});<br></span><span>        <span class="hljs-comment">// automatically verify the response</span><br></span><span>        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">6400</span>) {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 1 failed "</span>);<br></span><span>        }<br></span><span><br></span><span>        <span class="hljs-comment">//test case 2</span><br></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});<br></span><span>        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">2300</span>) {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 2 failed "</span>);<br></span><span>        }<br></span><span><br></span><span>        <span class="hljs-comment">//more tests...</span><br></span><span><br></span><span>        System.out.println(<span class="hljs-string">"All tests passed"</span>);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                    <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTest</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{<br></span><span><br></span><span>        <span class="hljs-comment">//test setup</span><br></span><span>        Payroll p = <span class="hljs-keyword">new</span> Payroll();<br></span><span><br></span><span>        <span class="hljs-comment">//test case 1</span><br></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});<br></span><span>        <span class="hljs-comment">// automatically verify the response</span><br></span><span>        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">6400</span>) {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 1 failed "</span>);<br></span><span>        }<br></span><span><br></span><span>        <span class="hljs-comment">//test case 2</span><br></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});<br></span><span>        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">2300</span>) {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 2 failed "</span>);<br></span><span>        }<br></span><span><br></span><span>        <span class="hljs-comment">//more tests...</span><br></span><span><br></span><span>        System.out.println(<span class="hljs-string">"All tests passed"</span>);<br></span><span>    }<br></span><span>}<br></span></code></pre>
                   </box>
                 </div>
               </div>
@@ -8029,7 +8033,7 @@ Extensions:
                     <p></p>
                   </box>
                   <p>
-                    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Show each association as <strong>either an attribute or a line but not both</strong>. A line is preferred is it is easier to spot.
+                    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Show each association as <strong>either an attribute or a line but not both</strong>. A line is preferred as it is easier to spot.
                   </p>
                 </div>
               </div>
@@ -9937,7 +9941,7 @@ Extensions:
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, Sep 11, 2020, 10:09:05 PM GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, Sep 15, 2020, 11:10:16 PM GMT+8]</small></div>
     </footer>
   </div>
 </body>

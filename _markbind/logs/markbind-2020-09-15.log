@@ -1,0 +1,193 @@
+2020-09-15T12:45:37.672Z - info: Website generation started at 8:45:26 PM
+2020-09-15T12:45:47.694Z - info: Building assets...
+2020-09-15T12:45:54.206Z - info: Assets built
+2020-09-15T12:45:54.208Z - info: Generating pages...
+2020-09-15T12:46:16.027Z - debug:  
+2020-09-15T12:46:16.028Z - debug:  
+2020-09-15T12:46:16.029Z - debug:  
+2020-09-15T12:46:16.030Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:46:16.030Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:46:20.628Z - debug:  
+2020-09-15T12:46:20.629Z - debug:  
+2020-09-15T12:46:22.307Z - debug:  
+2020-09-15T12:46:22.613Z - debug:  
+2020-09-15T12:46:23.553Z - debug:  
+2020-09-15T12:46:28.213Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:46:28.217Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:46:28.218Z - debug:  
+2020-09-15T12:46:28.218Z - debug:  
+2020-09-15T12:46:31.197Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:46:31.197Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:46:32.109Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:46:32.110Z - debug:  
+2020-09-15T12:46:32.110Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:46:32.110Z - debug:  
+2020-09-15T12:46:37.206Z - debug:  
+2020-09-15T12:46:37.336Z - debug:  
+2020-09-15T12:47:02.321Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:03.380Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:04.799Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:05.427Z - debug:  
+2020-09-15T12:47:07.211Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:08.445Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:10.855Z - debug:  
+2020-09-15T12:47:14.132Z - debug:  
+2020-09-15T12:47:17.818Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:17.820Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:21.114Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:21.115Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:21.117Z - debug:  
+2020-09-15T12:47:24.898Z - debug:  
+2020-09-15T12:47:29.257Z - debug:  
+2020-09-15T12:47:29.811Z - debug:  
+2020-09-15T12:47:39.805Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:42.291Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T12:47:43.475Z - debug:  
+2020-09-15T12:48:21.982Z - debug:  
+2020-09-15T12:48:22.445Z - debug:  
+2020-09-15T12:48:22.447Z - debug:  
+2020-09-15T12:48:22.449Z - debug:  
+2020-09-15T12:48:30.033Z - debug:  
+2020-09-15T12:48:30.317Z - debug:  
+2020-09-15T12:48:30.318Z - debug:  
+2020-09-15T12:48:38.141Z - debug:  
+2020-09-15T12:48:42.263Z - debug:  
+2020-09-15T12:48:42.264Z - debug:  
+2020-09-15T12:48:42.264Z - debug:  
+2020-09-15T12:48:43.005Z - debug:  
+2020-09-15T12:48:55.113Z - debug:  
+2020-09-15T12:48:55.114Z - debug:  
+2020-09-15T12:48:55.114Z - debug:  
+2020-09-15T12:49:02.680Z - debug:  
+2020-09-15T12:49:39.229Z - debug:  
+2020-09-15T12:49:51.467Z - debug:  
+2020-09-15T12:49:51.470Z - debug:  
+2020-09-15T12:49:53.015Z - debug:  
+2020-09-15T12:50:40.776Z - debug:  
+2020-09-15T12:51:03.508Z - debug:  
+2020-09-15T12:51:03.508Z - debug:  
+2020-09-15T12:51:19.911Z - info: Pages built
+2020-09-15T12:52:07.863Z - info: Website generation complete! Total build time: 400.981s
+2020-09-15T12:52:08.956Z - info: Serving "D:\Teaching\CS2113\AY2021S1\website\_site" at http://127.0.0.1:8080
+2020-09-15T12:52:08.957Z - info: Press CTRL+C to stop ...
+2020-09-15T12:52:08.958Z - debug:  
+2020-09-15T12:52:09.061Z - info: Site data built
+2020-09-15T15:00:08.065Z - info: Website generation started at 10:59:58 PM
+2020-09-15T15:00:17.500Z - info: Building assets...
+2020-09-15T15:00:23.654Z - info: Assets built
+2020-09-15T15:00:23.655Z - info: Generating pages...
+2020-09-15T15:00:43.443Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:00:43.444Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:00:47.799Z - debug:  
+2020-09-15T15:00:47.800Z - debug:  
+2020-09-15T15:00:47.800Z - debug:  
+2020-09-15T15:00:47.800Z - debug:  
+2020-09-15T15:00:47.800Z - debug:  
+2020-09-15T15:00:49.556Z - debug:  
+2020-09-15T15:00:50.280Z - debug:  
+2020-09-15T15:00:55.381Z - debug:  
+2020-09-15T15:00:55.382Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:00:55.382Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:00:55.383Z - debug:  
+2020-09-15T15:00:55.383Z - debug:  
+2020-09-15T15:00:57.784Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:00:57.785Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:00:58.919Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:00:58.920Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:00:58.920Z - debug:  
+2020-09-15T15:00:58.920Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:00:59.402Z - debug:  
+2020-09-15T15:01:02.872Z - debug:  
+2020-09-15T15:01:28.100Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:01:28.975Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:01:30.582Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:01:31.080Z - debug:  
+2020-09-15T15:01:32.812Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:01:33.982Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:01:36.065Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:01:36.066Z - debug:  
+2020-09-15T15:01:40.981Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:01:40.982Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:01:43.960Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:01:43.964Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:01:44.337Z - debug:  
+2020-09-15T15:01:46.937Z - debug:  
+2020-09-15T15:01:50.112Z - debug:  
+2020-09-15T15:01:50.182Z - debug:  
+2020-09-15T15:02:01.516Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:02:04.430Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T15:02:05.359Z - debug:  
+2020-09-15T15:02:43.836Z - debug:  
+2020-09-15T15:02:43.981Z - debug:  
+2020-09-15T15:02:44.109Z - debug:  
+2020-09-15T15:02:44.280Z - debug:  
+2020-09-15T15:02:54.400Z - debug:  
+2020-09-15T15:02:54.401Z - debug:  
+2020-09-15T15:02:54.401Z - debug:  
+2020-09-15T15:03:27.636Z - debug:  
+2020-09-15T15:03:33.092Z - debug:  
+2020-09-15T15:03:33.092Z - debug:  
+2020-09-15T15:03:33.092Z - debug:  
+2020-09-15T15:03:33.093Z - debug:  
+2020-09-15T15:03:45.193Z - debug:  
+2020-09-15T15:03:45.195Z - debug:  
+2020-09-15T15:03:45.196Z - debug:  
+2020-09-15T15:03:52.486Z - debug:  
+2020-09-15T15:04:28.368Z - debug:  
+2020-09-15T15:04:41.294Z - debug:  
+2020-09-15T15:04:41.295Z - debug:  
+2020-09-15T15:04:41.295Z - debug:  
+2020-09-15T15:05:24.152Z - debug:  
+2020-09-15T15:05:45.449Z - debug:  
+2020-09-15T15:05:46.105Z - debug:  
+2020-09-15T15:06:01.341Z - info: Pages built
+2020-09-15T15:06:47.882Z - info: Website generation complete! Total build time: 409.231s
+2020-09-15T15:06:49.008Z - info: Serving "D:\Teaching\CS2113\AY2021S1\website\_site" at http://127.0.0.1:8080
+2020-09-15T15:06:49.009Z - info: Press CTRL+C to stop ...
+2020-09-15T15:06:49.010Z - debug:  
+2020-09-15T15:06:49.107Z - info: Site data built
+2020-09-15T15:08:41.287Z - info: [11:08:41 PM] Reload for file change: D:\Teaching\CS2113\AY2021S1\website\_markbind\variables.md
+2020-09-15T15:08:42.536Z - warn: Rebuilding all pages as variables file was changed, or the --force-reload flag was set
+2020-09-15T15:08:42.549Z - info: Rebuilding 769 pages
+2020-09-15T15:10:00.324Z - info: Website generation started at 11:09:50 PM
+2020-09-15T15:10:10.052Z - info: Building assets...
