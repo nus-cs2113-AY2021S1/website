@@ -347,6 +347,10 @@ This activity is worth `2x2=4` participation points.
 <p/>
 <panel header="Allocation for iP peer evaluation" minimized >
 
+The allocation will be made known to by Monday 2359 via LumiNUS gradebook.
+
+<!--
+
 {% from "_module-" + module + "/studentData.mbdf" import ip_final_peer_evaluation_allocation as allocation %}
 
 {% macro get_links(username) -%}
@@ -358,12 +362,13 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {% for allocation in allocations  -%}
 {{ allocation[0] }} | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }}
 {% endfor %}
+-->
 
 </panel>
 <p/>
 </div>
 
-1. **Find out which iPs are allocated for your evaluation** from the panel above.
+1. ~~**Find out which iPs are allocated for your evaluation** from the panel above.~~
 1. **Download the JAR file** of the first iP by following the link provided.
 1. **Locate the User Guide** of the app by following the link provided.
 1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
