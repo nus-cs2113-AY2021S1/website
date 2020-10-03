@@ -224,7 +224,9 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 <div tags="m--cs2113 m--tic4001">
 
 * No <tooltip content="e.g., the product is not working at all by the milestone deadline">major mishaps</tooltip> at {{ version_first }}, {{ version_penultimate }}, and {{ version_final }} milestone deadlines.
-* Good attempt to use of at least _some_ Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)
+* Good attempt to use of at least _some_ Git and GitHub features (e.g.,version control, milestones, releases)
+* Good task definition, assignment and tracking, based on the issue tracker
+* Reasonable attempt to use the forking workflow (e.g., creating and manging PRs appropriately)
 </div>
 
 
