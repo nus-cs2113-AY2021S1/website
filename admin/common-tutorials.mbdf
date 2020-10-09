@@ -288,6 +288,7 @@ Note the following:
   1. A `Student` can belong to how many teams?<img src="images/interpret-module-cd/extract-team.png" />
   1. A `Team` can have how many `Student` objects?
 </div>
+
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="draw-stock-cd">
 
@@ -327,14 +328,19 @@ Note the following:
 * Paste the diagram (take a photo if you drew on paper) in the _tutorial workspace_ document.
 * {{ timing_badge("10 minutes", "info") }} **Discuss answers** as guided by the tutor.
 * {{ timing_badge("10+5=15 minutes", "info") }} **Do part (b)** in the same manner.
+
 </div>
+</div>
+
 <!-- ------------------------------------------------------------------------------------------------------ -->
+
 <div id="demo-test-coverage">
 
 * Measure test coverage in your own IDE. Take a screenshot showing test coverage details such as lines covered, lines not covered, percentage of coverage for different files etc.
 * Post a screenshot in the _tutorial workspace_ document. An example is given below:<br>
  <pic src="images/demo-test-coverage/CoverageReportExample.png" ></pic>
 </div>
+
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="interpret-parserfactory-sd">
 
