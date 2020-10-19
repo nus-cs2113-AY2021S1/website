@@ -663,10 +663,15 @@ In addition,
 * **This activity is <span class="text-danger">compulsory</span> and counts for `3` participation points.** Please do it before the deadline.
 <div class="indented-level2">
 <box dismissible>
+
 %%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we'll be using for the PE this semester.%%
+
 </box>
-This week, we would like you to smoke-test the CATcher app **to ensure it can run in your computer**.
+
+This week, we would like you to smoke-test the CATcher app **to ensure it can run on your computer**.
+
 <p/>
+
 <panel type="info" header="**The steps for smoke-testing CATcher:**" minimized>
 
 1. **Download the latest version** of the CATcher executable from [https://github.com/CATcher-org/CATcher/releases](https://github.com/CATcher-org/CATcher/releases).
