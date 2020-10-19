@@ -360,7 +360,7 @@ Update the following pages in your project repo:
 
 * {{ icon_important_big_red }} Do a sincere job in this task as the DG will be reviewed during this week's {{ session_name }}.
 * Update the following in the DG, based on your project notes from the previous weeks.<br>
-  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide]({{ url_ab3_fork_website }}/DeveloperGuide.html#product-scope).
+  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide]({{ url_ab3_upstream_website }}/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.{% if not tic4001 %}
   * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%{% endif %}
@@ -665,7 +665,7 @@ In addition,
 <box dismissible>
 
 %%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we'll be using for the PE this semester.%%
-
+u
 </box>
 
 This week, we would like you to smoke-test the CATcher app **to ensure it can run on your computer**.
