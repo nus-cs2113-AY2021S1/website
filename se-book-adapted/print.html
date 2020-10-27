@@ -1175,7 +1175,7 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how the constructor is overloaded in the class below. The method call <code v-pre>new Account()</code> is bound to the first constructor at compile time.</p>
                     <pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{<br></span><span><br></span><span>    Account () {<br></span><span>        <span class="hljs-comment">// Signature: ()</span><br></span><span>        ...<br></span><span>    }<br></span><span><br></span><span>    Account (String name, String number, <span class="hljs-keyword">double</span> balance) {<br></span><span>        <span class="hljs-comment">// Signature: (String, String, double)</span><br></span><span>        ...<br></span><span>    }<br></span><span>}<br></span></code></pre>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Similarly, the <code v-pre>calcuateGrade</code> method is overloaded in the code below and a method call <code v-pre>calculateGrade(&quot;A1213232&quot;)</code> is bound to the second implementation, at compile time.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Similarly, the <code v-pre>calculateGrade</code> method is overloaded in the code below and a method call <code v-pre>calculateGrade(&quot;A1213232&quot;)</code> is bound to the second implementation, at compile time.</p>
                     <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }<br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(String matric)</span> </span>{ ... }<br></span></code></pre>
                   </box>
                 </div>
@@ -1899,7 +1899,7 @@
                           <li>Jean starts freelancing in her spare time. She wants to keep her free-lancing clients separate from her other clients.</li>
                         </ul>
                       </blockquote>
-                      <p><strong><strong>Step 4:</strong></strong> <strong>List the user stories to supports the scenarios:</strong></p>
+                      <p><strong><strong>Step 4:</strong></strong> <strong>List the user stories to support the scenarios:</strong></p>
                       <p>Based on the scenarios, decide user stories you need to support each. For example, based on the scenario 'A. First use', you might have user stories such as these:</p>
                       <blockquote>
                         <ul>
@@ -4232,7 +4232,7 @@ Extensions:
               <div class="indented-less">
                 <div>
                   <p>Always include a default branch in <code v-pre>case</code> statements.</p>
-                  <p>Furthermore, use it for the intended default action and not just to execute the last option. If there is no default action, you can use the 'default' branch to detect errors (i.e. if execution reached the <code v-pre>default</code> branch, throw an exception). This also applies to the final <code v-pre>else</code> of an <code v-pre>if-else</code> construct. That is, the final <code v-pre>else</code> should mean 'everything else', and not the final option. Do not use <code v-pre>else</code> when an <code v-pre>if</code> condition can be explicitly specified, unless there is absolutely no other possibility.</p>
+                  <p>Furthermore, use it for the intended default action and not just to execute the last option. If there is no default action, you can use the 'default' branch to detect errors (i.e. if execution reached the <code v-pre>default</code> branch, raise a suitable error). This also applies to the final <code v-pre>else</code> of an <code v-pre>if-else</code> construct. That is, the final <code v-pre>else</code> should mean 'everything else', and not the final option. Do not use <code v-pre>else</code> when an <code v-pre>if</code> condition can be explicitly specified, unless there is absolutely no other possibility.</p>
                   <box>
                     <p>
                       <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
@@ -7041,7 +7041,7 @@ Extensions:
               <div class="indented-less">
                 <div>
                   <p><strong>RCS can be done in two ways: the <em>centralized</em> way and the <em>distributed</em> way.</strong></p>
-                  <p><strong>Centralized RCS (CRCS for short)uses a central remote repo that is shared by the team.</strong> Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository. Older RCS tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo either. Instead, they force users to do all the versioning with the remote repo.</p>
+                  <p><strong>Centralized RCS (CRCS for short) uses a central remote repo that is shared by the team.</strong> Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository. Older RCS tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo either. Instead, they force users to do all the versioning with the remote repo.</p>
                   <pic src="/website/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png" width="300">
                     <p><em>The centralized RCS approach without any local repos (e.g., CVS, SVN)</em></p>
                   </pic>
@@ -7065,13 +7065,17 @@ Extensions:
                   <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
                   <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
                   <ol>
-                    <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.</li>
+                    <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.<br>
+                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Common mistake: Done the proposed changes in the <code v-pre>master</code> branch -- if Jean does that, she will not be able to have more than one open PR at any time because any changes to the <code v-pre>master</code> branch will be reflected in all open PRs.
+                    </li>
                     <li>Jean pushes the branch to her fork.</li>
                     <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
                     <li>Other members review Jean’s pull request.</li>
                     <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
                     <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated 'maintainer' of the main repo) merges the PR, which brings Jean’s code to the main repo.</li>
-                    <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own fork.</li>
+                    <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own fork.<br>
+                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Possible mistake: Creating another 'reverse' PR from the team repo to team member fork to syn the member's fork with the merged code. PRs are meant to go from downstream repos to upstream repos, not in the other direction.
+                    </li>
                   </ol>
                 </div>
               </div>
@@ -7401,7 +7405,7 @@ Extensions:
                     <li><strong>breadth-first</strong>: an iteration evolves all major components in parallel <span class="dimmed">e.g., add a new feature fully, or enhance an existing feature</span>.</li>
                     <li><strong>depth-first</strong>: an iteration focuses on fleshing out only some components <span class="dimmed">e.g., update the backend to support a new feature that will be added in a future iteration</span>.</li>
                   </ul>
-                  <p><strong>Most project use a mixture of breadth-first and depth-first iterations</strong> <span class="dimmed">i.e., an iteration can contain some breadth-first work as well as some depth-first work</span>.</p>
+                  <p><strong>Most projects use a mixture of breadth-first and depth-first iterations</strong> <span class="dimmed">i.e., an iteration can contain some breadth-first work as well as some depth-first work</span>.</p>
                 </div>
               </div>
             </div>
@@ -9941,7 +9945,7 @@ Extensions:
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, Oct 27, 2020, 7:42:17 PM GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, Oct 27, 2020, 8:52:25 PM GMT+8]</small></div>
     </footer>
   </div>
 </body>

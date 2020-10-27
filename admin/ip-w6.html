@@ -369,7 +369,7 @@
                           <li>remember to <a href="https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html">specify file paths in an OS-independent way</a>. If not, your app might not work when used on a different OS.</li>
                         </ul>
                         <p>
-                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Your code must handle the case where the file doesn't exist at the start. Reason: when someone else takes your Duke and runs it for the first time, the required file might not exist in their computer. Similarly, if you expect the data file to be in as specific folder (e.g., <code v-pre>./data/</code>), you must also handle the 'folder does not exist yet' case.
+                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Your code must <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., if the file is missing, your code must creat it</span>handle</span> the case where the data file doesn't exist at the start. Reason: when someone else takes your Duke and runs it for the first time, the required file might not exist in their computer. Similarly, if you expect the data file to be in as specific folder (e.g., <code v-pre>./data/</code>), you must also handle the folder-does-not-exist-yet case.
                         </p>
                       </div>
                     </panel>
@@ -410,7 +410,7 @@
                         <p><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> Do not commit the JAR file created. Instead, you can make the JAR file available in the following manner.</p>
                         <ul>
                           <li>Go to your fork on GitHub and <a href="https://help.github.com/en/articles/creating-releases">create a new <em>release</em></a>.</li>
-                          <li>In the page where you fill the details of th release,
+                          <li>In the page where you fill the details of the release,
                             <ul>
                               <li>give an appropriate version number e.g., <code v-pre>v0.1</code></li>
                               <li>attach the JAR file where it says <code v-pre>Attach binaries by dropping them ...</code>.</li>
@@ -451,7 +451,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, Oct 27, 2020, 7:42:17 PM GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, Oct 27, 2020, 8:52:25 PM GMT+8]</small></div>
     </footer>
   </div>
 </body>

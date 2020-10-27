@@ -497,7 +497,7 @@
                 <li>remember to <a href="https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html">specify file paths in an OS-independent way</a>. If not, your app might not work when used on a different OS.</li>
               </ul>
               <p>
-                <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Your code must handle the case where the file doesn't exist at the start. Reason: when someone else takes your Duke and runs it for the first time, the required file might not exist in their computer. Similarly, if you expect the data file to be in as specific folder (e.g., <code v-pre>./data/</code>), you must also handle the 'folder does not exist yet' case.
+                <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Your code must <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., if the file is missing, your code must creat it</span>handle</span> the case where the data file doesn't exist at the start. Reason: when someone else takes your Duke and runs it for the first time, the required file might not exist in their computer. Similarly, if you expect the data file to be in as specific folder (e.g., <code v-pre>./data/</code>), you must also handle the folder-does-not-exist-yet case.
               </p>
             </div>
             <hr>
@@ -747,7 +747,7 @@
                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> Do not commit the JAR file created. Instead, you can make the JAR file available in the following manner.</p>
                 <ul>
                   <li>Go to your fork on GitHub and <a href="https://help.github.com/en/articles/creating-releases">create a new <em>release</em></a>.</li>
-                  <li>In the page where you fill the details of th release,
+                  <li>In the page where you fill the details of the release,
                     <ul>
                       <li>give an appropriate version number e.g., <code v-pre>v0.1</code></li>
                       <li>attach the JAR file where it says <code v-pre>Attach binaries by dropping them ...</code>.</li>
@@ -870,8 +870,10 @@
                 <ul>
                   <li>Tweak the GUI to match the asymmetric nature of the conversation: As the conversation is between the user and the app (not between two humans), it is asymmetric in nature. Accordingly, it makes sense not to display both sides of the conversion in the same visual format.</li>
                   <li>Highlight errors e.g., when the user types a wrong command, the error should be shown in a different format to catch ther user's attention.</li>
-                  <li>Tweak padding, fonts, colors, alignments to make the GUI more pleasing to look at.</li>
-                  <li>Profile pictures: If your GUI shows profile pictures, you can tweak the way the picture is shown (e.g., crop as a circle or a square with rounded corners). In fact, an easy tweak is to use a picture with a transparent background so that it blends nicely with the background.</li>
+                  <li>Tweak padding, fonts, colors, alignments to make the GUI more pleasing to look at.<br>
+                    Given the app is likely to take only a small portion of the screen, and the bot replies can contain lot of text, try to optimize for space (e.g., avoid wasting display space that simply shows the background graphics)</li>
+                  <li>Profile pictures: If your GUI shows profile pictures, you can tweak the way the picture is shown (e.g., crop as a circle or a square with rounded corners). In fact, an easy tweak is to use a picture with a transparent background so that it blends nicely with the background.<br>
+                    Given that the participants of the conversion are fixed (i.e., you and the chatbot), do you even need big profile pictures?</li>
                 </ul>
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can take inspiration from <a href="https://nus-cs2103-ay1920s1.github.io/website/admin/ip-showcase.html">these past projects</a>. If you adopt any ideas from them, don't forget to give credit to the original author.</p>
               </div>
