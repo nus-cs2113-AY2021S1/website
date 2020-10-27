@@ -8,7 +8,7 @@
 <variable name="S">1</variable>
 <variable name="semester">AY2021S{{ S }}</variable>
 <variable name="period">2020 Aug-Dec</variable>
-<variable name="current_week">9</variable>
+<variable name="current_week">11</variable>
 
 <variable name="luminus_module_id">dd7206fb-b22d-4a82-9c3b-f761a1f77ac8</variable>
 <variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQ3yMfxtxatSX5XxWnZparVJN9UkEOu504YHyShketpCzdqQth4JDcwQwhWvOBi-XH8-gkdgMgGpg1t/pub?embedded=true</variable>
