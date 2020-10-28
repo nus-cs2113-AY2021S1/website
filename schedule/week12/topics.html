@@ -140,6 +140,14 @@
                       <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-2b">W12.2b</a>] <span>Quality Assurance → Test Case Design → Combining Test Inputs →
                           </span></span> <span>Test input combination strategies</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-2c">W12.2c</a>] <span>Quality Assurance → Test Case Design → Combining Test Inputs →
+                          </span></span> <span>Heuristic: Each valid input at least once in a positive test case</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                    </li>
+                    <li>
+                      <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-2d">W12.2d</a>] <span>Quality Assurance → Test Case Design → Combining Test Inputs →
+                          </span></span> <span>Heuristic: No more than one invalid input in a test case</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                    </li>
                   </ul>
                 </small></div>
               <ul>
@@ -763,6 +771,353 @@
               <div class="indented">
                 <div></div>
               </div>
+              <p><span id="W12-2c"></span></p>
+              <div></div>
+              <panel type="seamless" popup-url="/website/book/testCaseDesign/combiningTestInputs/heuristicValid" id="quality-assurance-test-case-design-combining-test-inputs-heuristic-each-valid-input-at-least-once-in-a-positive-test-case" class="algolia-no-index">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W12.2c</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
+                  <h4 id="quality-assurance-test-case-design-combining-test-inputs-heuristic-each-valid-input-at-least-once-in-a-positive-test-case"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Combining Test Inputs →</span></span></small> <strong><span>Heuristic: Each valid input at least once in a positive test case</span></strong><span id="quality-assurance-test-case-design-combining-test-inputs-heuristic-each-valid-input-at-least-once-in-a-positive-test-case" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-test-case-design-combining-test-inputs-heuristic-each-valid-input-at-least-once-in-a-positive-test-case" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div></div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can apply heuristic ‘each valid input at least once in a positive test case’</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p>Consider the following scenario.</p>
+                      <box>
+                        <p>SUT: <code v-pre>printLabel(fruitName String, unitPrice int)</code></p>
+                        <p><strong>Selected values for</strong> <code v-pre>fruitName</code> (invalid values are <ins>underlined</ins> ):</p>
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>Values</th>
+                                <th>Explanation</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Apple</td>
+                                <td>Label format is round</td>
+                              </tr>
+                              <tr>
+                                <td>Banana</td>
+                                <td>Label format is oval</td>
+                              </tr>
+                              <tr>
+                                <td>Cherry</td>
+                                <td>Label format is square</td>
+                              </tr>
+                              <tr>
+                                <td><ins>Dog</ins></td>
+                                <td>Not a valid fruit</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p><strong>Selected values for</strong> <code v-pre>unitPrice</code>:</p>
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>Values</th>
+                                <th>Explanation</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Only one digit</td>
+                              </tr>
+                              <tr>
+                                <td>20</td>
+                                <td>Two digits</td>
+                              </tr>
+                              <tr>
+                                <td><ins>0</ins></td>
+                                <td>Invalid because 0 is not a valid price</td>
+                              </tr>
+                              <tr>
+                                <td><ins>-1</ins></td>
+                                <td>Invalid because negative prices are not allowed</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </box>
+                      <p>Suppose these are the test cases being considered.</p>
+                      <box>
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th style="text-align:center">Case</th>
+                                <th style="text-align:center">fruitName</th>
+                                <th style="text-align:center">unitPrice</th>
+                                <th style="text-align:center">Expected</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="text-align:center">1</td>
+                                <td style="text-align:center">Apple</td>
+                                <td style="text-align:center">1</td>
+                                <td style="text-align:center">Print label</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">2</td>
+                                <td style="text-align:center">Banana</td>
+                                <td style="text-align:center">20</td>
+                                <td style="text-align:center">Print label</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">3</td>
+                                <td style="text-align:center">Cherry</td>
+                                <td style="text-align:center"><ins>0</ins></td>
+                                <td style="text-align:center">Error message “invalid price”</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">4</td>
+                                <td style="text-align:center"><ins>Dog</ins></td>
+                                <td style="text-align:center"><ins>-1</ins></td>
+                                <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </box>
+                      <p>It looks like the test cases were created using the <em>at least once</em> strategy. After running these tests, can you confirm that square-format label printing is done correctly?</p>
+                      <ul>
+                        <li>Answer: No.</li>
+                        <li>Reason: <code v-pre>Cherry</code> -- the only input that can produce a square-format label -- is in a negative test case which produces an error message instead of a label. If there is a bug in the code that prints labels in square-format, these tests cases will not trigger that bug.</li>
+                      </ul>
+                      <p>In this case a useful heuristic to apply is <strong>each valid input must appear at least once in a positive test case</strong>. <code v-pre>Cherry</code> is a valid test input and you must ensure that it appears at least once in a positive test case. Here are the updated test cases after applying that heuristic.</p>
+                      <box>
+                        <div id="heuristic-valid-test-case">
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th style="text-align:center">Case</th>
+                                  <th style="text-align:center">fruitName</th>
+                                  <th style="text-align:center">unitPrice</th>
+                                  <th style="text-align:center">Expected</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td style="text-align:center">1</td>
+                                  <td style="text-align:center">Apple</td>
+                                  <td style="text-align:center">1</td>
+                                  <td style="text-align:center">Print round label</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">2</td>
+                                  <td style="text-align:center">Banana</td>
+                                  <td style="text-align:center">20</td>
+                                  <td style="text-align:center">Print oval label</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">2.1</td>
+                                  <td style="text-align:center">Cherry</td>
+                                  <td style="text-align:center">VV</td>
+                                  <td style="text-align:center">Print square label</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">3</td>
+                                  <td style="text-align:center">VV</td>
+                                  <td style="text-align:center"><ins>0</ins></td>
+                                  <td style="text-align:center">Error message “invalid price”</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">4</td>
+                                  <td style="text-align:center"><ins>Dog</ins></td>
+                                  <td style="text-align:center"><ins>-1</ins></td>
+                                  <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
+                        </div>
+                      </box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W12-2d"></span></p>
+              <div></div>
+              <panel type="seamless" popup-url="/website/book/testCaseDesign/combiningTestInputs/heuristicInvalid" id="quality-assurance-test-case-design-combining-test-inputs-heuristic-no-more-than-one-invalid-input-in-a-test-case" class="algolia-no-index">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W12.2d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
+                  <h4 id="quality-assurance-test-case-design-combining-test-inputs-heuristic-no-more-than-one-invalid-input-in-a-test-case"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Combining Test Inputs →</span></span></small> <strong><span>Heuristic: No more than one invalid input in a test case</span></strong><span id="quality-assurance-test-case-design-combining-test-inputs-heuristic-no-more-than-one-invalid-input-in-a-test-case" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-test-case-design-combining-test-inputs-heuristic-no-more-than-one-invalid-input-in-a-test-case" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <div>
+                  <div class="indented">
+                    <div>
+                      <p>
+                        <panel src="/website/book/testCaseDesign/combiningTestInputs/heuristicValid/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testCaseDesign/combiningTestInputs/heuristicValid" class="algolia-no-index"><template slot="_header">
+                            <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: Each Valid Input at Least Once in a Positive Test Case</span></p>
+                          </template></panel>
+                      </p>
+                    </div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can apply heuristic ‘no more than one invalid input in a test case’</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p>Consider the <span for="modal:heuristic-valid-test-case" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:heuristic-valid-test-case'].show()" class="trigger-click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</span>.</p>
+                      <b-modal id="modal:heuristic-valid-test-case" hide-footer size="lg" modal-class="mb-zoom" ref="modal:heuristic-valid-test-case" class="algolia-no-index"><template slot="modal-title"><strong>Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case</strong></template>
+                        <div>
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th style="text-align:center">Case</th>
+                                  <th style="text-align:center">fruitName</th>
+                                  <th style="text-align:center">unitPrice</th>
+                                  <th style="text-align:center">Expected</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td style="text-align:center">1</td>
+                                  <td style="text-align:center">Apple</td>
+                                  <td style="text-align:center">1</td>
+                                  <td style="text-align:center">Print round label</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">2</td>
+                                  <td style="text-align:center">Banana</td>
+                                  <td style="text-align:center">20</td>
+                                  <td style="text-align:center">Print oval label</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">2.1</td>
+                                  <td style="text-align:center">Cherry</td>
+                                  <td style="text-align:center">VV</td>
+                                  <td style="text-align:center">Print square label</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">3</td>
+                                  <td style="text-align:center">VV</td>
+                                  <td style="text-align:center"><ins>0</ins></td>
+                                  <td style="text-align:center">Error message “invalid price”</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">4</td>
+                                  <td style="text-align:center"><ins>Dog</ins></td>
+                                  <td style="text-align:center"><ins>-1</ins></td>
+                                  <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
+                        </div>
+                      </b-modal>
+                      <p>After running these test cases can you be sure that the error message “invalid price” is shown for negative prices?</p>
+                      <ul>
+                        <li>Answer: No.</li>
+                        <li>Reason: <code v-pre>-1</code> -- the only input that is a negative price -– is in a test case that produces the error message “invalid fruit”.</li>
+                      </ul>
+                      <p>In this case a useful heuristic to apply is <strong>no more than one invalid input in a test case</strong>. After applying that, you get the following test cases.</p>
+                      <box>
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th style="text-align:center">Case</th>
+                                <th style="text-align:center">fruitName</th>
+                                <th style="text-align:center">unitPrice</th>
+                                <th style="text-align:center">Expected</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="text-align:center">1</td>
+                                <td style="text-align:center">Apple</td>
+                                <td style="text-align:center">1</td>
+                                <td style="text-align:center">Print round label</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">2</td>
+                                <td style="text-align:center">Banana</td>
+                                <td style="text-align:center">20</td>
+                                <td style="text-align:center">Print oval label</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">2.1</td>
+                                <td style="text-align:center">Cherry</td>
+                                <td style="text-align:center">VV</td>
+                                <td style="text-align:center">Print square label</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">3</td>
+                                <td style="text-align:center">VV</td>
+                                <td style="text-align:center"><ins>0</ins></td>
+                                <td style="text-align:center">Error message “invalid price”</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">4</td>
+                                <td style="text-align:center">VV</td>
+                                <td style="text-align:center"><ins>-1</ins></td>
+                                <td style="text-align:center">Error message “invalid price&quot;</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">4.1</td>
+                                <td style="text-align:center"><ins>Dog</ins></td>
+                                <td style="text-align:center">VV</td>
+                                <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
+                      </box>
+                    </div>
+                    <div>
+                      <div>
+                        <panel expandable class="algolia-no-index"><template slot="_header">
+                            <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
+                          </template>
+                          <div>
+                            <panel class="algolia-no-index"><template slot="_header">
+                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Can define test cases precisely</p>
+                              </template>
+                              <question>
+                                <p>Applying the heuristics covered so far, we can determine the precise number of test cases required to test any given SUT effectively.</p>
+                                <ul radio-group="a7d7f" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="a7d7f" type="radio"> True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="a7d7f" type="radio"> False</label></li>
+                                </ul>
+                                <div slot="answer" class="algolia-no-index">
+                                  <p>False</p>
+                                  <p>Explanation: These heuristics are, well, heuristics only. They will help you to make better decisions about test case design. However, they are speculative in nature (especially, when testing in black-box fashion) and cannot give you precise number of test cases.</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
             </div>
           </panel>
           <p></p>
@@ -1300,7 +1655,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, Oct 27, 2020, 8:52:25 PM GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Wed, Oct 28, 2020, 11:14:49 PM GMT+8]</small></div>
     </footer>
   </div>
 </body>

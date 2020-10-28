@@ -2315,6 +2315,8 @@
         "how": "How",
         "why": "Why",
         "test-input-combination-strategies": "Test Input Combination Strategies",
+        "heuristic-each-valid-input-at-least-once-in-a-positive-test-case": "Heuristic: Each Valid Input at Least Once in a Positive Test Case",
+        "heuristic-no-more-than-one-invalid-input-in-a-test-case": "Heuristic: No More Than One Invalid Input In A Test Case",
         "testing-based-on-use-cases": "Testing Based on Use Cases",
         "test-case-design": "Test case design"
       },
