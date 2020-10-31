@@ -399,6 +399,8 @@
     {heading: "Combining Multiple Test Inputs"},
       {location: ["testCaseDesign", "combiningTestInputs", "why"]},
       {location: ["testCaseDesign", "combiningTestInputs", "combinationStrategies"]},
+      {location: ["testCaseDesign", "combiningTestInputs", "heuristicValid"]},
+      {location: ["testCaseDesign", "combiningTestInputs", "heuristicInvalid"]},
     {heading: "Other QA Techniques"},
       {location: ["qualityAssurance", "introduction", "what"]},
       {location: ["qualityAssurance", "introduction", "validationVsVerification"]},
