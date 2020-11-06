@@ -131,11 +131,11 @@
       "layout": "default",
       "headings": {
         "exams": "Exams ",
-        "early-preparations": "Early preparations",
-        "30-minutes-before-the-exam": "30 minutes before the exam",
-        "during-the-exam": "During the exam",
-        "troubleshooting-exam-problems": "Troubleshooting exam problems",
-        "format": "Format"
+        "sop-deviations-refinements": "SOP deviations/refinements",
+        "format": "Format",
+        "final-exam-section-1": "Final exam - Section 1",
+        "final-exam-section-2": "Final exam - Section 2",
+        "exam-briefing-mock-exam-practice-exam-paper": "Exam briefing, mock exam, practice exam paper"
       },
       "headingKeywords": {}
     },
