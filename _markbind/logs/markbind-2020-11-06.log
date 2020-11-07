@@ -516,3 +516,95 @@
 2020-11-06T05:58:40.615Z - info: Lazy website regeneration complete! Total build time: 1.633s
 2020-11-06T06:05:35.537Z - info: Website generation started at 2:05:33 PM
 2020-11-06T06:05:40.878Z - info: Building assets...
+2020-11-06T06:05:44.816Z - info: Assets built
+2020-11-06T06:05:44.817Z - info: Generating pages...
+2020-11-06T06:06:00.880Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:00.881Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:04.846Z - debug:  
+2020-11-06T06:06:04.847Z - debug:  
+2020-11-06T06:06:04.847Z - debug:  
+2020-11-06T06:06:04.847Z - debug:  
+2020-11-06T06:06:04.848Z - debug:  
+2020-11-06T06:06:06.299Z - debug:  
+2020-11-06T06:06:06.977Z - debug:  
+2020-11-06T06:06:07.691Z - debug:  
+2020-11-06T06:06:11.483Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:11.484Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:11.484Z - debug:  
+2020-11-06T06:06:11.485Z - debug:  
+2020-11-06T06:06:13.792Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:13.792Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:14.540Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:14.540Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:14.540Z - debug:  
+2020-11-06T06:06:14.540Z - debug:  
+2020-11-06T06:06:19.010Z - debug:  
+2020-11-06T06:06:19.201Z - debug:  
+2020-11-06T06:06:33.839Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:34.497Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:36.095Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:36.731Z - debug:  
+2020-11-06T06:06:37.788Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:38.846Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:40.335Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:40.335Z - debug:  
+2020-11-06T06:06:42.822Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:42.823Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:45.255Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:45.256Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:47.177Z - debug:  
+2020-11-06T06:06:47.178Z - debug:  
+2020-11-06T06:06:50.229Z - debug:  
+2020-11-06T06:06:50.272Z - debug:  
+2020-11-06T06:06:55.969Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:57.694Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-06T06:06:58.679Z - debug:  
+2020-11-06T06:07:25.341Z - debug:  
+2020-11-06T06:07:25.341Z - debug:  
+2020-11-06T06:07:25.638Z - debug:  
+2020-11-06T06:07:25.639Z - debug:  
+2020-11-06T06:07:32.165Z - debug:  
+2020-11-06T06:07:32.747Z - debug:  
+2020-11-06T06:07:32.748Z - debug:  
+2020-11-06T06:07:40.109Z - debug:  
+2020-11-06T06:07:43.426Z - debug:  
+2020-11-06T06:07:43.426Z - debug:  
+2020-11-06T06:07:44.046Z - debug:  
+2020-11-06T06:07:44.047Z - debug:  
+2020-11-06T06:07:53.323Z - debug:  
+2020-11-06T06:07:53.324Z - debug:  
+2020-11-06T06:07:53.324Z - debug:  
+2020-11-06T06:07:58.046Z - debug:  
+2020-11-06T06:08:20.198Z - debug:  
+2020-11-06T06:08:30.716Z - debug:  
+2020-11-06T06:08:30.717Z - debug:  
+2020-11-06T06:08:30.717Z - debug:  
+2020-11-06T06:08:58.027Z - debug:  
+2020-11-06T06:09:15.646Z - debug:  
+2020-11-06T06:09:15.647Z - debug:  
+2020-11-06T06:09:27.392Z - info: Pages built
+2020-11-06T06:09:58.859Z - info: Website generation complete! Total build time: 265.794s
+2020-11-06T06:09:58.861Z - info: Build success!
+2020-11-06T06:09:58.862Z - debug:  
+2020-11-06T06:09:58.866Z - info: Site data built
+2020-11-06T06:10:40.500Z - info: Deployed!
