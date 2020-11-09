@@ -6,17 +6,48 @@
 
 <p class="lead">There is no midterm exam. Information about the final exam is given below.</p>
 
+<!--
 <box type="important">
 
 Instructions below are from the previous semester. Will be updated closer to the exam.
 </box>
 
+-->
 
 * The final exam will be as per the normal exam schedule, and will count for {{ marks_exam }}% of the final grade.
-* The exam will be done online. Tools used: LumiNUS, Zoom, Microsoft Teams.
+* The exam will be done online.
+* ==**We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)**==, combined with the deviations/refinements given in the section below. Please read the SOP carefully and ensure you follow all instructions.
 
-## Early preparations
 
+## SOP deviations/refinements
+
+1. **Tools: LumiNUS, Zoom, Microsoft Teams (MST),** %%(optionally) PDF scanner, PDF reader.%%
+
+1. **Recording of your PC screen** not required (tentative, subject to approvals).
+
+1. **Only one computer screen** is asllowed.
+
+1. **Not allowed to take printouts during the exam.**
+
+1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html, jpeg) are not allowed. You may want to convert your notes to PDF before the exam.
+
+1. **Soft copy of the textbook (only PDF format) is allowed.**
+
+1. **The Browser should only be used to access LumiNUS.** Accessing other websites (including the module website) is not allowed.
+
+1. **Use Microsoft Teams (not Zoom) private messages to communicate with the prof**. Use Zoom to PM the invigilator only if you don't get a response via MST.
+
+1. **The quiz will not appear on LumiNUS until a few minutes before we release the password**. Wait until we announce that the quiz is available to see.
+
+1. **When the invigilator asks you to do an _identity check_**, turn your face towards the camera, move closer to the camera, remove face mask (if any), and hold the pose until the invigilator tells you to go back to your working position. **Simultaneously show your photo identification document** to the camera
+
+1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'justification' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
+
+1. **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), PM the invigilator using MS Teams (failing that, use Zoom chat).
+
+1. **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.
+
+<!--
 * **Set up Zoom**: Follow the [Zoom exam instructions provided by NUS](https://wiki.nus.edu.sg/display/THES/Proctoring+with+Zoom) (note the requirement for ==SSO login==).
   * **Update the name of your Zoom profile to match the exact name on your student card, ==including whether the family name is give first or last==** (reason: we need to manually locate your name in the attendance list, which is sorted by your name in LumiNUS). You will not be admitted to the Zoom meeting if you do not comply with the requirement.
   * **Note the requirements for camera placement**: Your Zoom video feed need to capture your upper body and the work area, including the computer screen (==as explained in [this example](https://www.youtube.com/watch?v=BoeXRLfpYv4)==). That means **the built-in camera of your computer is not suitable** for this purpose. Use either a separate web cam (attached to your Computer) or use Zoom through your smart phone. If neither of those options are available to you, let the prof know ASAP (deadline: April 24).
@@ -33,6 +64,7 @@ Your exam submission will not be accepted if your Zoom video feed does not compl
 As per NUS requirements, your Zoom video feed is recorded by us and will be shared with NUS administration. If you do not consent to that, please let us know ASAP (deadline: April 24) so that we can put you in touch with the NUS administration to sort it out.
 </box>
 </div>
+
 
 * **Set up MS-Teams**: Follow the [_Microsoft Teams_ instructions provided by NUS](https://wiki.nus.edu.sg/display/THES/Before+exams+-+Install+and+log+in+to+Microsoft+Teams). We'll be using MS-Teams as a backup in case of Zoom fails.
 
@@ -73,10 +105,44 @@ As per NUS requirements, your Zoom video feed is recorded by us and will be shar
 * **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'justification' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 * **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), contact the invigilator using Zoom chat or MS-Teams.
 * **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.
+-->
 
 
 ## Format
 
+* The exam will be divided into {{ 3 if cs2103 else 2 }} sections.
+* Each section is worth 15 marks. There are no negative marks in the exam. 
+* Both sections should be completed in one sitting. **Duration: 1 hour**
+
+
+### Final exam - Section 1
+
+* The first section will contain 30 True/False questions.
+* Questions will appear in random order.
+* You will not be able to go back to previous questions.<br>
+  %%Reasons:<br>
+  1\. to minimize opportunities for collusion<br>
+  2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
+* Recommended duration: 23 minutes (recommended: allocate 40 seconds per question, which gives you a 3 minutes buffer)
+* You are **not required to give a justification** for your answer in this section.
+
+### Final exam - Section 2
+
+* The second section will contain 15 MCQs
+* Questions will appear in random order.
+* You will not be able to go back to previous questions.<br>
+  %%Reasons:<br>
+  1\. to minimize opportunities for collusion<br>
+  2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
+* Recommended duration: 35 minutes (recommended: allocate 2 minutes per question, which gives you a 5 minutes buffer)
+* You **are required to give a justification** for your answer in this section. ==The question will specify what should be included in the justification. **Answers without the correct justification may not earn full marks.**== However, we'll give full marks up to two correct answers that do not have justifications (or that have incorrect justification) %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
+
+## Exam briefing, mock exam, practice exam paper
+
+* There will be an exam briefing in the penultimate lecture. It will include a minimal mock exam, just to help you understand the structure.
+* You will be given a practice exam paper (of proportionally reduced size of the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.
+
+<!--
 * The exam will be given as quizzes in LumiNUS.<br>
   For the ease of administration, the exam is split into two equal size quizzes: part 1, part 2.<br>
 * Each quiz,
@@ -107,6 +173,7 @@ Choose the incorrect statement.
 
 </div>
 
+-->
 <!--
 There is no midterm.
 
