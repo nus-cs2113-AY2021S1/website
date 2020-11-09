@@ -59,7 +59,7 @@
 * Put the downloaded jar file ==in an empty folder==.
 * Open a command window. Run the `java -version` command to ensure you are using Java 11.
 * Launch the jar file ==using the `java -jar` command== (do not use double-clicking).
-* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, contact the invigilator (via Gitter or Zoom chat) to receive a _fallback_ team to test.
+* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, contact the invigilator (via via MS Teams, and failing that, via Zoom chat) to receive a _fallback_ team to test.
 
 
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
@@ -74,7 +74,7 @@
 <tab header="PE (at **{{ version_final }}**)">
 
 * Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
-* As before, do both ==system testing and acceptance testing== but give priority to system testing as system-testing bugs can earn you more credit.
+* As before, do both ==_system testing_ and _acceptance testing_== but give priority to system testing as those bugs can earn you more credit.
 
 </tab>
 </tabs>
@@ -150,7 +150,7 @@
 * Each bug should be a separate issue.
 * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
 * Use a descriptive title.
-* Give a good description of the bug with ==steps to reproduce and screenshots==. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.
+* Give a good description of the bug with ==steps to reproduce, expected, actual, and screenshots==. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.
 * Assign exactly one `severity.*` label to the bug report. Bug report without a severity label are considered `severity.Low` (lower severity bugs earn lower credit)<br>
 
 <div class="indented-level2">

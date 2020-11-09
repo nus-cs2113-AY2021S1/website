@@ -709,7 +709,7 @@
                   <ul>
                     <li>The primary objective of the PE is to <mark>increase the rigor of project grading</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.</li>
                     <li>PE is also <mark>used to evaluate your manual testing skills, product evaluation skills, effort estimation skills</mark> etc.</li>
-                    <li>Note that significant project components are <mark>not graded solely based on peer ratings</mark>. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.</li>
+                    <li>Note that significant project components are <mark>not graded solely based on peer ratings</mark>. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.</li>
                     <li>PE is <mark>not a means of <em>pitting you against each other</em></mark>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li>
                   </ul>
                   <p><strong>Grading</strong>:</p>
@@ -731,11 +731,11 @@
                           <li>The three types (i.e., <code v-pre>type.FunctionalityBug</code>, <code v-pre>type.DocumentationBug</code>, <code v-pre>type.FeatureFlaw</code>) are counted for three different grade components. The penalty/credit can vary based on the bug type. <span class="dimmed">Given that you are not told which type has a bigger impact on the grade, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.</span></li>
                           <li>The penalty for a bug is divided equally among assignees.</li>
                           <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
-                          <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span> earn less credit for the tester and slightly penalty for the developer.</li>
+                          <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span> earn less credit for the tester and slightly higher penalty for the developer.</li>
                           <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
                           <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
                             <ul>
-                              <li><code v-pre>n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
+                              <li><code v-pre>n</code> bugs found in your feature; it is a big feature consisting of lot of code → 4/5 marks</li>
                               <li><code v-pre>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
                             </ul>
                           </li>
@@ -853,7 +853,7 @@
                       <ul>
                         <li>The primary objective of the PE is to <mark>increase the rigor of project grading</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.</li>
                         <li>PE is also <mark>used to evaluate your manual testing skills, product evaluation skills, effort estimation skills</mark> etc.</li>
-                        <li>Note that significant project components are <mark>not graded solely based on peer ratings</mark>. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.</li>
+                        <li>Note that significant project components are <mark>not graded solely based on peer ratings</mark>. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.</li>
                         <li>PE is <mark>not a means of <em>pitting you against each other</em></mark>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li>
                       </ul>
                       <p><strong>Grading</strong>:</p>
@@ -875,11 +875,11 @@
                               <li>The three types (i.e., <code v-pre>type.FunctionalityBug</code>, <code v-pre>type.DocumentationBug</code>, <code v-pre>type.FeatureFlaw</code>) are counted for three different grade components. The penalty/credit can vary based on the bug type. <span class="dimmed">Given that you are not told which type has a bigger impact on the grade, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.</span></li>
                               <li>The penalty for a bug is divided equally among assignees.</li>
                               <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
-                              <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span> earn less credit for the tester and slightly penalty for the developer.</li>
+                              <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span> earn less credit for the tester and slightly higher penalty for the developer.</li>
                               <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
                               <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
                                 <ul>
-                                  <li><code v-pre>n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
+                                  <li><code v-pre>n</code> bugs found in your feature; it is a big feature consisting of lot of code → 4/5 marks</li>
                                   <li><code v-pre>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
                                 </ul>
                               </li>
@@ -983,31 +983,25 @@
                     </div>
                     <p></p>
                     <h4 id="pe-phase-1-bug-reporting"><span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span><span id="pe-phase-1-bug-reporting" class="anchor"></span><a class="fa fa-anchor" href="#pe-phase-1-bug-reporting" onclick="event.stopPropagation()"></a></h4>
-                    <box type="important" light icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-exclamation-circle"></span></template>
-                      <p><strong>PE Phase 1 is an 'exam', to be done under exam conditions:</strong></p>
+                    <box type="important" seamless><template slot="icon"><span aria-hidden="true" class="fas fa-exclamation-circle"></span></template>
+                      <p><strong>PE Phase 1 will conducted under exam conditions. <mark>We will be following the <a href="https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/">SoC's E-Exam SOP</a></mark></strong>, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.</p>
                       <ul>
-                        <li>You are not allowed to communicate with others (except the invigilators).</li>
-                        <li>You are not allowed to share your work with others.</li>
-                        <li>Violators will be reported to the university for disciplinary action.</li>
-                      </ul>
-                    </box>
-                    <box type="info" light>
-                      <p><strong>Online channels used for the PE</strong>:</p>
-                      <ul>
-                        <li><strong><strong>Gitter</strong></strong>:
+                        <li><strong>Proctoring will be done via Zoom.</strong> No admission if the requirements are not met (e.g., display name, camera placement).</li>
+                        <li><strong>Recording the screen is not required.</strong></li>
+                        <li><strong>Only one screen is allowed.</strong></li>
+                        <li><strong>Do not use the public chat channel to ask questions</strong> from the prof. If you do, you might accidentally reveal which team you are testing.</li>
+                        <li><strong>Use MS Teams (not Zoom) private messages to communicate with the prof.</strong> Fall back on Zoom chat only if you didn't receive a reply via MST.</li>
+                        <li><strong>Do not view video Zoom feeds of others</strong> while the testing is ongoing. Keep the video view minimized.</li>
+                        <li><strong>During the bug reporting periods (i.e., <span class="badge badge-success">PE Phase 1 - part I</span> and <span class="badge badge-success">PE Phase 1 - part II</span>), do not visit websites and use software other than the following.</strong> In particular, <mark>do not visit GitHub</mark>. If you need to visit a different website or use another software, please ask for permission first.
                           <ul>
-                            <li>Prof will be online in <a href="https://gitter.im/nus-cs2113-AY2021S1/community">Gitter</a>.</li>
-                            <li><mark>Direct all your queries to prof as private messages to <code v-pre>@okkhoy</code>. <span class="text-danger">Do not use the public chat channel</span> .</mark> If you use the main channel, you might accidentally reveal which team you are testing.</li>
+                            <li>Website: LumiNUS</li>
+                            <li>Website: Module website <span class="dimmed">(e.g., to look up PE info)</span></li>
+                            <li>Software: CATcher, any text editor, any screen grab software</li>
+                            <li>Software: PDF reader <span class="dimmed">(to read the UG/DG or other references such as the textbook)</span></li>
                           </ul>
                         </li>
-                        <li><strong><strong>Zoom</strong></strong>:
-                          <ul>
-                            <li>There will be a Zoom meeting (details will be announced later) to provide you with audio announcements.</li>
-                            <li>Join it and <strong>keep the speaker</strong> on during the PE session so that you can hear our announcements.</li>
-                            <li>You can use it to chat with the prof (but Gitter is preferred for chatting as it's harder to post screenshots in Zoom chats).</li>
-                            <li>You will not be able to share your screen, share your cam, or talk to us.</li>
-                          </ul>
-                        </li>
+                        <li><strong>Do not use any other software running</strong> in the background e.g., telegram chat</li>
+                        <li><strong>This is a <em>manual</em> testing session</strong>. Do not use any test automation tools or custom scripts.</li>
                       </ul>
                     </box>
                     <ul>
@@ -1045,7 +1039,7 @@
                           <li>Put the downloaded jar file <mark>in an empty folder</mark>.</li>
                           <li>Open a command window. Run the <code v-pre>java -version</code> command to ensure you are using Java 11.</li>
                           <li>Launch the jar file <mark>using the <code v-pre>java -jar</code> command</mark> (do not use double-clicking).</li>
-                          <li><strong>If the product doesn't work at all:</strong> If the product fails catastrophically <span class="dimmed">e.g., cannot even launch, or even the basic commands crash the app</span>, contact the invigilator (via Gitter or Zoom chat) to receive a <em>fallback</em> team to test.</li>
+                          <li><strong>If the product doesn't work at all:</strong> If the product fails catastrophically <span class="dimmed">e.g., cannot even launch, or even the basic commands crash the app</span>, contact the invigilator (via via MS Teams, and failing that, via Zoom chat) to receive a <em>fallback</em> team to test.</li>
                         </ul>
                         <h6 id="b-what-to-test">
                           <div class="text-white bg-secondary p-1">b) What to test</div><span id="b-what-to-test" class="anchor"></span><a class="fa fa-anchor" href="#b-what-to-test" onclick="event.stopPropagation()"></a>
@@ -1060,7 +1054,7 @@
                           <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v2.1</strong>)</template>
                             <ul>
                               <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                              <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system-testing bugs can earn you more credit.</li>
+                              <li>As before, do both <mark><em>system testing</em> and <em>acceptance testing</em></mark> but give priority to system testing as those bugs can earn you more credit.</li>
                             </ul>
                           </tab>
                         </tabs>
@@ -1285,7 +1279,7 @@
                           <li>Each bug should be a separate issue.</li>
                           <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                           <li>Use a descriptive title.</li>
-                          <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.</li>
+                          <li>Give a good description of the bug with <mark>steps to reproduce, expected, actual, and screenshots</mark>. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.</li>
                           <li>Assign exactly one <code v-pre>severity.*</code> label to the bug report. Bug report without a severity label are considered <code v-pre>severity.Low</code> (lower severity bugs earn lower credit)<br></li>
                         </ul>
                         <div class="indented-level2">
@@ -1848,7 +1842,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, Nov 7, 2020, 10:24:10 AM GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, Nov 9, 2020, 10:07:31 PM GMT+8]</small></div>
     </footer>
   </div>
 </body>
