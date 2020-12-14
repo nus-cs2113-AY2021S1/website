@@ -25,13 +25,15 @@ Instructions below are from the previous semester. Will be updated closer to the
 
 1. **Recording of your PC screen** not required (tentative, subject to approvals).
 
-1. **Only one computer screen** is asllowed.
+1. **Only one computer screen** is allowed.
 
-1. **Not allowed to take printouts during the exam.**
+1. **Not allowed to use the printer or any other device during the exam.**
 
 1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html, jpeg) are not allowed. You may want to convert your notes to PDF before the exam.
 
 1. **Soft copy of the textbook (only PDF format) is allowed.**
+
+1. **Hand-written notes and printed textbook allowed**
 
 1. **The Browser should only be used to access LumiNUS.** Accessing other websites (including the module website) is not allowed.
 
