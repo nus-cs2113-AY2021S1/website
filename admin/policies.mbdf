@@ -118,7 +118,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   //Solution below adapted from https://stackoverflow.com/a/16252290
   {Your implmentation of the reused solution here ...}
   ```
-* If you copy-pasted a non-trivial code block (possibly with minor modifications %%renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-authorTags">`@@author` tags</trigger>) with the ==`-reused`== suffix)<br>
+* If you copy-pasted a non-trivial code block (possibly with minor modifications %%renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-authorTags">`@@author` tags</trigger> with the ==`-reused`== suffix)<br>
   Format:
   ```java
   //@@author {yourGithubUsername}-reused
@@ -142,7 +142,10 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   //@@author
   return persons;
   ```
+<div tags="m--cs2103">
 
+**Giving credit to AB3 code**: If your project started with the AB3 code and your new code follows a design similar to AB3, that doesn't mean you need to credit AB3 -- this is because new code is _expected_ to follow existing code where possible, in the interest of consistency. However, don't take credit for existing AB3 code (i.e., ensure such code doesn't appear under your name in the tP code dashboard) unless you have modified them substantially.
+</div>
 </box>
 
 <modal large header="Admin {{ icon_embedding }} Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">

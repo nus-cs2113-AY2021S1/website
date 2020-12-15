@@ -1,268 +1,199 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.15.2">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CS2113/T - Week 12 - Tutorial</title>
-  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
-  <link rel="stylesheet" href="../../markbind/css/octicons.css">
-  <link rel="stylesheet" href="../../markbind/css/github.min.css">
-  <link rel="stylesheet" href="../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
-  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-  <link rel="stylesheet" href="/website/book/css/textbook.css">
-  <link rel="stylesheet" href="/website/css/main.css">
-  <link rel="stylesheet" href="/website/css/schedule.css">
-  <link rel="icon" href="/website/favicon.ico">
-</head>
-
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
-  <div id="app">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2113/T - Week 12 - Tutorial</title>
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="../../markbind/css/octicons.css">
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/css/main.css">
+    <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
+<body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
+<div id="app">
     <header fixed>
-      <navbar placement="top" type="dark" class="temp-navbar">
-        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Aug-Dec</small></span></a>
-        <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
-          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
-          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
-          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
-          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
-          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
-          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
-          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
-          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
-          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
-          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
-          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
-          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li>
-        </dropdown>
-        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-        <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
-          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-cs2113-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
-          <li><a href="https://github.com/nus-cs2113-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
-          <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-cs2113-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
-          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/dd7206fb-b22d-4a82-9c3b-f761a1f77ac8/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/dd7206fb-b22d-4a82-9c3b-f761a1f77ac8/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
-          <li tags="m--cs2113 m--cs2103"><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/sclqjqn" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/u06S3eg" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link (duplicated)</span></a></li>
-          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
-          <li tags="m--cs2103 m--cs2113"><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/forum-activities.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
-          <hr>
-          <span><strong> Individual Project (iP):</strong></span>
-          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
-          <li><a href="https://github.com/nus-cs2113-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
-          <hr>
-          <span><strong> Team Project (tP):</strong></span>
-          <li><a href="https://github.com/nus-cs2113-AY2021S1/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Reference AB3</span></a></li>
-          <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+<div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
+<navbar placement="top" type="dark" class="temp-navbar">
+<a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Aug-Dec</small></span></a>
+  <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
+  <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+<li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
+<li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
+<li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
+<li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
+<li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
+<li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
+<li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
+<li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
+<li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
+<li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
+<li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
+<li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
+<li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li></dropdown>
+  <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+  <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+  <div class="nav-link temp-dropdown-placeholder">**Links**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-cs2113-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+    <li><a href="https://github.com/nus-cs2113-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+    <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-cs2113-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
+    <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+    <li><a href="https://luminus.nus.edu.sg/modules/dd7206fb-b22d-4a82-9c3b-f761a1f77ac8/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+    <li><a href="https://luminus.nus.edu.sg/modules/dd7206fb-b22d-4a82-9c3b-f761a1f77ac8/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+    <li tags="m--cs2113 m--cs2103"><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/sclqjqn" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
+    <li><a href="https://repl.it/classroom/invite/u06S3eg" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link (duplicated)</span></a></li>
+    <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
+    <li tags="m--cs2103 m--cs2113"><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/forum-activities.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
+    <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
+    <hr>
+    <span><strong> Individual Project (iP):</strong></span>
+    <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+    <li><a href="https://github.com/nus-cs2113-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
+    <li><a href="https://nus-cs2113-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+    <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
+    <hr>
+    <span><strong> Team Project (tP):</strong></span>
+    <li><a href="https://github.com/nus-cs2113-AY2021S1/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Reference AB3</span></a></li>
+    <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+    
+    <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
+    <li><a href="https://nus-cs2113-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+    <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li></dropdown>
+  <li slot="right" class="nav-link">
+    <form class="navbar-form">
+      <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
+        
+<div id="content-wrapper">
+<div class="website-content">
+<nav>
+<ul class="pagination mt-2"><li class="page-item"><a class="page-link" href="/website/schedule/week11"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week12/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week12/admin.html"><span><span><span aria-hidden="true" class="fas fa-info-circle"></span></span></span> Admin Info</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week12/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week12/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
+<li class="page-item active"><a class="page-link" href="/website/schedule/week12/tutorial.html"><span><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span></span> Tutorial</a></li>
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week13"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
+<p></p>
+<h1 id="week-12-fri-oct-30th-tutorial">Week 12 <small><small><span class="dimmed">[Fri, Oct 30th]</span> - Tutorial</small></small><span id="week-12-fri-oct-30th-tutorial" class="anchor"></span><a class="fa fa-anchor" href="#week-12-fri-oct-30th-tutorial" onclick="event.stopPropagation()"></a></h1>
+<div>
 
-          <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="https://nus-cs2113-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
-        </dropdown>
-        <li slot="right" class="nav-link">
-          <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-          </form>
-        </li>
-      </navbar>
-    </header>
-    <div id="flex-body">
+<div>
+<div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+<p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+<div class="indented">
+<p><strong>There is no formal tutorial in this week</strong>. Use the tutorial slot for project work.</p>
+<p>Attempt this question by yourself. The model answer will be released later.</p></div></div></div>
+<p></p>
+<h4 id="1-exercise-test-case-design"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Exercise: test case design<span id="1-exercise-test-case-design" class="anchor"></span><a class="fa fa-anchor" href="#1-exercise-test-case-design" onclick="event.stopPropagation()"></a></h4>
+<div>
+<ul>
+<li><s>Divide into two sub-teams and do the following exercises on the white board.</s></li></ul>
+<div class="indented-level2">
+  <div>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Design test cases for the <code v-pre>day</code> parameter</p></template>
+<question>
+<ol>
+<li>
+<p>What are the <em>equivalence partitions</em> for the parameter <code v-pre>day</code> of this method?</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"> * Returns true if the three values represent a valid day</span><br></span><span><span class="hljs-comment"> */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidDay</span><span class="hljs-params">(<span class="hljs-keyword">int</span> year, <span class="hljs-keyword">int</span> month, <span class="hljs-keyword">int</span> day)</span> </span>{<br></span><span><br></span><span>} <br></span></code></pre></li>
+<li>
+<p>What are the <em>boundary values</em> for the parameter <code v-pre>day</code> in the question above?</p></li>
+<li>
+<p>Give 10 test inputs you would use for the parameter <code v-pre>day</code> in the question above.</p></li></ol></question></panel></div></div>
 
-      <div id="content-wrapper">
-        <div class="website-content">
-          <nav>
-            <ul class="pagination mt-2">
-              <li class="page-item"><a class="page-link" href="/website/schedule/week11"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-              <li class="page-item"><a class="page-link" href="/website/schedule/week12/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-              <li class="page-item"><a class="page-link" href="/website/schedule/week12/admin.html"><span><span><span aria-hidden="true" class="fas fa-info-circle"></span></span></span> Admin Info</a></li>
-              <li class="page-item"><a class="page-link" href="/website/schedule/week12/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
-              <li class="page-item"><a class="page-link" href="/website/schedule/week12/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
-              <li class="page-item active"><a class="page-link" href="/website/schedule/week12/tutorial.html"><span><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span></span> Tutorial</a></li>
-              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-              <li class="page-item"><a class="page-link" href="/website/schedule/week13"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-            </ul>
-          </nav>
-          <p></p>
-          <h1 id="week-12-fri-oct-30th-tutorial">Week 12 <small><small><span class="dimmed">[Fri, Oct 30th]</span> - Tutorial</small></small><span id="week-12-fri-oct-30th-tutorial" class="anchor"></span><a class="fa fa-anchor" href="#week-12-fri-oct-30th-tutorial" onclick="event.stopPropagation()"></a></h1>
-          <div>
+<div id="no-tutorial-take-a-break">
+<box type="info">
+<p>No tutorial this week. <strong>Take a break</strong> and prepare for the last burst of tP activities coming up soon.</p></box></div>
 
-            <div>
-              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
-                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
-                <div class="indented">
-                  <p><strong>There is no formal tutorial in this week</strong>. Use the tutorial slot for project work.</p>
-                  <p>Attempt this question by yourself. The model answer will be released later.</p>
-                </div>
-              </div>
-            </div>
-            <p></p>
-            <h4 id="1-exercise-test-case-design"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Exercise: test case design<span id="1-exercise-test-case-design" class="anchor"></span><a class="fa fa-anchor" href="#1-exercise-test-case-design" onclick="event.stopPropagation()"></a></h4>
-            <div>
-              <ul>
-                <li><s>Divide into two sub-teams and do the following exercises on the white board.</s></li>
-              </ul>
-              <div class="indented-level2">
-                <div>
-                  <panel class="algolia-no-index"><template slot="_header">
-                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Design test cases for the <code v-pre>day</code> parameter</p>
-                    </template>
-                    <question>
-                      <ol>
-                        <li>
-                          <p>What are the <em>equivalence partitions</em> for the parameter <code v-pre>day</code> of this method?</p>
-                          <pre><code class="hljs java" v-pre><span><span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"> * Returns true if the three values represent a valid day</span><br></span><span><span class="hljs-comment"> */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidDay</span><span class="hljs-params">(<span class="hljs-keyword">int</span> year, <span class="hljs-keyword">int</span> month, <span class="hljs-keyword">int</span> day)</span></span>{<br></span><span><br></span><span>} <br></span></code></pre>
-                        </li>
-                        <li>
-                          <p>What are the <em>boundary values</em> for the parameter <code v-pre>day</code> in the question above?</p>
-                        </li>
-                        <li>
-                          <p>Give 10 test inputs you would use for parameter <code v-pre>day</code> in the question above.</p>
-                        </li>
-                      </ol>
-                    </question>
-                  </panel>
-                </div>
-              </div>
+<div id="tp-project-demo">
+<box type="info">
+<p>This tutorial is used for tP project demos. Demo instructions are repeated below for your easy reference.
+</p></box><p></p>
+<div>
+<div class="indented-level2">
+<p><img src="/website/admin/images/v05demo.png" style="width: 250px"></p><p></p><p></p>
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Demo <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
+<div>
+<ul>
+<li><strong>Record a demo</strong> of all the product features, in a reasonable order.
+<ul>
+<li>You may choose to screen record each feature and tie it up (see the  &quot;Suggested tools&quot; below for options), OR</li>
+<li>Schedule + record a zoom meeting within the team, where you share your screens and do the demo.</li></ul></li>
+<li><strong>The quality of the demo will not affect marks</strong> as long as it serves the purpose (i.e., demonstrates the product features). Hence, don't waste too much time on creating the video.</li>
+<li><strong>Audio explanations</strong> are strongly encouraged.</li>
+<li><strong>Annotations and other enhancements</strong> to the video are optional (those will not earn any extra marks).</li>
+<li><strong>All members taking part</strong> in the demo video is encouraged but not compulsory.</li>
+<li><strong>File name:</strong> <code v-pre>[TEAM_ID][product Name].mp4</code>  <span class="dimmed">e.g.[CS2113-T09-2][Contacts Plus].mp4</span> (other video formats are acceptable but use a format that works on all major OS'es).</li>
+<li><strong>File size:</strong> Recommended to keep below 200MB. You can use a low resolution as long as the video is in usable quality.</li>
+<li><strong>Submission:</strong> Submit to LumiNUS (different folder).</li>
+<li><strong>Deadline:</strong> 2 days after the main deadline</li>
+<li><strong>Suggested tools:</strong>
+<ul>
+<li>Ink2Go: You can use this to record your screen and annotate if necessary. <a href="https://wiki.nus.edu.sg/display/cit/Ink2go+Instructions+for+Students">Here</a> are some instructions from NUS CIT to help you get started.</li>
+<li><a href="https://handbrake.fr/">Handbrake</a>: A free/open-source tool to help convert videos to MP4.</li></ul></li></ul>
+<h4 id="demo-duration"><span class="badge badge-info">Demo</span> <span class="text-info">Duration</span><span id="demo-duration" class="anchor"></span><a class="fa fa-anchor" href="#demo-duration" onclick="event.stopPropagation()"></a></h4>
+<ul>
+<li><strong>Strictly 18 minutes for a 5-person team, 15 minutes for a 4-person team</strong>, 21 minutes for a 6-person team. Exceeding this limit will be penalized.</li></ul>
 
-              <div id="no-tutorial-take-a-break">
-                <box type="info">
-                  <p>No tutorial this week. <strong>Take a break</strong> and prepare for the last burst of tP activities coming up soon.</p>
-                </box>
-              </div>
+<h4 id="demo-target-audience"><span class="badge badge-info">Demo</span> <span class="text-info">Target audience</span><span id="demo-target-audience" class="anchor"></span><a class="fa fa-anchor" href="#demo-target-audience" onclick="event.stopPropagation()"></a></h4>
+<ul>
+<li><strong>Assume you are giving a demo to a higher-level manager of your company</strong>, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed. The actual audience are the evaluators (the team supervisor and another tutor).</li></ul>
+<h4 id="demo-scope"><span class="badge badge-info">Demo</span> <span class="text-info">Scope</span><span id="demo-scope" class="anchor"></span><a class="fa fa-anchor" href="#demo-scope" onclick="event.stopPropagation()"></a></h4>
+<ul>
+<li><mark><strong>Start by giving an overview of the product</strong></mark> so that the evaluators get a sense of the full picture early. Include the following:
+<ul>
+<li><strong>What</strong> is it? <span class="dimmed">e.g., FooBar is a product to ensure the user takes frequent standing-breaks while working.</span></li>
+<li><strong>Who</strong> is it for? <span class="dimmed">e.g., It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods of sitting.</span></li>
+<li><strong>How</strong> does it help? Give an overview of how the product's features help to solve the target problem for the target user</li></ul></li></ul>
+<div class="indented-level2">
+<box>
+<p>Here is an example:</p>
+<pre><code class="no-line-numbers hljs" v-pre><span>Hi, welcome to the demo of our product FooBar. It is a product to ensure the user takes<br></span><span>frequent standing-breaks while working.<br></span><span>It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods<br></span><span>of sitting.<br></span><span>The user first sets the parameters such as frequency and targets, and then enters a<br></span><span>command to record the start of the sitting time, ... The app shows the length of the<br></span><span>sitting periods, and alerts the user if ...<br></span><span>...<br></span></code></pre></box></div>
+<ul>
+<li>There is no need to introduce team members or explain who did what. <span class="dimmed">Reason: to save time.</span></li></ul>
 
-              <div id="tp-project-demo">
-                <box type="info">
-                  <p>This tutorial is used for tP project demos. Demo instructions are repeated below for your easy reference.
-                  </p>
-                </box>
-                <p></p>
-                <div>
-                  <div class="indented-level2">
-                    <p><img src="/website/admin/images/v05demo.png" style="width: 250px"></p>
-                    <p></p>
-                    <p></p>
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Demo <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                      </template>
-                      <div>
-                        <div>
-                          <ul>
-                            <li><strong>Record a demo</strong> of all the product features, in a reasonable order.
-                              <ul>
-                                <li>You may choose to screen record each feature and tie it up (see the &quot;Suggested tools&quot; below for options), OR</li>
-                                <li>Schedule + record a zoom meeting within the team, where you share your screens and do the demo.</li>
-                              </ul>
-                            </li>
-                            <li><strong>The quality of the demo will not affect marks</strong> as long as it serves the purpose (i.e., demonstrates the product features). Hence, don't waste too much time on creating the video.</li>
-                            <li><strong>Audio explanations</strong> are strongly recommended.</li>
-                            <li><strong>Annotations and other enhancements</strong> to the video are optional (those will not earn any extra marks).</li>
-                            <li><strong>All members taking part</strong> in the demo video is encouraged but not compulsory.</li>
-                            <li><strong>File name:</strong> <code v-pre>[TEAM_ID][product Name].mp4</code> <span class="dimmed">e.g.[CS2113-T09-2][Contacts Plus].mp4</span> (other video formats are acceptable but use a format that works on all major OS'es).</li>
-                            <li><strong>File size:</strong> Recommended to keep below 200Mb. You can use a low resolution as long as the video is in usable quality.</li>
-                            <li><strong>Submission:</strong> Submit to LumiNUS (different folder).</li>
-                            <li><strong>Deadline:</strong> 2 days after the main deadline</li>
-                            <li><strong>Suggested tools:</strong>
-                              <ul>
-                                <li>Ink2Go: You can use this to record your screen and annotate if necessary. <a href="https://wiki.nus.edu.sg/display/cit/Ink2go+Instructions+for+Students">Here</a> are some instructions from NUS CIT to help you get started.</li>
-                                <li><a href="https://handbrake.fr/">Handbrake</a>: A free/open-source tool to help convert videos to MP4.</li>
-                              </ul>
-                            </li>
-                          </ul>
-                          <h4 id="demo-duration"><span class="badge badge-info">Demo</span> <span class="text-info">Duration</span><span id="demo-duration" class="anchor"></span><a class="fa fa-anchor" href="#demo-duration" onclick="event.stopPropagation()"></a></h4>
-                          <ul>
-                            <li><strong>Strictly 18 minutes for a 5-person team, 15 minutes for a 4-person team</strong>, 21 minutes for a 6-person team. Exceeding this limit will be penalized.</li>
-                          </ul>
+<ul>
+<li><strong>Present the features in a reasonable order</strong>: Organize the demo to present a cohesive picture of the product as a whole, presented in a logical order.</li>
+<li><strong>No need to cover design/implementation details</strong> as the manager is not interested in those details.</li></ul>
+<h4 id="demo-structure"><span class="badge badge-info">Demo</span> <span class="text-info">Structure</span><span id="demo-structure" class="anchor"></span><a class="fa fa-anchor" href="#demo-structure" onclick="event.stopPropagation()"></a></h4>
+<ul>
+<li><strong>Demo the product using the same executable</strong> you submitted </li>
+<li><strong>Use a sufficient amount of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code v-pre>Mr aaa</code> is not a realistic person name</span><em>realistic</em></span> demo data.</strong> <span class="dimmed">e.g at least 20 data items</span>. Trying to demo a product using just 1-2 sample data creates a bad impression.</li></ul>
 
-                          <h4 id="demo-target-audience"><span class="badge badge-info">Demo</span> <span class="text-info">Target audience</span><span id="demo-target-audience" class="anchor"></span><a class="fa fa-anchor" href="#demo-target-audience" onclick="event.stopPropagation()"></a></h4>
-                          <ul>
-                            <li><strong>Assume you are giving a demo to a higher-level manager of your company</strong>, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed. The actual audience are the evaluators (the team supervisor and another tutor).</li>
-                          </ul>
-                          <h4 id="demo-scope"><span class="badge badge-info">Demo</span> <span class="text-info">Scope</span><span id="demo-scope" class="anchor"></span><a class="fa fa-anchor" href="#demo-scope" onclick="event.stopPropagation()"></a></h4>
-                          <ul>
-                            <li><mark><strong>Start by giving an overview of the product</strong></mark> so that the evaluators get a sense of the full picture early. Include the following:
-                              <ul>
-                                <li><strong>What</strong> is it? <span class="dimmed">e.g., FooBar is a product to ensure the user takes frequent standing-breaks while working.</span></li>
-                                <li><strong>Who</strong> is it for? <span class="dimmed">e.g., It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods of sitting.</span></li>
-                                <li><strong>How</strong> does it help? Give an overview of how the product's features help to solve the target problem for the target user</li>
-                              </ul>
-                            </li>
-                          </ul>
-                          <div class="indented-level2">
-                            <box>
-                              <p>Here is an example:</p>
-                              <pre><code class="no-line-numbers hljs" v-pre><span>Hi, welcome to the demo of our product FooBar. It is a product to ensure the user takes<br></span><span>frequent standing-breaks while working.<br></span><span>It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods<br></span><span>of sitting.<br></span><span>The user first sets the parameters such as frequency and targets, and then enters a<br></span><span>command to record the start of the sitting time, ... The app shows the length of the<br></span><span>sitting periods, and alerts the user if ...<br></span><span>...<br></span></code></pre>
-                            </box>
-                          </div>
-                          <ul>
-                            <li>There is no need to introduce team members or explain who did what. <span class="dimmed">Reason: to save time.</span></li>
-                          </ul>
+<h4 id="demo-tips"><span class="badge badge-info">Demo</span> <span class="text-info">Tips</span><span id="demo-tips" class="anchor"></span><a class="fa fa-anchor" href="#demo-tips" onclick="event.stopPropagation()"></a></h4>
+<ul>
+<li><strong>Plan the demo to be in sync with the impression you want to create.</strong> For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.</li></ul>
+</div></div></panel>
+<p></p></div>
+</div></div></div></div></div></div>
 
-                          <ul>
-                            <li><strong>Present the features in a reasonable order</strong>: Organize the demo to present a cohesive picture of the product as a whole, presented in a logical order.</li>
-                            <li><strong>No need to cover design/implementation details</strong> as the manager is not interested in those details.</li>
-                          </ul>
-                          <h4 id="demo-structure"><span class="badge badge-info">Demo</span> <span class="text-info">Structure</span><span id="demo-structure" class="anchor"></span><a class="fa fa-anchor" href="#demo-structure" onclick="event.stopPropagation()"></a></h4>
-                          <ul>
-                            <li><strong>Demo the product using the same executable</strong> you submitted </li>
-                            <li><strong>Use a sufficient amount of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code v-pre>Mr aaa</code> is not a realistic person name</span><em>realistic</em></span> demo data.</strong> <span class="dimmed">e.g at least 20 data items</span>. Trying to demo a product using just 1-2 sample data creates a bad impression.</li>
-                          </ul>
+        <nav id="page-nav" class="navbar navbar-light bg-transparent">
+<div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-                          <h4 id="demo-tips"><span class="badge badge-info">Demo</span> <span class="text-info">Tips</span><span id="demo-tips" class="anchor"></span><a class="fa fa-anchor" href="#demo-tips" onclick="event.stopPropagation()"></a></h4>
-                          <ul>
-                            <li><strong>Plan the demo to be in sync with the impression you want to create.</strong> For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </panel>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+<a class="nav-link py-1" href="#week-12-fri-oct-30th-tutorial">Week 12 [Fri, Oct 30th] - Tutorial&#x200E;</a>
+<nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+<a class="nav-link py-1" href="#1-exercise-test-case-design">1 Exercise: test case design&#x200E;</a>
+</nav>
 
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
-
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#week-12-fri-oct-30th-tutorial">Week 12 [Fri, Oct 30th] - Tutorial&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-exercise-test-case-design">1 Exercise: test case design&#x200E;</a>
-            </nav>
-
-          </nav>
-        </div>
-      </nav>
-    </div>
+</nav>
+</div>
+</nav>
+</div>
     <footer>
-
-      <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Wed, Nov 11, 2020, 11:52:17 AM GMT+8]</small></div>
-    </footer>
-  </div>
+  
+  <div class="text-center">
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, 15 Dec 2020, 12:27:40 GMT+8]</small></div></footer></div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/components.min.js"></script>
@@ -274,21 +205,18 @@
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "3855d3d0d62585efc4f4841564bc73ca",
-      indexName: "nus-cs2113-ay1920s2",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "3855d3d0d62585efc4f4841564bc73ca",
+        indexName: "nus-cs2113-ay1920s2",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
-
 </html>

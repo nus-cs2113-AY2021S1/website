@@ -1,8 +1,11 @@
 <span id="lectures-s1">
  Module                 | Venue    | Time
 ---------------------- | -------- | ----
-{{ module }}   | ~~LT19~~            | **1200**-1400
-{{ module }}/T | ~~LT19~~            | **1600**-1800
+{{ module }}   | ~~LT19~~            | Friday **1200**-1400
+{{ module }}T | ~~LT19~~            | Friday **1600**-1800
+
+* As the lectures are repeats of each other, ==you may attend any of the two, except in weeks== the lecture is used for the practical exam (PE) or the PE dry run.
+* As Zoom has a limitation of 300 participants (and {{ module }}T has more than 300 students while {{ module }} has ~90 students), =={{ module }}T students are encouraged to attend the earlier lecture== (except in weeks mentioned above) if you are free during that time. If you can't join the Zoom lecture because it already has 300 participants, we'll make the lecture recording available to you the same day.
 </span>
 
 <span id="lectures-s2">
@@ -12,7 +15,6 @@
 </span>
 
 <span id="tutorials-s1">
-{{ MT | safe }} | | **W**ed  **09**:00 | ~~%%LG01%%~~ | **`CS2103T-W09`**|
 {{ MT | safe }} | | **W**ed  **10**:00 | ~~%%LG02%%~~ | **`CS2103T-W10`**|
 {{ MT | safe }} | | **W**ed  **11**:00 | ~~%%LG03%%~~ | **`CS2103T-W11`**|
 {{ MT | safe }} | | **W**ed  **12**:00 | ~~%%LG04%%~~ | **`CS2103T-W12`**|

@@ -45,7 +45,7 @@
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="share-project-direction">
 
-* Show your collaborative project doc to others (share screen).
+* Show your collaborative project doc to others.
 * Share the project direction, user profile, value proposition you have decided upon.
 * Give feedback to the other team. Some examples:
   * Suppose you belong to the proposed target user group; do you find the value proposition attractive?
@@ -63,6 +63,12 @@ Tutorial | Reviewer | First PR to review | Backup PR to review
 </panel>
 <p/>
 
+<div tags="m--tic4001">
+
+{{ icon_info }} If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the _Backup PR to review_ provided in the allocation table. Failing both, pick a PR at random to review.
+</div>
+<div tags="m--cs2113 m--cs2103">
+
 {{ icon_info }} If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the _Backup PR to review_ provided in the allocation table. Failing both, review another PR allocated to another student in your own tutorial ++but not in your team++.
 <p/>
 
@@ -73,6 +79,10 @@ Tip for future reference: GitHub allows you to filter PRs/Issues using various c
 Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 <img src="images/filterPrsUsingLabels.png" />
 </box>
+
+:fas-question-circle: FAQ: How many comments should I add? Answer: Depends on the code being reviewed but we expect most PRs would warrant at least 4-5 comments. If the PR is huge, you can stop when you think you've put in a fair amount of time on the job (~15 minutes) and added enough comments for the PR author to receive some value.
+</div>
+
 </div>
 <div id="show-ip-peer-review-allocation-2">
 <panel header="iP PR review allocation" minimized >
@@ -148,7 +158,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 {{ embed_topic("appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="2") }}
 {{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="2") }}
 
-* **[Each person] Verify that you know how to do the following** by performing each on your computer and posting a screenshot in the _tutorial workspace_ document:
+* **[Each person] Verify that you know how to do the following** by performing each on hour computer and posting a screenshot in the _tutorial workspace_ document:
   * run the code in your IDE
   * run I/O redirection tests
   * verify compliance with the coding standard automatically using Gradle
@@ -212,7 +222,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 </pic>
 **_Hand-drawing_ diagrams on a white-board and on paper is an important practical skill** %%(e.g., for technical interviews, project discussions)%%. It's possible that the diagrams you draw in your first few attempts to look amateurish, messy, and hard to read, and the drawing itself will take a long time. With more practice, you will be able to draw such diagrams quicker %%(e.g., draw as you explain verbally your design)%%, with less need for corrections, and the diagrams will look more _professional_ too.
 
-That is why we have structured these tutorials to get everyone to practice this skill so that **your first few (not so good) diagram drawing experiences happen in the tutorial, not in an interview or during your internship.**
+That is why we have structured these tutorials to get everyone to practice this skill so that **your first few (not-so-good) diagram drawing experiences happen in the tutorial, not in an interview or during your internship.**
 
 Note the following:
 * Draw ==on paper or on a whiteboard or use a free-hand drawing software== (e.g., Bamboo paper). If latter, do not use UML software or predefined shapes.
@@ -288,7 +298,6 @@ Note the following:
   1. A `Student` can belong to how many teams?<img src="images/interpret-module-cd/extract-team.png" />
   1. A `Team` can have how many `Student` objects?
 </div>
-
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="draw-stock-cd">
 
@@ -307,40 +316,72 @@ Note the following:
 * {{ timing_badge("5+5=10 minutes", "info") }} **Do part (b)** in the same manner.
 -->
 
-<div class="indented-level2" tags="m--cs2103">
-
-<include src="common-tutorials.mbdf#hand-drawing-diagrams" />
-</div>
 <div class="indented">
 
 {{ icon_info }} Question adapted from past exam paper.
 </div>
 
-* {{ timing_badge("15 minutes", "info") }} **Each student do the part (a)** of the following exercise, by ==hand-drawing== the answer.
-  * Use the following layout:<br>
-  <img src="images/draw-stock-cd/classLayout.png" width="600"/>
+1. {{ timing_badge("before the tutorial", "danger") }} **Do the following exercise**, by ==hand-drawing== the answer.<br>
+   Use the following layout:<br>
+   <img src="images/draw-stock-cd/classLayout.png" width="600"/>
 
 <div class="indented-level2">
 
 <include src="../book/modeling/modelingStructures/classDiagramsIntermediate/q-drawClassDiagramForItemEtc.md" />
 <p/>
-
-* Paste the diagram (take a photo if you drew on paper) in the _tutorial workspace_ document.
-* {{ timing_badge("10 minutes", "info") }} **Discuss answers** as guided by the tutor.
-* {{ timing_badge("10+5=15 minutes", "info") }} **Do part (b)** in the same manner.
-
-</div>
 </div>
 
+2. {{ timing_badge("during the tutorial", "info") }}
+   * Paste the diagram (take a photo if you drew on paper) in the _tutorial workspace_ document.
+   * **Discuss answers** as guided by the tutor.
+</div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="draw-sd-personlist">
 
+1. {{ timing_badge("before the tutorial", "danger") }}
+
+<div class="indented-level2">
+
+**(a) Do the following exercise** similar to the previous one.
+
+<include src="../book/modeling/modelingBehaviors/sequenceDiagramsBasic/q-essay-drawSequenceDiagramForPerson.md" />
+<p/>
+
+**(b) How would you update the diagram** if the `PersonList` class was updated as follows?
+
+```java
+class PersonList{
+    void addPerson(Person p){
+        add(p);
+    }
+
+    void add(Person p){
+        //...
+    }
+}
+```
+</div>
+
+
+2. {{ timing_badge("during the tutorial", "info") }}:
+
+<div class="indented">
+
+* As before, paste the diagram in the _tutorial workspace_ document, and take part in the follow up discussion, as guided by the tutor.
+
+
+</div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="demo-test-coverage">
 
 * Measure test coverage in your own IDE. Take a screenshot showing test coverage details such as lines covered, lines not covered, percentage of coverage for different files etc.
+
+{{ embed_topic("../book/testing/testCoverage/text.md#body", "Textbook " + icon_embedding + " Testing → **Test Coverage**", "3", indent=2) }}
+
 * Post a screenshot in the _tutorial workspace_ document. An example is given below:<br>
  <pic src="images/demo-test-coverage/CoverageReportExample.png" ></pic>
 </div>
-
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="interpret-parserfactory-sd">
 

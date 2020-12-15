@@ -40,6 +40,9 @@
 
 <include src="tp-tasks.mbdf#milestoneCumulative" />
 </box>
+
+{{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3", indent="1") }}
+
 </span>
 
 {#====================================================================================================================#}
@@ -52,9 +55,10 @@
 
 <box background-color="white" border-color="red">
 
-**Remind yourself of the project grading criteria:**
+**Remind yourself of the project grading criteria and our policy on reuse** (e.g., ==how to give credit for reused code==):
 
 <panel type="seamless" src="tp-grading.md#main" header="%%Admin {{ icon_embedding }} tP → Grading%%" class="embedding" />
+<panel type="seamless" src="appendixB-policies.md#policy-reuse" header="%%Admin {{ icon_embedding }} Policy on reuse%%" class="embedding" />
 </box>
 </span>
 {#====================================================================================================================
@@ -120,11 +124,21 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 
 * **Decide project direction, target user profile, and problem addressed**: Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:
 
+<div class="indented">
+
+<box type="warning" seamless>
+
+As we are still at the early stages of identifying a problem to solve, do not think of the product (i.e., the _solution_) yet. That is, ==do not discuss the product features, UI, command format, and implementation details, etc.== unless they are pertinent to the decision of the project direction.
+</box>
+</div>
+
 {{ embed_topic("tp-expectations.md#main", "Admin " + icon_embedding + " **tP: Expectations**", "3", indent="2") }}
 {{ embed_topic("tp-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3", indent="2") }}
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3", indent="2") }}
 
-* <span class="text-danger">**Submission**:</span> Submit your product name, target user profile, the value proposition, and the public link to your collaborative project notes via TEAMMATES. You'll receive an email from TEAMMATES with the submission link. Only one member needs to submit on behalf of the team. All members can view/update the submission.
+* <span class="text-danger">**Submission**:</span> Submit your product name, target user profile, the value proposition, and the public link to your collaborative project notes via TEAMMATES. You'll receive an email from TEAMMATES with the submission link. Only one member needs to submit on behalf of the team. All members can view/update the submission.{% if cs2103 or tic4001 %}<br>
+  {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.{% endif %}
+
 
 </span>
 {#====================================================================================================================#}
@@ -132,7 +146,8 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 <span id="desc_start_project_notes">
 
 * Keep project notes in easy-to-use collaborative docs (Recommended: use a GoogleDoc). This document will be checked by the tutor at various points.<br>
-  Remember to choose a tool that ==allow public _view_ access== (not write access) e.g., GoogleDoc can be shared via a public link so that the document can be viewed by others.
+  Remember to choose a tool that ==allow public _view_ access== (not write access) e.g., GoogleDoc can be shared via a public link so that the document can be viewed by others. You'll be asked to submit this link to us in the next week.<br>
+  {{ icon_important_big_red }} Make sure all you current and future project notes (if split into in multiple documents) are reachable via links given in this document and are viewable by the public.
 
 </span>
 {#====================================================================================================================#}
@@ -143,13 +158,24 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 
 <div class="indented-level1">
 
-Get together with your team members and <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> **&nbsp;for the the product**.
 
-* **How many?** Aim to collect more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other competing products.%%
-* **Follow** [**the _recipe for brainstorming user stories_** in the textbook → Specifying Requirements → UserStories →  Usage]({{ baseUrl }}/se-book-adapted/chapters/specifyingRequirements.html#a-recipe-for-brainstorming-user-stories).
+* **Learn** [**the _recipe for brainstorming user stories_** in the textbook → Specifying Requirements → UserStories →  Usage]({{ baseUrl }}/se-book-adapted/chapters/specifyingRequirements.html#a-recipe-for-brainstorming-user-stories).<br>
+  Also learn about <trigger trigger="click" for="modal:v10-brainstorming">brainstorming</trigger> and <trigger trigger="click" for="modal:v10-userstories">user stories</trigger>.
+
+* **Follow the steps in the recipe mentioned above to arrive at user stories for the the product**, with your team members. <span tags="m--cs2103">If you didn't attend the lecture, please watch the lecture recording to learn more about this step.</span>
+
+* **How many user stories?** Aim to collect more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other competing products.%%
+
+* **User stories of what size?** Normally, it is fine to use _epic_-level user stories in the early stages of a project but given this is a small project, you may want to define smaller user stories (i.e., small enough for one person to implement in 1-2 days).
+  * {{ bad }} As a user, I can track my schedule, so that I can know when to do things.<br>
+    %%Reason: too big, as _track_ can involve a lot of things.%%
+  * {{ good }} As a user, I can add a time to a task, so that I can record when a task need to be done.
+  * {{ good }} As a user, I can see the pending task that has the next earliest deadline, so that I can know what I need to do next.
+
+* **What format?**: You may use a sentence format or a table format but do maintain the prescribed three-part structure of a user story. In particular, ==try to include the _benefit_ part in most user stories== as that will come in handy when prioritizing user stories later.
 
 * **How to record?**<br>
-  Keep records of intermediate steps (e.g., persona, scenarios) in your collaborative project document started in the previous week.<br>
+  ==Keep records of intermediate steps (e.g., persona, scenarios)== in your collaborative project document started in the previous week.<br>
   You can ~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~ use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
@@ -157,7 +183,7 @@ Get together with your team members and <trigger trigger="click" for="modal:v10-
 </modal>
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-userstories">
-  <include src="../book/specifyingRequirements/userStories/introduction/unit-inElsewhere-asFlat.md" boilerplate/>
+  <include src="../book/specifyingRequirements/userStories/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
 <modal large header="Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools">
@@ -204,11 +230,14 @@ How is that better?
 
 **The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.
 
+{{ icon_important_big_red }} Do not discuss features, UI, command format, or implementation details yet. That would be like _putting the cart before the horse_. At this stage we are simply trying to choose which user needs to fulfill first.
+
 </div>
 
 * If the product _can_ be of some use without a given user story, that user story should be left out of {{ version_first }}, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
 * Don't worry about {{ version_penultimate  }}. You can design {{ version_penultimate }} after {{ version_first }} done.
-* Don't worry about {{ version_first }} being 'too small'. You can always add more features to {{ version_first }} if you finish it ahead of schedule.
+* Don't worry about {{ version_first }} being 'too small'. You can always add more features to {{ version_first }} if you finish it ahead of schedule.<br>
+  {{ icon_tip }} You can also select an additional set of user stories that are _nice-to-have_ in v1.2, to be done but only if there's time left.
 * If possible, narrow the scope of {{ version_first }} further e.g., narrower target user, a smaller value proposition.
 
 Suggested workflow:
@@ -268,7 +297,7 @@ Suggested workflow:
   * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ version_first }}.
   * Include only features that will be delivered in {{ version_first }}.
   * <span tags="m--cs2103">Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or [Balsamiq](https://balsamiq.com/))%%</span><span tags="m--cs2113 m--tic4001">Consider including examples of expected outputs too</span>.
-  * {{ icon_important_big_red }} **Submission**: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to LumiNUS.<br><br>
+  * {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to LumiNUS.<br><br>
 
 <div id="divideDocs" class="indented">
 
@@ -298,9 +327,9 @@ Suggested workflow:
 
 <div class="indented-level1">
 
-<box type="info" light>
+<box type="info" seamless>
 
-**Recommended procedure for updating docs**:
+**Recommended procedure for updating docs**:{.text-info}
 
 1. Divide among yourselves who will update which parts of the document(s).
 1. Update the team repo by following the recommended workflow.
@@ -313,10 +342,12 @@ Update the following pages in your project repo:
 </div>
 
 * **_AboutUs_ page**:
-  This page is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
+  This page (in the `/docs` folder) is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
   * Add your own details. Include a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.
   * Including the the supervisor/lecturer is optional.
-  * The filename of the profile photo should be `doc/images/githbub_username_in_lower_case.png` %%e.g. `docs/images/okkhoy.png`%%. ==If your photo is in jpg format, name the file as `.png` anyway==.
+  * The filename of the profile photo should be `doc/images/githbub_username_in_lower_case.png`<br>
+    ==Note the need for lower case== (<tooltip content="GitHub usernames are not case sensitive, but URLs in GitHub-pages are -- to avoid any mismatches, we have fixed the file name here to be lower case">%%why lowercase?%%</tooltip>) %%e.g. `JohnDoe123` -> `docs/images/johndoe123.png` not `docs/images/JohnDoe123.png`%%.<br>
+    ==If your photo is in jpg format, name the file as `.png` anyway==.
   * Indicate the different roles played and responsibilities held by each team member. You can reassign these <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities %%(as explained in Admin {{ icon_embedding }} Project Scope)%%</trigger> later in the project, if necessary.
 
 <modal large header="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:mid-v12-photo">
@@ -347,7 +378,7 @@ Update the following pages in your project repo:
 <span id="heading_update_the_ug">{{ icon_individual }} Update the UG</span>
 <span id="desc_update_the_ug">
 
-* Move the draft UG into the User Guide page in your repository. Update the content as necessary. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>
+* **Move the draft UG content into the User Guide page** in your repository. Update the content as necessary. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
@@ -358,9 +389,13 @@ Update the following pages in your project repo:
 <span id="heading_update_dg_user_stories_etc">{{ icon_team }} Update the DG: user stories, glossary, NFRs{% if not tic4001 %}, use cases{% endif %}</span>
 <span id="desc_update_dg_user_stories_etc">
 
-* {{ icon_important_big_red }} Do a sincere job in this task as the DG will be reviewed during this week's {{ session_name }}.
-* Update the following in the DG, based on your project notes from the previous weeks.<br>
-  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide]({{ url_ab3_upstream_website }}/DeveloperGuide.html#product-scope).
+<div tags="m--tic4001" class="indented-level2">
+
+<include src="tp-tasks.mbdf#divideDocs" />
+</div>
+
+* **Add the following to the DG**, based on your project notes from the previous weeks.<br>
+  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.{% if not tic4001 %}
   * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%{% endif %}
@@ -386,10 +421,20 @@ Update the following pages in your project repo:
 
 </span>
 {#====================================================================================================================#}
+<span id="heading_practice_workflow_with_sample_repo">{{ icon_team }} Practice the workflow with a sample repo</span>
+<span id="desc_practice_workflow_with_sample_repo">
+
+* We recommend that you practice the forking workflow with your team members as described in the textbook section given in the panel below.<br>
+  {{ icon_tip }} You can use your tP GitHub org for this exercise too.
+
+{{ embed_topic("../book/gitAndGithub/forkingWorkflow/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **The forking workflow**", "1", indent=2) }}
+
+</span>
+{#====================================================================================================================#}
 <span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration</span>
 <span id="desc_do_a_practice_iteration">
 
-* To get some practice of doing project iterations, do this week's tP work as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
+* To get some practice of doing project iterations, do this week's tP work (i.e., updates to various documents) as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
 
@@ -407,13 +452,13 @@ Update the following pages in your project repo:
   * ==**Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)**== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
   * **If possible, break the iteration into two _increments_** i.e., aim to produce an even simpler but working version after one week.
   * **Avoid depth-first implementations**: "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
-    It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet i.e., go _breadth-first iterative_ not _depth-first iterative_.
+    It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet.
 * {{ icon_team }} **Divide the work among the team members** i.e., the work required for the current iteration.
 * {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a place holder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_first }}`%%<br>
   Optionally, you can define a `mid-{{ version_first }}` milestone to keep track of things to be done within the first half of the milestone.
 </span>
 {#====================================================================================================================#}
-<span id="heading_start_implementing_the_next_version">{{ icon_individual }} start implementing the next version</span>
+<span id="heading_start_implementing_the_next_version">{{ icon_individual }} Start implementing the next version</span>
 <span id="desc_start_implementing_the_next_version">
 
 * If you have time, start implementing v1.2.
@@ -490,7 +535,8 @@ Update the following pages in your project repo:
 <span id="heading_add_first_functionality_increment">{{ icon_individual }} Add the first functionality increment</span>
 <span id="desc_add_first_functionality_increment">
 
-* Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).
+* Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).<br>
+  **If you split the iteration into two smaller iterations** of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b` so that the dashboard can track them accurately.
 
 * {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
 </span>
@@ -537,16 +583,27 @@ Update the following pages in your project repo:
 
 * **Wrap up the milestone** using a git tag `{{ version_first }}`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, reassign them to a future milestone.
 
+<div tags="m--cs2103">
+
+* Do a release on GitHub. Uploading a JAR file to GitHub is optional.
+</div>
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_first }}</span>
 <span id="desc_do_an_informal_demo">
 
 <div id="demo">
+<div tags="m--cs2103 m--cs2113">
 
 <!-- * **Do an informal demo** of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the commit tagged as `{{ version_first }}` in the `master` branch %%i.e. only features included in the current release should be demoed%%.-->
 * As we don't have in-class tutorials this semester, do the following in lieu of a live demo:<br>
-  [one member] Run your app using the version tagged `{{ version_first }}`. Take screenshots of each available feature in action. Add those screenshots to your product notes document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.
+  [one member] Run your app using the latest released version `{{ version_first }}` <span tags="m--cs2103">(or `{{ version_first }}b`, if applicable)</span>. Take screenshots of each available feature in action. Add those screenshots to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.
+</div>
+<div tags="m--tic4001">
+
+* During the lecture, do an informal demo of your {{ version_first }} to the profs.
+</div>
 </div>
 </span>
 {#====================================================================================================================#}
@@ -605,14 +662,20 @@ In addition,
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>
 <span id="desc_update_dg_with_design_details">
 
-<div class="indented">
-<box>
+<div class="indented-level2" tags="m--cs2103">
 
-{{ icon_important_big_red }} Do a sincere job in this task because this is your only chance to get feedback on the DG before it is graded at {{ version_final }} {% if has_pe %}i.e., this is your last chance to get your DG tested for free.{% endif %}
-</box>
+<panel type="info" header="Why the hurry to update documents? Why not wait till the implementation is finalized?" minimized>
+
+* We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
+
+* Wt is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
+
+* It allows receiving early self/peer/instructor feedback.
+</panel>
 </div>
 
-* **Update the Developer Guide** as follows:
+* **Update the Developer Guide** as follows:{% if tic4001 %}
+  * You can take some inspiration from the [DG of the AB3 (se-edu/addressbook-level 3) project]({{ url_ab3_fork_website }}/DeveloperGuide.html).{% endif %}
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
     Expected length: 1+ page per person{% if module == "CS2113" or module == "TIC4001" %}
   * Describing the design at a multiple-levels (e.g., first, describe at _architecture-level_, then describe at _component-level_) is optional. It is also acceptable to have one _Design & Implementation_ section in which you describe the entire thing at the class- and object-level.{% endif %}
@@ -636,13 +699,13 @@ In addition,
 </div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_do_a_release">{{ icon_team }} Do a dry run of a release</span>
+<span id="heading_do_a_release">{{ icon_team }} Do a trial JAR release</span>
 <span id="desc_do_a_release">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `{{ version_first }}.1` (or `{{ version_penultimate }}.trial`). ==Ensure that the jar file works as expected in an empty folder and using Java 11==, by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
 </span>
 {#====================================================================================================================#}
-<span id="heading_make_code_reposense_compatible">{{ icon_individual }} Make the code RepoSense-compatible</span>
+<span id="heading_make_code_reposense_compatible">{{ icon_individual }} Ensure the code RepoSense-compatible</span>
 <span id="desc_make_code_reposense_compatible">
 
 <span id="midV13-repoSenseCompatible">
@@ -660,16 +723,16 @@ In addition,
 {#====================================================================================================================#}
 <span id="heading_smoke_test_catcher">{{ icon_individual }} Smoke-test CATcher</span>
 <span id="desc_smoke_test_catcher">
+
 * **This activity is <span class="text-danger">compulsory</span> and counts for `3` participation points.** Please do it before the deadline.
 <div class="indented-level2">
+
 <box dismissible>
 
 %%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we'll be using for the PE this semester.%%
-u
 </box>
 
-This week, we would like you to smoke-test the CATcher app **to ensure it can run on your computer**.
-
+This week, we would like you to smoke-test the CATcher app **to ensure it can run in your computer**.
 <p/>
 
 <panel type="info" header="**The steps for smoke-testing CATcher:**" minimized>
@@ -679,7 +742,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
    {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.<br>
    {{ icon_info }} If you encounter other problems at the app launch, refer to the [Notes on using the CATcher Desktop App](https://github.com/CATcher-org/CATcher/blob/master/docs/usage-notes.md).
 1. **Login**: Choose the _session_ `{{ module }}/T Alpha Test`, and submit.
-   <img src="../admin/images/catcherLogin.png" />
+   <img src="images/catcherLogin.png" />
 1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
 1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
@@ -723,6 +786,24 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
 
 </div>
+{#====================================================================================================================#}
+<span id="heading_demo_penultimate_version">{{ icon_team }} Demo {{ version_penultimate }}</span>
+<span id="desc_demo_penultimate_version">
+
+<div id="demo">
+<div tags="m--cs2103 m--cs2113">
+
+* [one member] As was done in `{{ version_first }}`,
+  * Run your application using the ==JAR file== that you released for `{{ version_penultimate }}`.
+  * Take screenshots of each available feature in action (or screen-record a demo -- need not be polished).
+  * Add those screenshots (or upload the demo video somewhere and give the link) to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_penultimate }} features demo`.
+</div>
+<div tags="m--tic4001">
+
+* During the lecture, do an informal demo of your {{ version_first }} to the profs.
+</div>
+</div>
+</span>
 {#====================================================================================================================#}
 <span id="heading_add_sd_to_dg">{{ icon_individual }} Add sequence diagrams to the developer guide</span>
 <span id="desc_add_sd_to_dg">
@@ -917,20 +998,21 @@ Not applicable this semester
 <span id="desc_submit_final_deliverables">
 
 * **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 2359** unless stated otherwise.
-* {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}<br>
+* {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}{% if not tic4001 %}<br>
   ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>
-  Penalty for delays beyond 24 hours is determined on a case by case basis.{% if not tic4001 %}
-  * Even a one-second delay is considered late, irrespective of the reason.{% endif %}
+  Penalty for delays beyond 24 hours is determined on a case by case basis.
+  * Even a one-second delay is considered late, irrespective of the reason.
   * For submissions done via LumiNUS, the submission time is the timestamp shown by LumiNUS.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
-  * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.
+  * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.{% endif %}
 * **Submit to LumiNUS folder we have set up**, not to your project space.
   {% if has_t %}{{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.{% endif %}
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.
   * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%e.g. broken links, outdated diagrams/instructions etc.%%.
 * **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _freeze_ period.
-  * You can update issues/milestones/PRs even during the _freeze_ period.
+  * You can update issues/milestones/PRs even during the _freeze_ period.{% if cs2113 or cs2103 %}
+  * [{{ module }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline. However, a freeze period of 1-2 days is still recommended, so that there is a clear gap between the tP submission and subsequent docs updates.{% endif %}
   * You can update the code during the freeze period if the change is related to a late submission approved by us.
   * You can continue to evolve your repo after the freeze period.
 
@@ -944,14 +1026,22 @@ Not applicable this semester
 
 **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.==
 
-**Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be reported as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
+**Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
+</box>
+
+<box type="info" seamless>
+
+**The icon {{ icon_team }} indicates team submissions.** Only one person need to submit on behalf of the team but we recommend that ==others help verify the submission is in order== i.e., the responsibility for (and any penalty for problems in) team submissions are best shared by the whole team rather than burden one person with it.
+
+The icon {{ icon_individual }} indicates individual submissions.
+
 </box>
 </div>
 
 * {{ icon_team }} **Product**:
   * Do a release on GitHub, tagged as `{{ version_final }}`.
   * Upload the jar file to LumiNUS.<br>
-    File name: `[team ID][product name].jar` %%e.g. [{{ example_team_id }}][ContactsPlus].jar%%
+    File name: `[team ID][product name].jar` %%e.g. [{{ example_team_id }}][Contacts Plus].jar%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
 

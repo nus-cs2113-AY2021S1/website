@@ -100,6 +100,12 @@
 * See the [{{ show_as_tab("Tutorial", icon_tutorial) }}](../schedule/week3/tutorial.html) tab for more info.
 </span>
 {#====================================================================================================================#}
+<span id="heading_form_teams_non_t">Form teams during the tutorial</span>
+<span id="desc_form_teams_non_t">
+
+* The teaching team will guide the team forming.
+</span>
+{#====================================================================================================================#}
 <span id="heading_accept_github_invitations">Accept GitHub invitation from the module organization</span>
 <span id="desc_accept_github_invitations">
 
@@ -116,10 +122,10 @@
 {{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Module Policies → Policy on Deadline Extensions**", "3", indent="2", type="primary") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_submit_midterm_feedback_for_the_module">[optional] Submit mid-term feedback to tutors</span>
+<span id="heading_submit_midterm_feedback_for_the_module">[optional] Submit mid-term feedback for the module</span>
 <span id="desc_submit_midterm_feedback_for_the_module">
 
-* **An anonymous survey to submit feedback about tutors** will open on LumiNUS by Monday. Please take a few minutes to give feedback to your tutors.
+* **An anonymous survey to submit feedback about the module and the teaching team** will open on LumiNUS by Monday. Please take a few minutes to give feedback to your tutors.
 </span>
 {#====================================================================================================================#}
 <span id="heading_submit_midterm_peer_evaluations">Submit Midterm Peer Evaluations on TEAMMATES</span>

@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import embed_topic, get_date with context %}
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Overview</span>
 
@@ -7,7 +7,7 @@
 **Objectives:**
 * The primary objective of the PE is to ==increase the rigor of project grading==. Assessing most aspects of the project involves an element subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
 * PE is also ==used to evaluate your manual testing skills, product evaluation skills, effort estimation skills== etc.
-* Note that significant project components are ==not graded solely based on peer ratings==. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
+* Note that significant project components are ==not graded solely based on peer ratings==. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutors' grades with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
 * PE is ==not a means of _pitting you against each other_==. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
 
 **Grading**:
@@ -39,17 +39,26 @@
 
 **PE Phase 1 will conducted under exam conditions. ==We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.
 
-* **Proctoring will be done via Zoom.** No admission if the requirements are not met (e.g., display name, camera placement).
-* **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. Seat numbers can be found in [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSxZ1SyL4AkikiaCxcJ20zNECumRvVvK2uYL27TTFRYLqSoLdFlfcBJ-lCDAHfgWWT1LbWaSvOhGo_E/pubhtml?gid=0&single=true). e.g.,
-  * `[M48] John Doe` (`M18` is the seat number)
-  * `[M48][PC] John Doe` (if using two devices)
-* **Join the Zoom waiting room ==about 30 minutes before the start time==.** Admitting you to the Zoom session can take some time; ==please be patient==.
+* **Proctoring will be done via Zoom.** No admission if the following requirements are not met.
+  * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external web cam for your PC.
+  * **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. ==Seat numbers can be found in [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true)==. e.g.,
+    * `[M48] John Doe` (`M18` is the seat number)
+    * `[M48][PC] John Doe` (for the PC, if using a phone as well)
+  * **Set your camera** so that _all_ the following are visible:
+    * your head (side view)
+    * the computer screen
+    * the work area (i.e., the table top)<br>
+    <img src="images/zoomCameraExample.png" width="362"/>
+* **Join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time.
+* **In case of Zoom outage**, we'll fall back on MS Teams (MST). Make sure you have MST running and have joined the matching MST Team `CS2103_AY2021S1_12pm_lecture` or `CS2103_AY2021S1_4pm_lecture`.
 * **Recording the screen is not required.**
+* **You are allowed to use head/ear phones.**
 * **Only one screen is allowed.**
 * **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.
+* **Do not use more than one CATcher instance** at the same time. Our grading scripts will red-flag you if you use multiple CATcher instances in parallel.
 * **Use MS Teams (not Zoom) private messages to communicate with the prof.** Fall back on Zoom chat only if you didn't receive a reply via MST.
 * **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
-* **During the bug reporting periods (i.e., <span class="badge badge-success">PE Phase 1 - part I</span> and <span class="badge badge-success">PE Phase 1 - part II</span>), do not visit websites and use software that are not in the list given below.** In particular, ==do not visit GitHub==. If you need to visit a different website or use another software, please ask for permission first.
+* **During the bug reporting periods (i.e., <span class="badge badge-success">PE Phase 1 - part I</span> and <span class="badge badge-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** ==In particular, do not visit GitHub==. However, you are allowed to visit pages linked in the UG/DG for the purpose of checking if the link is correct. If you need to visit a different website or use another software, please ask for permission first.
   * Website: LumiNUS
   * Website: Module website %%(e.g., to look up PE info)%%
   * Software: CATcher, any text editor, any screen grab software
@@ -57,10 +66,10 @@
 * **Do not use any other software running** in the background e.g., telegram chat
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
 
-
 </box>
 
-* **When, where**: Week 13 lecture slot
+
+* **When, where**: Week 13 lecture slot. Use the same Zoom link used for the regular lecture.
 
 ##### <span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
 
@@ -157,9 +166,11 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
 
+==**Deadline:** {{ get_date(date_w13_start, 11) }}==
+
 This phase is for you to respond to the bug reports you received.
 
-Duration: The review period will start around 1 day after the PE (exact time to be announced) and will ==last for 2-3 days==. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
+Duration: The review period will start around 1 day after the PE and will last for 2-3 days (exact times will be announced later). However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
@@ -179,7 +190,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 </box>
 * Launch CATcher, and login to the profile `{{ module }}/T PE`. It will show all the bugs assigned to your team, divided into three sections:
   1. `Issues Pending Responses` - Issues that your team has not processed yet.
-  1. `Issues Responded` - Your job is to get all issues to the second category.
+  1. `Issues Responded` - Your job is to get all issues to this category.
   1. `Faulty Issues` - e.g., Bugs marked as duplicates of each other, or causing circular _duplicate_ relationships. Fix the problem given so that no issues remain in this category.
 * Respond to the bug reports shown.
 </tab>
@@ -244,7 +255,7 @@ Duplicate of #67
 **Response** Labels:
 * `response.Accepted`: You accept it as a bug.
 * `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in {{ version_final }}%%.
-* `response.Rejected`: What tester treated as a bug is in fact the expected behavior.  You can reject bugs that you inherited from AB3.
+* `response.Rejected`: What tester treated as a bug is in fact the expected behavior, or the tester was mistaken in some other way.
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
 * `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
 
@@ -259,7 +270,7 @@ Duplicate of #67
 
 **Type** labels:
 * `type.FunctionalityBug`: A functionality does not work as specified/expected.
-* `type.FeatureFlaw`: Some functionality missing from a feature delivered in {{ version_final }} in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of {{ version_final }} features. These issues are counted against the _product design_ aspect of the project.
+* `type.FeatureFlaw`: Some functionality missing from a feature delivered in {{ version_final }} in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance-testing bug that falls within the scope of {{ version_final }} features. These issues are counted against the _product design_ aspect of the project.
 * `type.DocumentationBug`: A flaw in the documentation %%e.g., a missing step, a wrong instruction, typos%%
 </box>
 </div>
@@ -270,7 +281,7 @@ Duplicate of #67
 <include src="appendixE-gitHub.md#bug-severity" />
 </div>
 
-* **If you need teaching team's inputs when deciding on a bug** e.g., if you are not sure if the UML notation is correct, post in the [forum]({{ url_forum }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).
+* **If you need the teaching team's inputs when deciding on a bug** %%(e.g., if you are not sure if the UML notation is correct)%%, post in the [forum]({{ url_forum }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).
 
 <div class="indented-level2" id="additionalGuidelinesForBugTriaging">
 
@@ -281,10 +292,13 @@ Duplicate of #67
     If the same problem is reported for multiple diagrams, can be flagged as duplicates.<br>
     Omitting optional notations is not a bug as long it doesn't hinder understanding.
 * **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
-* **How to prove that something is 'not in scope'**: The following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
+* **How to prove that something is 'not in scope'**: In general, features not-yet-implemented (and hence, not in scope) are the features that have a lower priority that the ones that are implemented already. In addition, the following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
   * The UG specifies it as not supported or coming in a future version.
   * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
 * **If a missing feature is essential for the app to be reasonably useful**, its omission can be considered a _feature flaw_ even if it can be proven as _not in scope_ as given in the previous point.
+* **If a bug report contains multiple bugs** (i.e., despite instructions to the contrary, a tester included multiple bugs in a single bug report), you have to choose one bug and ignore the others. If there are valid bugs, choose from valid bugs. Among the choices available, choose the one with the highest severity (in your opinion). In your response, mention which bug you chose.
+* **How to decide the severity of bugs related to _missing requirements_** (e.g., missing user stories)? Depends on the potential damage the omission can cause. Keep in mind that not documenting a requirement increases the risk of it not getting implemented in a timely manner (i.e., future developers will not know that feature needs to be implemented).
+* **You can reject bugs that you <tooltip content="i.e., the current behavior is same as AB3 and you had no reason to change it because the feature applies similarly to your new product">inherited</tooltip> from AB3.**
 </box>
 </div>
 
@@ -303,20 +317,35 @@ Duplicate of #67
 <p/>
 </box>
 
+* You can also refer to the below guidelines:
+
+{{ embed_topic("tp-grading-bugs.mbdf#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
+
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 3: Tester Response</span>
+
+**Start:** Within 1 day after Phase 2 ends.<br>
+
+<div class="indented">
+
+{{ icon_important_big_red }} While you are waiting for Phase 3 to start, comments will be added to the bug reports in your `/pe` repo, to indicate the response each received from the receiving team. <span class="text-danger">Please do not edit any of those comments or reply to them via the GitHub interface.</span> Doing so can invalidate them, in which case the grading script will assume that you agree with the dev team's response. Instead, wait till the start of the Phase 3 is announced, after which you should use CATcher to respond.
+</div>
+
+==**Deadline:** {{ get_date(date_w13_start, 14) }}==
 
 * In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the receiving dev team, you can record your objections and the reason for the objection.
   * not accepted
   * severity downgraded
   * bug type changed
 * As before, consider carefully before you object to a dev team's response. ==<span class="text-danger">If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
+* If you disagree with the team's decision but would like to revise your own initial type/severity/response as well, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%%.
 * You can also refer to the below guidelines:
 
 {{ embed_topic("tp-pe.mbdf#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", 2, indent=2) }}
 
+{{ embed_topic("tp-grading-bugs.mbdf#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
+
 
 * This phase is optional. If you do not respond to a dev response, we'll assume that you agree with it.
-* **Deadline: Reading week Thursday 2359** (i.e., within 2 days)
 * Procedure:
 
 <div class="indented-level2">
@@ -324,12 +353,13 @@ Duplicate of #67
 <tabs>
 <tab header="Using CATcher">
 
-* When the phase has been announced as open, login to CATcher as usual (profile: `{{ module }}/T PE`).
+* When the phase has been announced as open, login to CATcher as usual (profile: `{{ module }}/T PE`).<br>
+  {{ icon_info }} You may use [the latest version of CATcher](https://github.com/CATcher-org/CATcher/releases) or the [Web version of CATcher](http://catcher-org.github.io/webapp).
 * For each issues listed in the `Issues Pending Responses` section:,
   * Go to the details, and read the dev team's response.
   * If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.
   * If you are fine with the team's changes, click `Save` without any other changes upon which the issue will move to the `Issue Responded` section.
-* Note that only bugs that require your response will be shown by CATcher. **Bugs already accepted by the team will not appear in CATcher** as there is nothing for you to do about them.
+* Note that only bugs that require your response will be shown by CATcher. **Bugs already accepted _as reported_ by the team will not appear in CATcher** as there is nothing for you to do about them.
 
 </tab>
 <tab header="Not using CATcher">

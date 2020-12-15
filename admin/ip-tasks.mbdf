@@ -1,4 +1,5 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
+{% from "common/topics.njk" import panopto with context %}
 {% from "common/macros.njk" import button, embed_topic, get_date, step, thumb, timing_badge with context %}
 {% from "_module-" + module + "/weeklyIpTasks.mbdf" import weekly_ip_tasks with context %}
 
@@ -203,7 +204,6 @@ Resources:
   1. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.
 * As before,
  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.<br>
- {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
 </span>
 <span tags="m--tic4001">
@@ -237,6 +237,7 @@ Resources:
 
 * Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement the other increment in a separate branch named similar to the first (i.e., `branch-{increment ID}`). Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
  {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
+ {{ icon_important_big_red }} Only _merged_ branches are detected by the script. After merging a branch `b1` to the `master` branch, you need to push both the `master` and the `b1` branches to the fork. Pushing the `master` branch does not automatically take the `b1` branch along with it just because it is already merged to the `master` branch.<br>
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
 
@@ -250,8 +251,11 @@ Resources:
 
 * **Practice using parallel git branches _and_ PRs**, as explained below:
 1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
-1. Then, push each branch to your fork, and create a PR within your fork (i.e., from the increment branch to the `master` branch).
-1. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
+1. Then, push each branch to your fork, and create a PR ++within your fork++ (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_module_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
+
+{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
+
+3. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
    1. Merge one of the PRs on GitHub e.g., Level-8. Remember to choose the `Create merge commit` option when merging.
    1. Pull the updated `master` branch from your fork to your Computer.
    1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
@@ -273,6 +277,7 @@ Resources:
 <span id="extra_A-JavaDoc">
 
 * As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
+* The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
 </span>
 {#====================================================================================================================#}
 <span id="heading_prepare_for_pr_reviews">Get ready to review PRs</span>
@@ -289,12 +294,23 @@ Resources:
 <span id="heading_review_two_prs">Review some peer PRs</span>
 <span id="desc_review_two_prs">
 
+<div tags="m--cs2103 m--tic4001">
+
+<box type="wrong" add-class="ml-4" icon=":fas-hand-paper:" icon-size="2x" seamless>
+
+**Please wait till {{ date_w4_start | date(format_normal, 3) }}** to start this task, to give others a few extra days to create the PR if they haven't done so yet.
+</box>
+</div>
+
 <box type="info" add-class="ml-4">
 
 This task is worth `2x2=4` participtaion points.
 </box>
 
 * **Learn _how_ you should review PRs in this task**:
+
+{{ panopto('c001244c-01b5-4471-ab9d-ac1b0098110a') }}
+
 {{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=2) }}
 
 * {{ step(1) }} **Note these additional guidelines**:
@@ -302,7 +318,7 @@ This task is worth `2x2=4` participtaion points.
   * If the PR has received some review comments already, feel free to confirm/complement/question those comments in your review. Also, look for things the previous reviewers may have missed.
   * At the end of the review, choose `Comment` (i.e., not `Approve` or `Request changes`)
 
-* **Do the first PR review** as follows.
+* {{ step(2) }} **Do the first PR review** as follows.
   * Comment on ==[coding standard]({{ url_java_coding_standard }}) violations only==.
   * The review allocation is given in the panel below.
 
@@ -311,7 +327,7 @@ This task is worth `2x2=4` participtaion points.
 <include src="common-tutorials.mbdf#show-ip-peer-review-allocation-1" />
 </div>
 
-* {{ step(2) }} **Do the second PR review** as follows.
+* {{ step(3) }} **Do the second PR review** as follows.
   * Comment on ==other code quality guidelines== (see the <span tags="m--cs2103">section _Naming_</span><span tags="m--cs2113 m--tic4001">sections on _Naming_ and _Readability_</span> in [this textbook chapter](../se-book-adapted/chapters/codeQuality.html)) you have learned so far. It's optional to comment on coding standard violations in this PR review.
   * The review allocation is given in the panel below.
 
@@ -320,7 +336,7 @@ This task is worth `2x2=4` participtaion points.
 <include src="common-tutorials.mbdf#show-ip-peer-review-allocation-2" />
 </div>
 
-* {{ step(3) }} **[When you receive reviews for your own PR] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in [these guidelines](https://se-education.org/guides/guidelines/PRs-reviewing.html), do not get into arguments with PR reviewers/authors.
+* {{ step(4) }} **[When you receive reviews for your own PR] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in [these guidelines](https://se-education.org/guides/guidelines/PRs-reviewing.html), do not get into arguments with PR reviewers/authors.
 
 </span>
 {#====================================================================================================================#}
@@ -344,32 +360,11 @@ This task is worth `2x2=4` participtaion points.
 
 This activity is worth `2x2=4` participation points.
 </box>
-<p/>
-<panel header="Allocation for iP peer evaluation" minimized >
 
-The allocation will be made known to by Monday 2359 via LumiNUS gradebook.
-
-<!--
-
-{% from "_module-" + module + "/studentData.mbdf" import ip_final_peer_evaluation_allocation as allocation %}
-
-{% macro get_links(username) -%}
-[[JAR](https://github.com/{{ username }}/{{ ip_repo_name }}/releases)][[User Guide](https://{{ username }}.github.io/{{ ip_repo_name }})][[Code](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#search={{ username }}&sort=groupTitle&sortWithin=title&since=2020-01-13&timeframe=commit&mergegroup=false&groupSelect=groupByRepos&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2F{{ ip_repo_name }}%5Bmaster%5D)]
-{%- endmacro  %}
-
-Your username | 1st iP to evaluate | 2nd iP to evaluate
---------------|--------------------|------------------
-{% for allocation in allocations  -%}
-{{ allocation[0] }} | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }}
-{% endfor %}
--->
-
-</panel>
-<p/>
 </div>
 
-1. ~~**Find out which iPs are allocated for your evaluation** from the panel above.~~
-1. **Download the latest JAR file** of the first iP by following the link provided.
+1. {% if cs2113 %}**The allocation will be in the LumiNUS gradebook**, by Monday 2359.{% else %}**Wait for the email notifying you which iPs are allocated for you to evaluate**. When the email is sent out, it will also be announced via module announcements.{% endif %}
+1. **Download the _latest_ JAR file** of the first iP by following the link provided.
 1. **Locate the User Guide** of the app by following the link provided.
 1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
 1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
@@ -382,15 +377,24 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {#====================================================================================================================#}
 <span id="extra_A-Gradle">
 
-* **Do each enhancement in a separate branch and merge to the `master` branch only when ready** (if you push incomplete features into the `master` branch, it can confuse others reviewing your PR).
+* **Do each enhancement in a separate branch and merge to the `master` branch only when ready** (if you push incomplete features into the `master` branch, it can confuse others reviewing your PR). There is no need to do the increments as _parallel_ branches though %%i.e., you can do one increment and merge that branch before starting on the next one%%.
 <br>
 {{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
+</span>
+{#====================================================================================================================#}
+<span id="post_Level-10">
+
+<div class="indented-level2">
+
+* Note that you no longer need to keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
+</div>
 </span>
 {#====================================================================================================================#}
 <span id="heading_generate_new_jar">Generate a new jar file</span>
 <span id="desc_generate_new_jar">
 * We recommend that you re-generate a new jar file again and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
-  If the `.jar` file is smaller than 10Mb, most likely JavaFX libraries are not inside it.
+==If the `.jar`  file is smaller than 10MB==, most likely JavaFX libraries are not inside it.
+* There is no need to create a release in GitHub with this jar file (although you are welcome to).
 </span>
 {#====================================================================================================================#}
 <span id="extra_A-Assertion">
@@ -448,11 +452,16 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {% if not tic4001 %}
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 {% endif %}
-* **Create a new jar file** using Intellij (unless you have added a GUI or using third-party libraries in which case you should [use Gradle](https://se-education.org/guides/tutorials/gradle.html) to create the jar file). The jar file should be ==cross-platform and should work in a computer that has Java 11==.
+* **Create a new jar file**
+  * Create the JAR file in one of these ways:
+    * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
+    * Else: you can use Intellij.
+  * The JAR file should be ==cross-platform and should work in a computer that has Java 11==.
 * **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
   1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.
-* **Create a new release on GitHub** (e.g., `v0.2`) and upload the jar file.
+* **Create a new release on GitHub** (e.g., `v0.2`) and upload the JAR file.
+  * Recommended to refrain from uploading multiple JAR files as this can cause extra work for the evaluators.
 
 <div class="indented">
 
@@ -482,10 +491,13 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 <span id="desc_add_an_extension">
 
 * Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`
+* Recommended to add the extension via a branch (branch name is up to you). Optional to add it via a PR.
+* Add a tag named `BCD-Extension` to the corresponding commit.
 
 <div class="indented-level2">
 
 {{ icon_important_big_red }} Discuss with your team members to ensure that each member picks a different extension.
+
 
 {{ icon_tip }} You may want to pick an extension that is relevant to your tP so that the code can be reused in the tP later.
 </div>
@@ -523,7 +535,9 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
   {% for i in step.increments %}
     {% set file = 'text.md' if i.id[0] == 'L' else 'extensions.mbdf' %}
     {% set tag = ('var-tag=' + i.tag) if i.tag else '' %}
+<include src="{{ tasks_file }}#pre_{{ i.id }}" optional />
 <include src="dukeFragment.md" boilerplate var-header="**`{{ i.id }}`: {{ i.title }}**" {{ tag }} var-fragment="{{ file }}#{{ i.id }}" />
+<include src="{{ tasks_file }}#post_{{ i.id }}" optional />
   {% endfor %}
 {% else %}
 <include src="{{ tasks_file }}#desc_{{ step.id }}" />

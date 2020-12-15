@@ -933,7 +933,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           }
         ]
@@ -957,14 +957,15 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"},
-              {name: "continuousIntegrationDeployment", heading: "Continuous Integration and Continuous Deployment", priority: "2"}
+              {name: "what", heading: "What", priority: "3"},
+              {name: "continuousIntegrationDeployment", heading: "Continuous Integration and Continuous Deployment", priority: "4"}
             ]
           }
         ]
       },
       {
         name: "more",
+        priority: "-1",
         level_two_topics: [
           {
             name: "",
@@ -1481,9 +1482,9 @@
           },
           {
             name: "associationsAsAttributes",
-            priority: "4",
+            priority: "3",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "4"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           },
           {
@@ -1670,8 +1671,8 @@
               {name: "fork", heading: "Fork: Creating a remote copy", priority: "3"},
               {name: "push", heading: "`push`: Uploading data to other repos", priority: "3"},
               {name: "branch", heading: "`branch`: Doing multiple parallel changes", priority: "3"},
-              {name: "mergeConflicts", heading: "Dealing with merge conflicts", priority: "4"},
-              {name: "createPRs", heading: "Creating PRs", priority: "4"},
+              {name: "mergeConflicts", heading: "Dealing with merge conflicts", priority: "3"},
+              {name: "createPRs", heading: "Creating PRs", priority: "3"},
               {name: "reviewPRs", heading: "Reviewing PRs", priority: "4"},
               {name: "managePRs", heading: "Merging PRs", priority: "4"},
               {name: "forkingWorkflow", heading: "Forking Workflow", priority: "4"}
@@ -1731,7 +1732,7 @@
             name: "",
             level_three_topics: [
               {name: "what", heading: "What is Java?", priority: "3"},
-              {name: "how", heading: "How Java Works", priority: "4"},
+              {name: "how", heading: "How Java Works", priority: "3"},
               {name: "editions", heading: "Java Editions", priority: "4"}
             ]
           }

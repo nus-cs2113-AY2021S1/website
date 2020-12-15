@@ -41,6 +41,8 @@ These are considered _functionality bugs_:<br>
 * looks messy
 * not well-formatted
 * broken links, other inaccuracies, typos, etc.
+* hard to read/understand
+* unnecessary repetitions %%(i.e., hard to see what's similar and what's different)%%
 </span>
 </div>
 
@@ -64,7 +66,7 @@ These are considered _functionality bugs_:<br>
 * Symbols used are not intuitive
 * Indiscriminate use of double-headed arrows
 * <tooltip content="e.g., the sequence diagram showing interactions between main components">_architecture-level_</tooltip> diagrams contain lower-level details
-* Description given are not usufficiently high-level
+* Description given are not sufficiently high-level
 </span>
 <span id="umlDiagramBugs">
 
@@ -84,22 +86,23 @@ These are considered _functionality bugs_:<br>
 :fas-bug: Problems in User Stories. Examples:
 * Incorrect format
 * All three parts are not present
-* Benefit does not match the function
+* The three parts do not match with each other
 * Important user stories missing
 </span>
 <span tags="m--cs2103" id="useCaseBugs">
 
 :fas-bug: Problems in Use Cases. Examples:
-* Incorrect step numbering
-* Missing extensions
-* Unnecessary UI details mentioned
 * Formatting/notational errors
+* Incorrect step numbering
+* Unnecessary UI details mentioned
+* Missing/unnecessary steps
+* Missing extensions
 </span>
 <span id="nfrBugs">
 
 :fas-bug: Problems in NFRs. Examples:
 * Not really a _Non-Functional_ Requirement
-* Not well-defined (i.e., hard to decide when it has been met)
+* Not scoped clearly (i.e., hard to decide when it has been met)
 * Not reasonably achievable
 * Highly relevant NFRs missing
 </span>
